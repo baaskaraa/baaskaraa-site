@@ -1,0 +1,50 @@
+/* baaskaraa.com holding page · loaded by holding.js · b with me */
+.bk-soon{--ink:#141416;--ink-2:#1c1c20;--gold:#D4AF37;--paper:#F5F1E8;--mute:#8f8a7d;
+  --display:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:radial-gradient(120% 80% at 50% 38%,var(--ink-2) 0%,var(--ink) 62%);color:var(--paper);font-family:var(--display);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;
+  padding-block:88px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  box-sizing:border-box;text-align:center;-webkit-font-smoothing:antialiased}
+.bk-soon *{box-sizing:border-box}
+.bk-soon [hidden]{display:none!important}
+.bk-lock{display:flex;flex-direction:column;align-items:center;gap:28px}
+.bk-mark{height:clamp(120px,22vw,190px);width:auto;overflow:visible;display:block}
+.bk-mark path{stroke-dasharray:1;stroke-dashoffset:var(--bk-hold);animation:bk-draw 3.2s cubic-bezier(.65,0,.25,1) .3s both}
+@keyframes bk-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:var(--bk-hold)}}
+.bk-name{margin:0;font-weight:300;font-size:clamp(26px,4.4vw,40px);letter-spacing:.2em;padding-left:.2em;color:var(--gold);line-height:1}
+.bk-line{margin:0;font-weight:200;font-size:clamp(18px,2.6vw,24px);letter-spacing:.02em;color:var(--paper);max-width:28ch;text-wrap:balance}
+.bk-roles{margin:0;font-weight:400;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);line-height:2}
+.bk-rule{width:48px;height:1px;background:var(--gold);opacity:.55;border:0;margin:0}
+.bk-mid{display:flex;flex-direction:column;align-items:center;gap:18px}
+.bk-note{margin:0;font-weight:300;font-size:15px;color:var(--paper);opacity:.85}
+.bk-gb{margin:0;font-weight:400;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.bk-gbline{margin:0;font-weight:300;font-size:15px;line-height:1.7;color:var(--paper);opacity:.85;max-width:38ch;text-wrap:balance}
+.bk-fade{animation:bk-in 1.2s ease 2.6s both}
+@keyframes bk-in{from{opacity:.0001;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bk-mark path,.bk-fade{animation:none}}
+.bk-book{display:flex;flex-direction:column;gap:26px;width:100%;max-width:440px;margin:0 auto;text-align:left}
+.bk-book label{display:flex;flex-direction:column;gap:6px;font-weight:400;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+.bk-book input,.bk-book textarea{background:transparent;border:0;border-bottom:1px solid rgba(212,175,55,.45);border-radius:0;color:var(--paper);font-family:var(--display);font-weight:300;font-size:16px;padding:10px 0;letter-spacing:normal;text-transform:none;resize:vertical;width:100%;box-shadow:none;-webkit-appearance:none}
+.bk-book input:focus,.bk-book textarea:focus{border-bottom-color:var(--gold);outline:none}
+.bk-book .bk-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.bk-send{align-self:center;background:transparent;color:var(--gold);border:1px solid var(--gold);font-family:var(--display);font-weight:400;font-size:11px;letter-spacing:.32em;padding:14px 32px;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.bk-send:hover{background:var(--gold);color:var(--ink)}
+.bk-send:disabled{opacity:.5;cursor:wait}
+.bk-send:focus-visible{outline:1px solid var(--paper);outline-offset:3px}
+.bk-msg{margin:0;max-width:440px;color:var(--gold);font-weight:300;font-size:15px;line-height:1.8;text-align:center}
+.bk-err{color:#e8a39c}
+.bk-endrow{display:flex;flex-direction:column;align-items:center;gap:20px;padding-bottom:40px}
+.bk-mail{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px}
+.bk-addr{font-weight:300;font-size:15px;letter-spacing:.06em;color:var(--gold);user-select:all;text-decoration:none;border-bottom:1px solid rgba(212,175,55,.35);padding-bottom:2px}
+.bk-copy{font-family:var(--display);font-weight:400;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--paper);background:transparent;border:1px solid rgba(245,241,232,.28);padding:8px 14px;cursor:pointer}
+.bk-copy:hover{border-color:var(--gold);color:var(--gold)}
+.bk-sign{margin:0;font-weight:300;font-size:14px;letter-spacing:.18em;color:var(--gold)}
+.bk-small{margin:0;font-weight:300;font-size:11px;letter-spacing:.2em;color:var(--mute)}
+html[lang="ta"] .bk-book label,html[lang="ta"] .bk-send{font-size:13px!important}
+.bk-lang{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));z-index:10000;display:flex;border:1px solid rgba(212,175,55,.45);background:#141416;font-family:Montserrat,"Mukta Malar",sans-serif}
+.bk-lang button{background:transparent;border:0;color:#8f8a7d;font:inherit;font-size:11px;letter-spacing:.2em;padding:8px 12px;cursor:pointer}
+.bk-lang button[aria-pressed="true"]{background:#D4AF37;color:#141416}
+.bk-lang button:focus-visible{outline:1px solid #F5F1E8;outline-offset:2px}
+html[lang="ta"] [data-ta]{font-family:"Mukta Malar",Montserrat,sans-serif!important;letter-spacing:.01em!important;text-transform:none!important}
+html[lang="ta"] .bk-roles,html[lang="ta"] .bk-gb{font-size:13px!important}
+html[lang="ta"] .bk-line{font-weight:300!important}
