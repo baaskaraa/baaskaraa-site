@@ -169,6 +169,11 @@
 
   function mount() {
     host = document.getElementById('bk-app');
+    if (!host && me && me.parentNode) {   /* loader can be just the script tag, with data-page / data-home on it */
+      host = document.createElement('div'); host.id = 'bk-app';
+      ['data-page', 'data-home'].forEach(function (k) { if (me.hasAttribute(k)) host.setAttribute(k, me.getAttribute(k)); });
+      me.parentNode.insertBefore(host, me);
+    }
     if (!host) return;
     page = host.getAttribute('data-page') || 'home'; if (!(page in PAGES)) page = 'home';
     homeUrl = host.getAttribute('data-home') || '/';
