@@ -3,7 +3,7 @@
    Loader on a Squarespace page (Code block):
      <div id="bk-app" data-page="home"></div><script src="https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/site/bk-site.js"></script>
    data-page: home | now | the-artist | artworks | awaken | archive | engage | live
-   data-home: address of the full home page (default "/"); e.g. "/preview" during the private preview */
+   data-home: address of the full home page (optional; default = HOME below) */
 (function () {
   'use strict';
   if (window.__bkSite) return; window.__bkSite = true;
@@ -13,6 +13,8 @@
   var ASSETS = __ASSETS__;
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyEQN5bhRxmcPEQ4oCPnczFaZzBJytxSRpDr9AeO9VkT7XWK6szzHL40xdAgETRyyxabQ/exec';
   var FONTS = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;500&display=swap';
+  /* Address of the full home page. '/preview' during the private preview; set to '/' at public go-live (one change here, no re-pasting in Squarespace). */
+  var HOME = '/preview';
   var PAGES = {
     home: null,
     now: ['journal'], 'the-artist': ['artist'], artworks: ['works'],
@@ -176,7 +178,7 @@
     }
     if (!host) return;
     page = host.getAttribute('data-page') || 'home'; if (!(page in PAGES)) page = 'home';
-    homeUrl = host.getAttribute('data-home') || '/';
+    homeUrl = host.getAttribute('data-home') || HOME;
     var inEditor = window.top !== window.self || /\/config(\/|$)/.test(location.pathname) || document.body.classList.contains('sqs-edit-mode');
     if (!document.querySelector('link[data-bk-fonts]')) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = FONTS; l.setAttribute('data-bk-fonts', ''); document.head.appendChild(l); }
     var st = document.createElement('style'); st.textContent = PAGE_CSS; document.head.appendChild(st);
