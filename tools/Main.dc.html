@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>baaskaraa — Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;family=Noto+Sans+Tamil:wght@300;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1A1A1D;font-family:'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#D4AF37}a:hover{color:#F0D27A}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;background:#2D2D2D;color:#B8B8B0;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:16px;box-sizing:border-box}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 28px;background:#D4AF37;color:#1A1A1D;font-weight:600;font-size:13px;letter-spacing:2px;text-decoration:none;box-sizing:border-box;border:0;cursor:pointer;font-family:inherit}
+.btn-gold:hover{background:#E2C05A;color:#1A1A1D}
+.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 28px;border:1px solid #D4AF37;color:#D4AF37;font-weight:600;font-size:13px;letter-spacing:2px;text-decoration:none;box-sizing:border-box;background:transparent;cursor:pointer;font-family:inherit}
+.btn-line:hover{background:rgba(212,175,55,.12);color:#F0D27A}
+.ft a{color:#CFCFC8;text-decoration:none;transition:color .2s}.ft a:hover{color:#F0D27A}.ft a.btn-line{color:#D4AF37}.ft-h{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#D4AF37;font-weight:600}.ft-soc{display:inline-flex;align-items:center;min-height:44px;font-size:12px;letter-spacing:3px;text-transform:uppercase}
+.navlink{text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px 0}
+.navlink:hover{color:#F0D27A !important}
+.chip{min-height:44px;padding:0 18px;font-family:inherit;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border:1px solid #4A4A4A;background:transparent;color:#CFCFC8}
+.work{display:flex;flex-direction:column;gap:12px;text-align:left;background:transparent;border:0;padding:0;cursor:pointer;font-family:inherit;color:inherit}
+.work img{transition:opacity .2s}
+.work:hover img{opacity:.85}
+.lbl{font-size:12px;letter-spacing:4px;text-transform:uppercase}
+.menubtn{display:none;min-height:44px;padding:0 14px;background:transparent;border:1px solid #4A4A4A;color:#F5F5F0;font-family:inherit;font-size:12px;letter-spacing:3px;cursor:pointer}
+@media (max-width:760px){.navlinks{display:none !important}.navlinks.open{display:flex !important;flex-direction:column;align-items:flex-start;flex-basis:100%;gap:0 !important;padding:6px 0 10px}.navlinks.open .navlink{font-size:14px;padding:12px 0}.menubtn{display:inline-flex;align-items:center;margin-left:auto}.navsoc{display:none !important}.navname{font-size:18px !important;letter-spacing:3px !important}.navlogo{height:26px !important}.navbar{padding:8px 16px !important}.navlinks.open .livepill{margin:10px 0 6px;align-self:flex-start !important}}
+.aw-split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.aw-col{display:flex;flex-direction:column;gap:12px;min-width:0}
+.aw-panel{position:relative;aspect-ratio:9/16;overflow:hidden;background:#141416}
+.aw-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease,transform 6s ease}
+.aw-txt{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:40px 32px 120px;box-sizing:border-box;transition:opacity 1.2s ease}
+.aw-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);width:76px;height:76px;border-radius:50%;border:1px solid rgba(245,245,240,.7);background:rgba(20,20,22,.45);color:#F5F5F0;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(4px);padding:0 0 0 5px;box-sizing:border-box;font-family:inherit}
+.aw-mini{width:40px;height:40px;border-radius:50%;border:1px solid rgba(245,245,240,.45);background:rgba(20,20,22,.5);color:#F5F5F0;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-family:inherit;flex:0 0 40px}
+@media (max-width:760px){.aw-split{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}.aw-split::-webkit-scrollbar{display:none}.aw-col{flex:0 0 84%;scroll-snap-align:center}.aw-wrap{padding:80px 16px !important}}
+.eg-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1000px) and (min-width:761px){.eg-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ar-top{display:grid;grid-template-columns:1.05fr 1fr;gap:28px 56px;align-items:start}
+@media (max-width:860px){.ar-top{grid-template-columns:1fr}}
+.bmark{position:relative;width:min(560px,94vw);aspect-ratio:962/600;background:none;border:0;padding:0;cursor:pointer;display:block}
+.bm-l{position:absolute;font-size:11px;letter-spacing:4px;color:#D4AF37;text-align:left;line-height:1.7;pointer-events:none}
+.bm-l em{font-style:normal;letter-spacing:1px;color:#A8A8A0;font-size:12px}
+.bm-puram{left:0;top:16%}
+.bm-agam{right:0;top:60%;text-align:right}
+@media (max-width:480px){.bm-l{font-size:9px;letter-spacing:3px}.bm-l em{font-size:10px}}
+.hero-mark{width:auto;height:clamp(64px,11vh,120px);margin-bottom:6px;overflow:visible;filter:drop-shadow(0 2px 12px rgba(0,0,0,.45))}
+.hero-mw{position:relative;display:inline-block;text-decoration:none;line-height:0;margin-bottom:6px}
+.hm-l{position:absolute;font-size:10px;letter-spacing:4px;color:#F0D27A;line-height:1;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.8);transition:opacity .9s ease;pointer-events:none}
+.hm-agam{left:calc(100% + 14px);top:62%}
+.hm-puram{right:calc(100% + 10px);top:4%}
+.nm-draw{stroke-dasharray:1;stroke-dashoffset:0}
+.nm-draw.go{animation:nmdraw 1.8s cubic-bezier(.55,0,.35,1)}
+@keyframes nmdraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8s cubic-bezier(.55,0,.35,1)}
+@media (prefers-reduced-motion: reduce){a:hover .nm-draw{animation:none}}
+</style>
+</helmet>
+<div style="width: 100%; background: #1A1A1D; color: #F5F5F0">
+
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(26,26,29,0.94); border-bottom: 1px solid #2D2D2D; transition: transform 0.35s ease; transform: {{navShift}}">
+<nav aria-label="Main" class="navbar" style="max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 28px">
+<a href="#top" onClick="{{navDraw}}" onMouseEnter="{{navDraw}}" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F5F0">
+<svg class="navlogo navmark" viewBox="0 0 422 600" aria-hidden="true" style="height: 32px; width: auto; display: block; overflow: visible"><path d="M42,41 L42.0,389.0 L42.6,396.3 L43.5,403.5 L44.7,410.7 L46.1,417.8 L47.8,424.8 L49.8,431.7 L52.1,438.6 L54.6,445.3 L57.3,451.9 L60.3,458.3 L63.6,464.7 L67.1,470.9 L70.8,476.9 L74.7,482.8 L78.9,488.4 L83.3,494.0 L87.8,499.3 L92.6,504.4 L97.5,509.3 L102.6,514.0 L107.9,518.5 L113.4,522.8 L118.9,526.9 L124.7,530.7 L130.5,534.3 L136.5,537.6 L142.6,540.7 L148.8,543.5 L155.1,546.1 L161.4,548.5 L167.9,550.6 L174.3,552.4 L180.9,554.0 L187.4,555.3 L194.1,556.3 L200.7,557.1 L207.3,557.6 L213.9,557.9 L220.5,557.9 L227.1,557.6 L233.7,557.1 L240.2,556.4 L246.7,555.3 L253.1,554.1 L259.4,552.6 L265.6,550.8 L271.8,548.8 L277.8,546.6 L283.8,544.2 L289.6,541.5 L295.3,538.6 L300.9,535.5 L306.3,532.2 L311.6,528.7 L316.7,525.0 L321.7,521.1 L326.5,517.0 L331.1,512.8 L335.5,508.3 L339.8,503.8 L343.8,499.1 L347.7,494.2 L351.3,489.2 L354.8,484.1 L358.0,478.9 L361.0,473.6 L363.8,468.1 L366.4,462.6 L368.7,457.0 L370.8,451.3 L372.7,445.6 L374.4,439.8 L375.8,434.0 L377.0,428.1 L378.0,422.2 L378.7,416.3 L379.2,410.4 L379.4,404.5 L379.5,398.6 L379.3,392.8 L378.8,386.9 L378.2,381.1 L377.3,375.4 L376.2,369.7 L374.9,364.1 L373.3,358.5 L371.6,353.0 L369.6,347.6 L367.5,342.4 L365.1,337.2 L362.6,332.1 L359.8,327.2 L356.9,322.3 L353.8,317.6 L350.5,313.1 L347.1,308.7 L343.5,304.4 L339.8,300.3 L335.9,296.4 L331.9,292.6 L327.7,289.1 L323.4,285.6 L319.0,282.4 L314.5,279.4 L309.9,276.5 L305.2,273.8 L300.4,271.4 L295.6,269.1 L290.6,267.0 L285.6,265.1 L280.6,263.5 L275.5,262.0 L270.4,260.7 L265.2,259.7 L260.1,258.8 L254.9,258.2 L249.7,257.7 L244.5,257.5 L239.4,257.5 L234.2,257.6 L229.1,258.0 L224.0,258.6 L219.0,259.4 L214.0,260.3 L209.1,261.5 L204.2,262.8 L199.4,264.3 L194.7,266.0 L190.1,267.9 L185.5,270.0 L181.1,272.2 L176.8,274.6 L172.6,277.1 L168.5,279.8 L164.5,282.7 L160.7,285.7 L157.0,288.8 L153.4,292.0 L150.0,295.4 L146.8,298.9 L143.6,302.5 L140.7,306.2 L137.9,310.1 L135.2,314.0 L132.8,318.0 L130.4,322.0 L128.3,326.2 L126.3,330.4 L124.5,334.7 L122.9,339.0 L121.5,343.3 L120.2,347.7 L119.1,352.2 L118.2,356.6 L117.5,361.1 L117.0,365.5 L116.6,370.0 L116.4,374.5 L116.4,378.9 L116.5,383.3 L116.9,387.7 L117.4,392.1 L118.0,396.4 L118.9,400.7 L119.9,404.9 L121.0,409.1 L122.4,413.2 L123.8,417.2 L125.4,421.1 L127.2,425.0 L129.1,428.8 L131.2,432.5 L133.4,436.0 L135.7,439.5 L138.1,442.9 L140.7,446.2 L143.4,449.3 L146.1,452.3 L149.0,455.2 L152.0,458.0 L155.1,460.6 L158.3,463.1 L161.5,465.5 L164.8,467.7 L168.2,469.8 L171.7,471.7 L175.2,473.5 L178.8,475.1 L182.4,476.6 L186.0,478.0 L189.7,479.1 L193.4,480.2 L197.1,481.1 L200.9,481.8 L204.6,482.4 L208.4,482.8 L212.2,483.1 L215.9,483.2 L219.6,483.2 L223.3,483.1 L227.0,482.8 L230.7,482.3 L234.3,481.7 L237.8,481.0 L241.3,480.1 L244.8,479.1 L248.2,478.0 L251.5,476.7 L254.8,475.4 L258.0,473.9 L261.1,472.2 L264.2,470.5 L267.1,468.7 L270.0,466.7 L272.7,464.7 L275.4,462.5 L278.0,460.3 L280.4,458.0 L282.8,455.6 L285.0,453.1 L287.2,450.5 L289.2,447.9 L291.1,445.2 L292.9,442.4 L294.5,439.6 L296.1,436.8 L297.5,433.9 L298.8,431.0 L300.0,428.0 L301.0,425.0 L301.9,422.0 L302.7,419.0 L303.4,415.9 L304.0,412.9 L304.4,409.8 L304.7,406.8 L304.9,403.7 L304.9,400.7 L304.9,397.7 L304.7,394.7 L304.4,391.7 L304.0,388.8 L303.4,385.9 L302.8,383.1 L302.1,380.3 L301.2,377.5 L300.2,374.8 L299.2,372.2 L298.0,369.6 L296.8,367.1 L295.4,364.6 L294.0,362.2 L292.5,359.9 L290.9,357.7 L289.2,355.5 L287.5,353.5 L285.7,351.5 L283.8,349.6 L281.8,347.8 L279.8,346.1 L277.8,344.4 L275.7,342.9 L273.5,341.5 L271.3,340.1 L269.1,338.9 L266.9,337.8 L264.6,336.7 L262.3,335.8 L259.9,334.9 L257.6,334.2 L255.3,333.6 L252.9,333.0 L250.5,332.6 L248.2,332.2 L245.8,332.0 L243.5,331.8 L241.1,331.8 L238.8,331.8 L236.5,331.9 L234.3,332.2 L232.0,332.5 L229.8,332.9 L227.6,333.4 L225.5,333.9 L223.4,334.6 L221.4,335.3 L219.4,336.1 L217.4,337.0 L215.5,337.9 L213.7,339.0 L211.9,340.0 L210.2,341.2 L208.5,342.4 L206.9,343.7 L205.4,345.0 L203.9,346.3 L202.6,347.7 L201.2,349.2 L200.0,350.7 L198.8,352.2 L197.7,353.8 L196.7,355.4 L195.7,357.0 L194.9,358.6 L194.1,360.3 L193.3,361.9 L192.7,363.6 L192.1,365.3 L191.6,367.0 L191.2,368.7 L190.9,370.4 L190.6,372.1 L190.4,373.8 L190.3,375.5 L190.2,377.1 L190.3,378.8 L190.3,380.4 L190.5,382.0 L190.7,383.6 L191.0,385.1 L191.3,386.7 L191.7,388.2 L192.2,389.6 L192.7,391.0 L193.3,392.4 L193.9,393.7 L194.6,395.0 L195.3,396.3 L196.1,397.5 L196.9,398.6 L197.7,399.7 L198.6,400.8 L199.5,401.8 L200.4,402.7 L201.4,403.6 L202.4,404.5 L203.4,405.3 L204.4,406.0 L205.5,406.7 L206.6,407.3 L207.6,407.9 L208.7,408.4 L209.8,408.8 L210.9,409.2 L212.0,409.6 L213.1,409.8 L214.2,410.1 L215.3,410.3 L216.4,410.4 L217.4,410.5 L218.5,410.5 L219.5,410.5 L220.6,410.4 L221.6,410.3 L222.5,410.1 L223.5,409.9 L224.4,409.7 L225.3,409.4 L226.2,409.1 L227.0,408.7 L227.8,408.3 L228.6,407.9 L229.3,407.5 L230.0,407.0 L230.7,406.5 L231.3,405.9 L231.9,405.4 L232.4,404.8 L232.9,404.2 L233.4,403.6 L233.8,403.0 L234.2,402.4 L234.5,401.8 L234.8,401.1 L235.1,400.5 L235.3,399.8 L235.5,399.2 L235.6,398.6 L235.7,397.9 L235.8,397.3 L235.8,396.7 L235.8,396.1 L235.7,395.5 L235.6,394.9 L235.5,394.4 L235.3,393.8 L235.1,393.3 L234.9,392.8 L234.7,392.3 L234.4,391.9 L234.1,391.5 L233.8,391.1 L233.4,390.7 L233.0,390.4 L232.6,390.1 L232.2,389.9 L231.8,389.6 L231.4,389.4 L230.9,389.3 L230.5,389.2" fill="none" stroke="#3A3530" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"></path><path class="nm-draw {{navGo}}" d="M42,41 L42.0,389.0 L42.6,396.3 L43.5,403.5 L44.7,410.7 L46.1,417.8 L47.8,424.8 L49.8,431.7 L52.1,438.6 L54.6,445.3 L57.3,451.9 L60.3,458.3 L63.6,464.7 L67.1,470.9 L70.8,476.9 L74.7,482.8 L78.9,488.4 L83.3,494.0 L87.8,499.3 L92.6,504.4 L97.5,509.3 L102.6,514.0 L107.9,518.5 L113.4,522.8 L118.9,526.9 L124.7,530.7 L130.5,534.3 L136.5,537.6 L142.6,540.7 L148.8,543.5 L155.1,546.1 L161.4,548.5 L167.9,550.6 L174.3,552.4 L180.9,554.0 L187.4,555.3 L194.1,556.3 L200.7,557.1 L207.3,557.6 L213.9,557.9 L220.5,557.9 L227.1,557.6 L233.7,557.1 L240.2,556.4 L246.7,555.3 L253.1,554.1 L259.4,552.6 L265.6,550.8 L271.8,548.8 L277.8,546.6 L283.8,544.2 L289.6,541.5 L295.3,538.6 L300.9,535.5 L306.3,532.2 L311.6,528.7 L316.7,525.0 L321.7,521.1 L326.5,517.0 L331.1,512.8 L335.5,508.3 L339.8,503.8 L343.8,499.1 L347.7,494.2 L351.3,489.2 L354.8,484.1 L358.0,478.9 L361.0,473.6 L363.8,468.1 L366.4,462.6 L368.7,457.0 L370.8,451.3 L372.7,445.6 L374.4,439.8 L375.8,434.0 L377.0,428.1 L378.0,422.2 L378.7,416.3 L379.2,410.4 L379.4,404.5 L379.5,398.6 L379.3,392.8 L378.8,386.9 L378.2,381.1 L377.3,375.4 L376.2,369.7 L374.9,364.1 L373.3,358.5 L371.6,353.0 L369.6,347.6 L367.5,342.4 L365.1,337.2 L362.6,332.1 L359.8,327.2 L356.9,322.3 L353.8,317.6 L350.5,313.1 L347.1,308.7 L343.5,304.4 L339.8,300.3 L335.9,296.4 L331.9,292.6 L327.7,289.1 L323.4,285.6 L319.0,282.4 L314.5,279.4 L309.9,276.5 L305.2,273.8 L300.4,271.4 L295.6,269.1 L290.6,267.0 L285.6,265.1 L280.6,263.5 L275.5,262.0 L270.4,260.7 L265.2,259.7 L260.1,258.8 L254.9,258.2 L249.7,257.7 L244.5,257.5 L239.4,257.5 L234.2,257.6 L229.1,258.0 L224.0,258.6 L219.0,259.4 L214.0,260.3 L209.1,261.5 L204.2,262.8 L199.4,264.3 L194.7,266.0 L190.1,267.9 L185.5,270.0 L181.1,272.2 L176.8,274.6 L172.6,277.1 L168.5,279.8 L164.5,282.7 L160.7,285.7 L157.0,288.8 L153.4,292.0 L150.0,295.4 L146.8,298.9 L143.6,302.5 L140.7,306.2 L137.9,310.1 L135.2,314.0 L132.8,318.0 L130.4,322.0 L128.3,326.2 L126.3,330.4 L124.5,334.7 L122.9,339.0 L121.5,343.3 L120.2,347.7 L119.1,352.2 L118.2,356.6 L117.5,361.1 L117.0,365.5 L116.6,370.0 L116.4,374.5 L116.4,378.9 L116.5,383.3 L116.9,387.7 L117.4,392.1 L118.0,396.4 L118.9,400.7 L119.9,404.9 L121.0,409.1 L122.4,413.2 L123.8,417.2 L125.4,421.1 L127.2,425.0 L129.1,428.8 L131.2,432.5 L133.4,436.0 L135.7,439.5 L138.1,442.9 L140.7,446.2 L143.4,449.3 L146.1,452.3 L149.0,455.2 L152.0,458.0 L155.1,460.6 L158.3,463.1 L161.5,465.5 L164.8,467.7 L168.2,469.8 L171.7,471.7 L175.2,473.5 L178.8,475.1 L182.4,476.6 L186.0,478.0 L189.7,479.1 L193.4,480.2 L197.1,481.1 L200.9,481.8 L204.6,482.4 L208.4,482.8 L212.2,483.1 L215.9,483.2 L219.6,483.2 L223.3,483.1 L227.0,482.8 L230.7,482.3 L234.3,481.7 L237.8,481.0 L241.3,480.1 L244.8,479.1 L248.2,478.0 L251.5,476.7 L254.8,475.4 L258.0,473.9 L261.1,472.2 L264.2,470.5 L267.1,468.7 L270.0,466.7 L272.7,464.7 L275.4,462.5 L278.0,460.3 L280.4,458.0 L282.8,455.6 L285.0,453.1 L287.2,450.5 L289.2,447.9 L291.1,445.2 L292.9,442.4 L294.5,439.6 L296.1,436.8 L297.5,433.9 L298.8,431.0 L300.0,428.0 L301.0,425.0 L301.9,422.0 L302.7,419.0 L303.4,415.9 L304.0,412.9 L304.4,409.8 L304.7,406.8 L304.9,403.7 L304.9,400.7 L304.9,397.7 L304.7,394.7 L304.4,391.7 L304.0,388.8 L303.4,385.9 L302.8,383.1 L302.1,380.3 L301.2,377.5 L300.2,374.8 L299.2,372.2 L298.0,369.6 L296.8,367.1 L295.4,364.6 L294.0,362.2 L292.5,359.9 L290.9,357.7 L289.2,355.5 L287.5,353.5 L285.7,351.5 L283.8,349.6 L281.8,347.8 L279.8,346.1 L277.8,344.4 L275.7,342.9 L273.5,341.5 L271.3,340.1 L269.1,338.9 L266.9,337.8 L264.6,336.7 L262.3,335.8 L259.9,334.9 L257.6,334.2 L255.3,333.6 L252.9,333.0 L250.5,332.6 L248.2,332.2 L245.8,332.0 L243.5,331.8 L241.1,331.8 L238.8,331.8 L236.5,331.9 L234.3,332.2 L232.0,332.5 L229.8,332.9 L227.6,333.4 L225.5,333.9 L223.4,334.6 L221.4,335.3 L219.4,336.1 L217.4,337.0 L215.5,337.9 L213.7,339.0 L211.9,340.0 L210.2,341.2 L208.5,342.4 L206.9,343.7 L205.4,345.0 L203.9,346.3 L202.6,347.7 L201.2,349.2 L200.0,350.7 L198.8,352.2 L197.7,353.8 L196.7,355.4 L195.7,357.0 L194.9,358.6 L194.1,360.3 L193.3,361.9 L192.7,363.6 L192.1,365.3 L191.6,367.0 L191.2,368.7 L190.9,370.4 L190.6,372.1 L190.4,373.8 L190.3,375.5 L190.2,377.1 L190.3,378.8 L190.3,380.4 L190.5,382.0 L190.7,383.6 L191.0,385.1 L191.3,386.7 L191.7,388.2 L192.2,389.6 L192.7,391.0 L193.3,392.4 L193.9,393.7 L194.6,395.0 L195.3,396.3 L196.1,397.5 L196.9,398.6 L197.7,399.7 L198.6,400.8 L199.5,401.8 L200.4,402.7 L201.4,403.6 L202.4,404.5 L203.4,405.3 L204.4,406.0 L205.5,406.7 L206.6,407.3 L207.6,407.9 L208.7,408.4 L209.8,408.8 L210.9,409.2 L212.0,409.6 L213.1,409.8 L214.2,410.1 L215.3,410.3 L216.4,410.4 L217.4,410.5 L218.5,410.5 L219.5,410.5 L220.6,410.4 L221.6,410.3 L222.5,410.1 L223.5,409.9 L224.4,409.7 L225.3,409.4 L226.2,409.1 L227.0,408.7 L227.8,408.3 L228.6,407.9 L229.3,407.5 L230.0,407.0 L230.7,406.5 L231.3,405.9 L231.9,405.4 L232.4,404.8 L232.9,404.2 L233.4,403.6 L233.8,403.0 L234.2,402.4 L234.5,401.8 L234.8,401.1 L235.1,400.5 L235.3,399.8 L235.5,399.2 L235.6,398.6 L235.7,397.9 L235.8,397.3 L235.8,396.7 L235.8,396.1 L235.7,395.5 L235.6,394.9 L235.5,394.4 L235.3,393.8 L235.1,393.3 L234.9,392.8 L234.7,392.3 L234.4,391.9 L234.1,391.5 L233.8,391.1 L233.4,390.7 L233.0,390.4 L232.6,390.1 L232.2,389.9 L231.8,389.6 L231.4,389.4 L230.9,389.3 L230.5,389.2" pathLength="1" fill="none" stroke="#D4AF37" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="navname" style="font-weight: 200; font-size: 22px; letter-spacing: 4px">baaskaraa</span>
+</a>
+<button type="button" class="menubtn" onClick="{{toggleMenu}}" aria-label="Menu">{{menuLabel}}</button>
+<div class="navlinks {{menuCls}}" style="display: flex; flex-wrap: wrap; gap: 4px 22px; flex: 1 1 420px; justify-content: center">
+<sc-for list="{{navItems}}" as="n" hint-placeholder-count="8">
+<a class="navlink" href="{{n.href}}" onClick="{{closeMenu}}" style="{{n.style}}">{{n.label}}</a>
+</sc-for>
+<a class="livepill" href="#live" onClick="{{closeMenu}}" aria-label="Live studio" style="align-self: center; display: inline-flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: 2px; color: #F5F5F0; text-decoration: none; border: 1px solid #4A4A4A; border-radius: 999px; padding: 6px 12px"><span style="width: 7px; height: 7px; border-radius: 50%; background: {{liveDot}}; display: inline-block"></span>LIVE</a>
+</div>
+<div class="navsoc" style="display: flex; align-items: center; gap: 0"><a href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.youtube.com/@baaskaraa" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"></rect><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"></path></svg></a><a href="https://www.tiktok.com/@baaskaraa.studio" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3.5c.6 2.6 2.4 4.2 5 4.5"></path></svg></a><a href="https://www.facebook.com/baaskaraa.studio" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H16V5h-2a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h2.2l.6-3H13V9.2c0-.7.4-1.2 1.5-1.2z"></path></svg></a></div>
+</nav>
+</header>
+
+<!-- 1 HERO -->
+<section id="top" style="position: relative; background: #000; height: calc(100vh - 57px); min-height: 540px; max-height: 1100px; overflow: hidden">
+<img src="/_blob/ecf99a8ea52645c196803a9b0da839ba" alt="Bird Sanctum, installation after the novel Kuruvi Kottam, Project LAVA, 2014" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; display: block">
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.88) 100%)"></div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 24px clamp(24px, 4.5vh, 48px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px">
+<div class="hero-mw" role="img" aria-label="The baaskaraa mark: one line, inward and outward.">
+<svg viewBox="0 0 422 600" class="hero-mark" aria-hidden="true">
+<defs><linearGradient id="hgold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0D27A"></stop><stop offset="0.5" stop-color="#D4AF37"></stop><stop offset="1" stop-color="#A8862A"></stop></linearGradient></defs>
+<path d="M230.5,389.2 L230.9,389.3 L231.4,389.4 L231.8,389.6 L232.2,389.9 L232.6,390.1 L233.0,390.4 L233.4,390.7 L233.8,391.1 L234.1,391.5 L234.4,391.9 L234.7,392.3 L234.9,392.8 L235.1,393.3 L235.3,393.8 L235.5,394.4 L235.6,394.9 L235.7,395.5 L235.8,396.1 L235.8,396.7 L235.8,397.3 L235.7,397.9 L235.6,398.6 L235.5,399.2 L235.3,399.8 L235.1,400.5 L234.8,401.1 L234.5,401.8 L234.2,402.4 L233.8,403.0 L233.4,403.6 L232.9,404.2 L232.4,404.8 L231.9,405.4 L231.3,405.9 L230.7,406.5 L230.0,407.0 L229.3,407.5 L228.6,407.9 L227.8,408.3 L227.0,408.7 L226.2,409.1 L225.3,409.4 L224.4,409.7 L223.5,409.9 L222.5,410.1 L221.6,410.3 L220.6,410.4 L219.5,410.5 L218.5,410.5 L217.4,410.5 L216.4,410.4 L215.3,410.3 L214.2,410.1 L213.1,409.8 L212.0,409.6 L210.9,409.2 L209.8,408.8 L208.7,408.4 L207.6,407.9 L206.6,407.3 L205.5,406.7 L204.4,406.0 L203.4,405.3 L202.4,404.5 L201.4,403.6 L200.4,402.7 L199.5,401.8 L198.6,400.8 L197.7,399.7 L196.9,398.6 L196.1,397.5 L195.3,396.3 L194.6,395.0 L193.9,393.7 L193.3,392.4 L192.7,391.0 L192.2,389.6 L191.7,388.2 L191.3,386.7 L191.0,385.1 L190.7,383.6 L190.5,382.0 L190.3,380.4 L190.3,378.8 L190.2,377.1 L190.3,375.5 L190.4,373.8 L190.6,372.1 L190.9,370.4 L191.2,368.7 L191.6,367.0 L192.1,365.3 L192.7,363.6 L193.3,361.9 L194.1,360.3 L194.9,358.6 L195.7,357.0 L196.7,355.4 L197.7,353.8 L198.8,352.2 L200.0,350.7 L201.2,349.2 L202.6,347.7 L203.9,346.3 L205.4,345.0 L206.9,343.7 L208.5,342.4 L210.2,341.2 L211.9,340.0 L213.7,339.0 L215.5,337.9 L217.4,337.0 L219.4,336.1 L221.4,335.3 L223.4,334.6 L225.5,333.9 L227.6,333.4 L229.8,332.9 L232.0,332.5 L234.3,332.2 L236.5,331.9 L238.8,331.8 L241.1,331.8 L243.5,331.8 L245.8,332.0 L248.2,332.2 L250.5,332.6 L252.9,333.0 L255.3,333.6 L257.6,334.2 L259.9,334.9 L262.3,335.8 L264.6,336.7 L266.9,337.8 L269.1,338.9 L271.3,340.1 L273.5,341.5 L275.7,342.9 L277.8,344.4 L279.8,346.1 L281.8,347.8 L283.8,349.6 L285.7,351.5 L287.5,353.5 L289.2,355.5 L290.9,357.7 L292.5,359.9 L294.0,362.2 L295.4,364.6 L296.8,367.1 L298.0,369.6 L299.2,372.2 L300.2,374.8 L301.2,377.5 L302.1,380.3 L302.8,383.1 L303.4,385.9 L304.0,388.8 L304.4,391.7 L304.7,394.7 L304.9,397.7 L304.9,400.7 L304.9,403.7 L304.7,406.8 L304.4,409.8 L304.0,412.9 L303.4,415.9 L302.7,419.0 L301.9,422.0 L301.0,425.0 L300.0,428.0 L298.8,431.0 L297.5,433.9 L296.1,436.8 L294.5,439.6 L292.9,442.4 L291.1,445.2 L289.2,447.9 L287.2,450.5 L285.0,453.1 L282.8,455.6 L280.4,458.0 L278.0,460.3 L275.4,462.5 L272.7,464.7 L270.0,466.7 L267.1,468.7 L264.2,470.5 L261.1,472.2 L258.0,473.9 L254.8,475.4 L251.5,476.7 L248.2,478.0 L244.8,479.1 L241.3,480.1 L237.8,481.0 L234.3,481.7 L230.7,482.3 L227.0,482.8 L223.3,483.1 L219.6,483.2 L215.9,483.2 L212.2,483.1 L208.4,482.8 L204.6,482.4 L200.9,481.8 L197.1,481.1 L193.4,480.2 L189.7,479.1 L186.0,478.0 L182.4,476.6 L178.8,475.1 L175.2,473.5 L171.7,471.7 L168.2,469.8 L164.8,467.7 L161.5,465.5 L158.3,463.1 L155.1,460.6 L152.0,458.0 L149.0,455.2 L146.1,452.3 L143.4,449.3 L140.7,446.2 L138.1,442.9 L135.7,439.5 L133.4,436.0 L131.2,432.5 L129.1,428.8 L127.2,425.0 L125.4,421.1 L123.8,417.2 L122.4,413.2 L121.0,409.1 L119.9,404.9 L118.9,400.7 L118.0,396.4 L117.4,392.1 L116.9,387.7 L116.5,383.3 L116.4,378.9 L116.4,374.5 L116.6,370.0 L117.0,365.5 L117.5,361.1 L118.2,356.6 L119.1,352.2 L120.2,347.7 L121.5,343.3 L122.9,339.0 L124.5,334.7 L126.3,330.4 L128.3,326.2 L130.4,322.0 L132.8,318.0 L135.2,314.0 L137.9,310.1 L140.7,306.2 L143.6,302.5 L146.8,298.9 L150.0,295.4 L153.4,292.0 L157.0,288.8 L160.7,285.7 L164.5,282.7 L168.5,279.8 L172.6,277.1 L176.8,274.6 L181.1,272.2 L185.5,270.0 L190.1,267.9 L194.7,266.0 L199.4,264.3 L204.2,262.8 L209.1,261.5 L214.0,260.3 L219.0,259.4 L224.0,258.6 L229.1,258.0 L234.2,257.6 L239.4,257.5 L244.5,257.5 L249.7,257.7 L254.9,258.2 L260.1,258.8 L265.2,259.7 L270.4,260.7 L275.5,262.0 L280.6,263.5 L285.6,265.1 L290.6,267.0 L295.6,269.1 L300.4,271.4 L305.2,273.8 L309.9,276.5 L314.5,279.4 L319.0,282.4 L323.4,285.6 L327.7,289.1 L331.9,292.6 L335.9,296.4 L339.8,300.3 L343.5,304.4 L347.1,308.7 L350.5,313.1 L353.8,317.6 L356.9,322.3 L359.8,327.2 L362.6,332.1 L365.1,337.2 L367.5,342.4 L369.6,347.6 L371.6,353.0 L373.3,358.5 L374.9,364.1 L376.2,369.7 L377.3,375.4 L378.2,381.1 L378.8,386.9 L379.3,392.8 L379.5,398.6 L379.4,404.5 L379.2,410.4 L378.7,416.3 L378.0,422.2 L377.0,428.1 L375.8,434.0 L374.4,439.8 L372.7,445.6 L370.8,451.3 L368.7,457.0 L366.4,462.6 L363.8,468.1 L361.0,473.6 L358.0,478.9 L354.8,484.1 L351.3,489.2 L347.7,494.2 L343.8,499.1 L339.8,503.8 L335.5,508.3 L331.1,512.8 L326.5,517.0 L321.7,521.1 L316.7,525.0 L311.6,528.7 L306.3,532.2 L300.9,535.5 L295.3,538.6 L289.6,541.5 L283.8,544.2 L277.8,546.6 L271.8,548.8 L265.6,550.8 L259.4,552.6 L253.1,554.1 L246.7,555.3 L240.2,556.4 L233.7,557.1 L227.1,557.6 L220.5,557.9 L213.9,557.9 L207.3,557.6 L200.7,557.1 L194.1,556.3 L187.4,555.3 L180.9,554.0 L174.3,552.4 L167.9,550.6 L161.4,548.5 L155.1,546.1 L148.8,543.5 L142.6,540.7 L136.5,537.6 L130.5,534.3 L124.7,530.7 L118.9,526.9 L113.4,522.8 L107.9,518.5 L102.6,514.0 L97.5,509.3 L92.6,504.4 L87.8,499.3 L83.3,494.0 L78.9,488.4 L74.7,482.8 L70.8,476.9 L67.1,470.9 L63.6,464.7 L60.3,458.3 L57.3,451.9 L54.6,445.3 L52.1,438.6 L49.8,431.7 L47.8,424.8 L46.1,417.8 L44.7,410.7 L43.5,403.5 L42.6,396.3 L42.0,389.0 L42,41" pathLength="1" fill="none" stroke="url(#hgold)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 1; stroke-dashoffset: {{introOff}}; transition: {{introTrans}}"></path>
+</svg>
+<span class="hm-l hm-agam" style="opacity: {{hAgamOp}}">AGAM</span>
+<span class="hm-l hm-puram" style="opacity: {{hPuramOp}}">PURAM</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: {{heroOp}}; transform: {{heroShift}}; transition: opacity 1.4s ease, transform 1.4s ease">
+<div style="font-weight: 200; font-size: clamp(52px, 8vw, 112px); line-height: 0.9; letter-spacing: 0.03em; color: #F5F5F0">baaskaraa</div>
+<h1 style="margin: 0; font-weight: 300; font-size: clamp(20px, 2.5vw, 32px); letter-spacing: 1px; color: #F5F5F0; line-height: 1.3">Understanding is all. <span style="color: #D4AF37">Expression is art.</span></h1>
+<div style="font-size: 12px; letter-spacing: clamp(1.5px, 0.35vw, 4px); line-height: 1.8; text-transform: uppercase; color: #CFCFC8">Painter · Sculptor · Poet · Digital artist<span style="color: #6E6E68"> — </span>Singapore · India</div>
+<div style="margin-top: 10px; font-size: 12px; color: #A8A8A0"><span style="color: #D4AF37; letter-spacing: 2px">Bird Sanctum</span> <span style="color: #6E6E68">· Project LAVA, NAC and NLB, 2014</span></div>
+</div>
+</div>
+</section>
+
+<!-- 5a NOW: IN PRODUCTION -->
+<section id="journal" style="background: #0E0E10; color: #F5F5F0; padding: 120px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div class="lbl" style="color: #D4AF37">Now</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4vw, 48px)">In the making.</h2>
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #A8A8A0"><span style="width: 8px; height: 8px; border-radius: 50%; background: #D4AF37; display: inline-block"></span>In development · from sketch to form</div>
+</div>
+<div style="max-width: 820px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">From Avvaiyar's verse to creation</div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px"><div style="font-size: clamp(32px, 3.8vw, 46px); font-weight: 600; line-height: 1.1">Vinayagar Agaval</div><div style="font-size: 20px; color: #D4AF37">விநாயகர் அகவல்</div></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #CFCFC8">A classical Tamil verse about the inward path, taking form from the artist's own sketch.</p>
+<sc-if value="{{showNowMore}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 16px; font-size: 16px; line-height: 1.8; color: #CFCFC8">
+<p style="margin: 0">Avvaiyar's <i>Vinayagar Agaval</i> describes the journey of energy up the spine, from the base to the crown. The sketch, drawn by hand on 3 February 2020, gives it a body: a gold axis rising straight through the centre, silver and copper lines winding around it to form the trunk, the sacred geometry of the Sri Chakra at its base, and Avvaiyar herself, small, at the foot of it all.</p>
+<p style="margin: 0">From that one drawing, the work grows in seven stages:</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 24px; font-size: 14px">
+<div><span style="color: #D4AF37">01</span> The Word: the verse, read and heard</div>
+<div><span style="color: #D4AF37">02</span> The Line: the drawing</div>
+<div><span style="color: #D4AF37">03</span> The Image: the painting</div>
+<div><span style="color: #D4AF37">04</span> The Object: the sculpture in metal</div>
+<div><span style="color: #D4AF37">05</span> The Space: an installation to walk around</div>
+<div><span style="color: #D4AF37">06</span> The Experience: sound, light, stillness</div>
+<div><span style="color: #D4AF37">07</span> Digital / VR: a journey you can walk through</div>
+</div>
+</div>
+</sc-if>
+<button type="button" class="btn-line" onClick="{{toggleNowMore}}" style="align-self: flex-start; min-height: 44px; padding: 0 20px; font-size: 12px; border-color: #4A4A50; color: #CFCFC8">{{nowMoreLabel}}</button>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="aspect-ratio: 2 / 3; background: #EEF1F4; overflow: hidden"><img src="/_blob/6ce33c7156f63624b1fe1368a1fb44b6" alt="The artist's own sketch for Vinayagar Agaval, 3 February 2020: an elephant head radiating lines above a trunk of twisting gold, silver and copper wires, labelled Sushumna, Ida, Pingala, Bindu Shakti and Sri Chakra, with a small figure of Avvaiyar at the base" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<figcaption style="font-size: 13px; color: #A8A8A0"><span style="color: #D4AF37; letter-spacing: 3px; text-transform: uppercase; font-size: 11px; font-weight: 600">The origin</span> · the artist's own sketch with working notes, 3 February 2020</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div onTouchStart="{{touchStart}}" onTouchEnd="{{touchEnd}}" style="position: relative; aspect-ratio: 2 / 3; background: #000; overflow: hidden; touch-action: pan-y">
+<sc-for list="{{slides}}" as="sl" hint-placeholder-count="7">
+<img src="{{sl.src}}" alt="{{sl.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.6s ease; opacity: {{sl.op}}">
+</sc-for>
+<button type="button" onClick="{{prevSlide}}" aria-label="Previous stage" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.5); background: rgba(0,0,0,0.45); color: #F5F5F0; font-size: 20px; cursor: pointer">‹</button>
+<button type="button" onClick="{{nextSlide}}" aria-label="Next stage" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.5); background: rgba(0,0,0,0.45); color: #F5F5F0; font-size: 20px; cursor: pointer">›</button>
+</div>
+<figcaption style="font-size: 13px; color: #A8A8A0"><span style="color: #D4AF37; letter-spacing: 3px; text-transform: uppercase; font-size: 11px; font-weight: 600">{{slideNo}}</span> · {{slideName}} · concept, developed with AI from the drawing</figcaption>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px" role="tablist" aria-label="Stages">
+<sc-for list="{{slides}}" as="sl" hint-placeholder-count="7">
+<button type="button" onClick="{{sl.pick}}" aria-label="{{sl.alt}}" style="padding: 0; border: 2px solid {{sl.dot}}; background: #000; cursor: pointer; aspect-ratio: 2 / 3; overflow: hidden; opacity: {{sl.thumbOp}}"><img src="{{sl.src}}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></button>
+</sc-for>
+</div>
+</figure>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 0">
+<a class="btn-gold" href="#engage">EXPRESS INTEREST</a>
+<a class="btn-line" href="#live">FOLLOW ITS MAKING</a>
+</div>
+</div>
+</section>
+
+
+
+<!-- 2 THE ARTIST -->
+<section id="artist" style="background: #F5F5F0; color: #1A1A1D; padding: 120px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 72px">
+<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 0 1 380px; width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 28px">
+<figure style="width: 100%; margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/fbfa54ec33ddc83e52e6663fdd838f40" alt="baaskaraa in profile, looking away: shaved head, silver beard, printed shirt" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 30% 25%; display: block"><figcaption style="font-size: 12px; letter-spacing: 1px; color: #6B6B6B">Photograph: Deva Baskar</figcaption></figure>
+<figure style="margin: 0; width: 100%; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/b96ecfe52e521411043b2a6fe4f7ca94" alt="Baskar and Suguna Baskar at the Golden Point Award 2013, Suguna holding her 1st Prize trophy for Tamil poetry" style="width: 100%; display: block"><figcaption style="font-size: 13px; line-height: 1.5; color: #5A5A5A">Baskar and Suguna Baskar at the Golden Point Award, Singapore, 7 November 2013. Same night, same language: her 1st Prize, his 3rd, for Tamil poetry.</figcaption></figure>
+<sc-if value="{{showStory}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<sc-for list="{{storyPics}}" as="q" hint-placeholder-count="6">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 6px"><img src="{{q.src}}" alt="{{q.cap}}" loading="lazy" style="width: 100%; display: block; background: #E9E7DF"><figcaption style="font-size: 12px; line-height: 1.5; color: #6B6B6B"><span style="color: #8A6D12; font-weight: 700">{{q.year}}</span> · {{q.cap}}</figcaption></figure>
+</sc-for>
+</div>
+</sc-if>
+</div>
+<div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 20px">
+<div class="lbl" style="color: #8A6D12">The Artist</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.25">A traditional painter. A digital creator. A poet. Now a multidisciplinary artist.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #3A3A3A">Born in 1974 in a village in Tamil Nadu, India, Baskar trained as a painter at the Government College of Arts and Crafts, Chennai, India's oldest art school. In 2000 he moved to Singapore and carried the painter's line into the digital medium. There, working inside his own language, he became a poet, twice honoured with the Golden Point Award for Tamil Poetry. His wife, Suguna Baskar, is an award-winning poet too: an artistic couple, two poets in one home. Today he works across painting, sculpture, digital form and writing as baaskaraa.</p>
+<blockquote style="margin: 4px 0 0; padding: 4px 0 4px 20px; border-left: 2px solid #D4AF37; font-size: 19px; line-height: 1.6; font-weight: 500; color: #1A1A1D">Born Baskar. Becoming baaskaraa.</blockquote>
+<button type="button" id="story-btn" class="btn-line" onClick="{{toggleStory}}" style="align-self: flex-start; color: #8A6D12; border-color: #8A6D12">{{storyLabel}}</button>
+<sc-if value="{{showStory}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
+<sc-for list="{{story}}" as="b" hint-placeholder-count="6">
+<p style="margin: {{b.mt}} 0 0; font-size: {{b.fs}}; font-weight: {{b.fw}}; line-height: 1.8; color: {{b.c}}">{{b.t}}</p>
+</sc-for>
+<button type="button" class="btn-line" onClick="{{closeStory}}" style="align-self: flex-start; margin-top: 10px; color: #8A6D12; border-color: #8A6D12">CLOSE THE STORY ↑</button>
+</div>
+</sc-if>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0; border-top: 1px solid #D8D8D0; margin-top: 8px">
+<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">1994–2000</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">The painter</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Chennai · BFA, First Class with Distinction · first solo show, 2000</div></div>
+<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">2000–2023</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">The digital creator and poet</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Singapore · education, broadcast, design · Tamil poetry circles · Golden Point Award 2011, 2013</div></div>
+<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">Now</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">baaskaraa</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Painting · sculpture · digital · writing</div></div>
+</div>
+</div>
+</div>
+
+<!-- Lineage -->
+<div style="background: #1A1A1D; color: #F5F5F0; padding: 56px clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 820px">
+<div class="lbl" style="color: #D4AF37">The institution · since 1850</div>
+<h3 style="margin: 0; font-weight: 600; font-size: clamp(24px, 3vw, 34px)">175 years. India's oldest art school.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #CFCFC8">The Government College of Arts and Crafts, Chennai: the school of K.C.S. Paniker and the Madras Art Movement, the home of Cholamandal's founders. Baskar studied there in the company of the masters of his time: Bachelor of Fine Arts, 1994–1999, then the Master of Fine Arts, until the digital age called in 2000.</p>
+</div>
+<button type="button" class="btn-line" onClick="{{toggleTeachers}}" style="align-self: flex-start">{{teachersLabel}}</button>
+<sc-if value="{{showTeachers}}" hint-placeholder-val="{{ false }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px">
+<sc-for list="{{teachers}}" as="t" hint-placeholder-count="5">
+<div style="border-top: 1px solid #D4AF37; padding-top: 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 17px; font-weight: 600">{{t.name}}</div>
+<div style="font-size: 13px; line-height: 1.6; color: #A8A8A0">{{t.role}}</div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+</div>
+
+<!-- Recognition, within The Artist -->
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div class="lbl" style="color: #8A6D12">Recognition</div>
+<h3 style="margin: 0; font-weight: 600; font-size: clamp(26px, 3.2vw, 38px)">Recognised in every medium he practises.</h3>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px"><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">India</span> · Work in the national collection, National Gallery of Modern Art, New Delhi. Tamil Nadu State Award, 1998.</span></div><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">USA</span> · PromaxBDA Global Excellence Award, Bronze, Los Angeles, 2015, for motion design at CNA, Mediacorp.</span></div><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">Singapore</span> · Golden Point Award twice, National Arts Council and SPH. Commissioned by the National Arts Council and National Library Board.</span></div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid #D8D8D0">
+<sc-for list="{{proofs}}" as="p" hint-placeholder-count="4">
+<div style="padding: 20px 16px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px">
+<div style="font-size: 36px; font-weight: 700; color: #8A6D12">{{p.year}}</div>
+<div style="font-size: 15px; font-weight: 600; margin-top: 6px">{{p.what}}</div>
+<div style="font-size: 13px; color: #5A5A5A; margin-top: 4px">{{p.where}}</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 56px; margin-top: 8px">
+<div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 8px">
+<button type="button" id="record-btn" class="btn-line" onClick="{{toggleRecord}}" style="align-self: flex-start; color: #8A6D12; border-color: #8A6D12">{{recordLabel}}</button>
+<sc-if value="{{showRecord}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; margin-top: 8px">
+<sc-for list="{{timeline}}" as="t" hint-placeholder-count="7">
+<div style="display: flex; gap: 20px; padding: 12px 0; border-bottom: 1px solid #E8E8E8">
+<div style="width: 92px; flex: 0 0 92px; font-weight: 700; font-size: 17px; color: #8A6D12">{{t.year}}</div>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; color: #2D2D2D">
+<sc-for list="{{t.items}}" as="it" hint-placeholder-count="2">
+<div style="padding-left: 14px; border-left: 2px solid #E3D6A6">{{it}}</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+<button type="button" class="btn-line" onClick="{{closeRecord}}" style="align-self: flex-start; margin-top: 18px; color: #8A6D12; border-color: #8A6D12">HIDE THE FULL RECORD ↑</button>
+</div>
+</sc-if>
+</div>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 12px">
+<img src="/_blob/3556958c05ecf413bae5e86e65b6f7f2" alt="Tabla! newspaper, 16 May 2014: Bird Sanctum by Baskar for Project LAVA" style="width: 100%; display: block">
+<div style="font-size: 14px; font-style: italic; color: #5A5A5A">Tabla!, Singapore, 16 May 2014 — <span style="font-style: normal">Bird Sanctum</span>, after Ma. Elangkannan's novel <span style="font-style: normal">Kuruvi Kottam</span>, Project LAVA, National Arts Council and National Library Board.</div>
+<sc-if value="{{showRecord}}" hint-placeholder-val="{{ false }}">
+<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/7a71bc2ba5db994de09e71c4681a5116" alt="Baskar with Bird Sanctum at library@chinatown, 2014" loading="lazy" style="width: 100%; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Baskar with <i>Bird Sanctum</i>, Project LAVA, at library@chinatown, 2014.</figcaption></figure>
+<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/533f26fcb5479f2c044ac859332900a4" alt="Baskar with dancers and volunteers at the GREY rooftop murals, Maya Dance Theatre, 2013" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A"><i>GREY</i>, rooftop murals for <a href="https://www.mayadancetheatre.org/" target="_blank" rel="noopener" style="color: #8A6D12">Maya Dance Theatre</a>'s production <i>GREY</i>, Singai Tamil Sangam, Little India, Singapore, June 2013. Murals by Baskar and the photographer <a href="https://charlie-lim.squarespace.com/" target="_blank" rel="noopener" style="color: #8A6D12">Charlie Lim</a>, painted with the dancers, volunteers, Kampong Glam Rowell Court RC and Republic Polytechnic's Indian Cultural Group. Artistic director: Kavitha Krishnan. With thanks to the National Arts Council.</figcaption></figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img loading="lazy" src="/_blob/036c7a1032e65d92936861ab67fdf272" alt="Baskar receiving the Golden Point Award for Tamil Poetry in 2011 and in 2013" style="width: 100%; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Golden Point Award for Tamil Poetry, National Arts Council, Singapore: 2011 (left) and 2013 (right), both 3rd Prize.</figcaption></figure>
+<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/83d9fdd77e04b5acec37090a8bb35685" alt="Tamil Murasu report on the Golden Point Award 2013" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Tamil Murasu, November 2013: "Golden Point Award 2013". In the same competition, Suguna Samidurai won 1st Prize and Baskar 3rd Prize for Tamil poetry.</figcaption></figure>
+<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/e3d509517cbfbf36e430ecf65ead61ee" alt="PromaxBDA 2015 Global Excellence Award trophy" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">PromaxBDA Global Excellence Award, Bronze, Los Angeles, USA, 2015: Art Direction &amp; Design, Program-Specific Logo, for CNA's <i>Documentary of the Week</i>, Mediacorp, Singapore. Presented at PromaxBDA's annual global conference, alongside winners such as CNN and FX.</figcaption></figure>
+</sc-if>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4 WORKS -->
+<section id="works" style="background: #2D2D2D; padding: 120px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div class="lbl" style="color: #D4AF37">Artworks</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(30px, 3.6vw, 44px); color: #F5F5F0">One unbroken line, in every medium.</h2>
+<div style="font-size: 16px; color: #CFCFC8">From idea and sketch to painting, sculpture, digital form and the written word.</div>
+</div>
+<div role="tablist" aria-label="Chapters" style="display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid #4A4A4A">
+<sc-for list="{{chapters}}" as="c" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{c.on}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{isArt}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div role="group" aria-label="Filter works" style="display: flex; flex-wrap: wrap; gap: 10px">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="6">
+<button type="button" class="chip" onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px 20px">
+<sc-for list="{{shownWorks}}" as="w" hint-placeholder-count="9">
+<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}">
+<img src="{{w.thumb}}" alt="{{w.title}}, {{w.medium}}" style="width: 100%; aspect-ratio: 4 / 5; object-fit: {{w.fit}}; object-position: {{w.pos}}; display: block; background: #1A1A1D">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 16px; font-weight: 600; color: #F5F5F0">{{w.title}}</div>
+<div style="font-size: 13px; color: #A8A8A0">{{w.year}} · {{w.medium}}</div>
+</div>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{isEmpty}}" hint-placeholder-val="{{ false }}">
+<div style="border: 1px dashed #4A4A4A; padding: 32px; text-align: center; color: #CFCFC8; font-size: 16px; line-height: 1.7">Current available works are shared on request.<br><a href="mailto:studio@baaskaraa.com" style="color: #D4AF37">Request the list →</a></div>
+</sc-if>
+<sc-if value="{{hasMore}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px 24px; margin-top: 8px">
+<div style="font-size: 14px; color: #A8A8A0">Showing {{shownCount}} of {{totalCount}}</div>
+<button type="button" class="btn-line" onClick="{{showMore}}">SHOW MORE</button>
+<button type="button" onClick="{{showAll}}" style="background: none; border: none; color: #D4AF37; font-family: inherit; font-size: 14px; letter-spacing: 1px; cursor: pointer; min-height: 44px">Show all →</button>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{isDigital}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px 20px">
+<sc-for list="{{digitalWorks}}" as="w" hint-placeholder-count="3">
+<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}">
+<img src="{{w.src}}" alt="{{w.title}}, {{w.medium}}" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: {{w.pos}}; display: block; background: #1A1A1D">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 16px; font-weight: 600; color: #F5F5F0">{{w.title}}</div>
+<div style="font-size: 13px; color: #A8A8A0">{{w.year}} · {{w.medium}}</div>
+</div>
+</button>
+</sc-for>
+</div>
+<div style="border-top: 1px solid #4A4A4A; padding-top: 40px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 14px">
+<div class="lbl" style="color: #D4AF37">Digital · motion · broadcast</div>
+<h3 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.8vw, 32px); color: #F5F5F0">The same hand, on screen.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #CFCFC8">The studio is for art. Behind it are two decades of digital creation: motion graphics, title design and visual effects for broadcast at RiGHTMiND and Mediacorp, and now 3D sculpture and VR. The showreel and past works stay here so fellow digital artists and studios can see the level for themselves, and start a collaboration.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
+<a class="btn-gold" href="#showreel">WATCH THE SHOWREEL</a>
+<a class="btn-line" href="mailto:studio@baaskaraa.com?subject=Digital%20portfolio%20access">FULL PORTFOLIO — ASK FOR ACCESS</a>
+</div>
+<div style="font-size: 12px; color: #8A8A84">Broadcast works shown with the permission and copyright of their owners.</div>
+</div>
+<figure id="showreel" style="flex: 1 1 460px; margin: 0; display: flex; flex-direction: column; gap: 8px; scroll-margin-top: 90px"><video src="/_blob/2a61142416205ac763a5a5b6380a1090" poster="/_blob/a75605ac6e384582f6f962af4f65e180" autoplay="" muted="" loop="" playsinline="" controls="" style="width: 100%; aspect-ratio: 16 / 9; display: block; background: #1A1A1D"></video><figcaption style="font-size: 12px; color: #8A8A84">CNA brand animation, concept to creation by Baskar · © Mediacorp</figcaption></figure>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div class="lbl" style="color: #D4AF37">Mediacorp · CNA · 2014–2023</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/75aa4a699493cd0ffdcb81a846d595bb" alt="Baskar at his desk in the CNA newsroom" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block"><figcaption style="font-size: 13px; color: #CFCFC8">At work in the CNA newsroom: motion graphics for an international news channel.</figcaption></figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/e3d509517cbfbf36e430ecf65ead61ee" alt="PromaxBDA 2015 Global Excellence Award trophy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 70%; display: block"><figcaption style="font-size: 13px; color: #CFCFC8">PromaxBDA Global Excellence Awards 2015: Art Direction &amp; Design, Program-Specific Logo, for CNA's <i>Documentary of the Week</i>.</figcaption></figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/906548d87f4725d0d9ed37ef28eb5be8" alt="Baskar holding his Mediacorp Long Service Award" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 40%; display: block"><figcaption style="font-size: 13px; color: #CFCFC8">Mediacorp Long Service Award, 16 September 2021.</figcaption></figure>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{isLit}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 48px; color: #F5F5F0">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+<div style="background: #1A1A1D; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+<div class="lbl" style="color: #D4AF37">On life</div>
+<p style="margin: 0; font-weight: 300; font-size: 20px; line-height: 1.7">Understanding is all. Expression is life. Expression alone doesn't become life. If you do not understand completely, you will try to fill the missing part through various actions — living like this and living like that — which may look like life.</p>
+<div style="font-size: 13px; letter-spacing: 2px; color: #D4AF37">— baaskaraa</div>
+</div>
+<div style="background: #1A1A1D; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+<div class="lbl" style="color: #D4AF37">On art</div>
+<p style="margin: 0; font-weight: 300; font-size: 20px; line-height: 1.7">Understanding is all. Expression is art. Expression alone doesn't become art. If you do not understand completely, you will try to fill the missing part through various actions — doing like this and doing like that — which may look like art.</p>
+<div style="font-size: 13px; letter-spacing: 2px; color: #D4AF37">— baaskaraa</div>
+</div>
+<div style="background: #1A1A1D; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+<div class="lbl" style="color: #D4AF37">Statement II</div>
+<p style="margin: 0; font-weight: 300; font-size: 20px; line-height: 1.7; white-space: pre-line">I think in the digital.
+I reach to make it physical.
+Between the two — a loss, unnamed.
+What stands before you is unfinished.
+It is reaching toward wholeness.
+When it arrives there,
+you and the work become one.</p>
+<div style="font-size: 13px; letter-spacing: 2px; color: #D4AF37">— baaskaraa</div>
+</div>
+<div style="background: #1A1A1D; padding: 36px; display: flex; flex-direction: column; gap: 14px">
+<div class="lbl" style="color: #D4AF37">Statement I</div>
+<p style="margin: 0; font-weight: 300; font-size: 20px; line-height: 1.7; white-space: pre-line">This world searches for artists.
+But those who step forward
+are imitators,
+recreators,
+careful copiers,
+shameless self-promoters,
+and those who hunger only for success.</p>
+<div style="font-size: 13px; letter-spacing: 2px; color: #D4AF37">— baaskaraa</div>
+</div>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img src="/_blob/036c7a1032e65d92936861ab67fdf272" alt="Baskar receiving the Golden Point Award for Tamil Poetry in 2011 and in 2013" style="width: 100%; display: block"><figcaption style="font-size: 13px; color: #A8A8A0">Golden Point Award for Tamil Poetry, National Arts Council, Singapore: 2011 (left) and 2013 (right), both 3rd Prize.</figcaption></figure>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; border-top: 1px solid #4A4A4A; padding-top: 36px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px">
+<div class="lbl" style="color: #D4AF37">In the literary world</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.6; color: #CFCFC8"><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Golden Point Award, Tamil Poetry, 3rd Prize, 2011</div><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Golden Point Award, Tamil Poetry, 3rd Prize, 2013 — his wife, the poet Suguna Baskar, won 1st Prize at the same ceremony</div><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Organising committee, World Tamil Writers Conference, Singapore, 2011</div><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Association of Singapore Tamil Writers: life member since 2004, committee 2006–2012</div><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Short Story Workshop led by Kalaimamani Prapanchan, Association of Singapore Tamil Writers, 2010</div><div style="padding-left: 14px; border-left: 2px solid #D4AF37">Encouragement Prize, Tamil Short Story, 2006</div></div>
+</div>
+<div class="ph" style="flex: 1 1 360px; min-height: 160px; background: #1A1A1D; border: 1px solid #3A3A3A">Poems · in English · to come</div>
+</div>
+</div>
+</sc-if>
+</div>
+
+<!-- lightbox -->
+<sc-if value="{{hasOpen}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="{{openWork.title}}" style="position: fixed; inset: 0; z-index: 100; background: rgba(10,10,12,0.96); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; gap: 16px">
+<button type="button" class="btn-line" onClick="{{closeWork}}" style="position: absolute; top: 16px; right: 16px; min-height: 44px; padding: 0 18px">CLOSE</button>
+<img src="{{openWork.src}}" alt="{{openWork.title}}" style="max-width: 100%; max-height: 74vh; object-fit: contain; display: block">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 20px; font-weight: 600; color: #F5F5F0">{{openWork.title}}</div>
+<div style="font-size: 14px; color: #CFCFC8">{{openWork.year}} · {{openWork.medium}}</div>
+<div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #D4AF37">{{openWork.status}}</div>
+</div>
+<div style="display: flex; gap: 12px">
+<button type="button" class="btn-line" onClick="{{prevWork}}" style="min-height: 44px">← PREV</button>
+<button type="button" class="btn-line" onClick="{{nextWork}}" style="min-height: 44px">NEXT →</button>
+</div>
+</div>
+</sc-if>
+</section>
+
+<!-- 6 AGAM · PURAM — opening -->
+<section id="statement" style="background: #141416; padding: 120px 24px 0">
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 26px; align-items: center; text-align: center">
+<div class="lbl" style="color: #D4AF37">Awaken</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4vw, 48px); color: #F5F5F0">Agam. Puram. Not two.</h2>
+<button type="button" id="bmark" class="bmark" onClick="{{replayMark}}" aria-label="The baaskaraa mark: one line, outward and inward. Tap to draw again.">
+<svg viewBox="-270 0 962 600" width="100%" height="100%" aria-hidden="true">
+<defs><linearGradient id="bgold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0D27A"></stop><stop offset="0.5" stop-color="#D4AF37"></stop><stop offset="1" stop-color="#A8862A"></stop></linearGradient></defs>
+<path d="M42,41 L42.0,389.0 L42.6,396.3 L43.5,403.5 L44.7,410.7 L46.1,417.8 L47.8,424.8 L49.8,431.7 L52.1,438.6 L54.6,445.3 L57.3,451.9 L60.3,458.3 L63.6,464.7 L67.1,470.9 L70.8,476.9 L74.7,482.8 L78.9,488.4 L83.3,494.0 L87.8,499.3 L92.6,504.4 L97.5,509.3 L102.6,514.0 L107.9,518.5 L113.4,522.8 L118.9,526.9 L124.7,530.7 L130.5,534.3 L136.5,537.6 L142.6,540.7 L148.8,543.5 L155.1,546.1 L161.4,548.5 L167.9,550.6 L174.3,552.4 L180.9,554.0 L187.4,555.3 L194.1,556.3 L200.7,557.1 L207.3,557.6 L213.9,557.9 L220.5,557.9 L227.1,557.6 L233.7,557.1 L240.2,556.4 L246.7,555.3 L253.1,554.1 L259.4,552.6 L265.6,550.8 L271.8,548.8 L277.8,546.6 L283.8,544.2 L289.6,541.5 L295.3,538.6 L300.9,535.5 L306.3,532.2 L311.6,528.7 L316.7,525.0 L321.7,521.1 L326.5,517.0 L331.1,512.8 L335.5,508.3 L339.8,503.8 L343.8,499.1 L347.7,494.2 L351.3,489.2 L354.8,484.1 L358.0,478.9 L361.0,473.6 L363.8,468.1 L366.4,462.6 L368.7,457.0 L370.8,451.3 L372.7,445.6 L374.4,439.8 L375.8,434.0 L377.0,428.1 L378.0,422.2 L378.7,416.3 L379.2,410.4 L379.4,404.5 L379.5,398.6 L379.3,392.8 L378.8,386.9 L378.2,381.1 L377.3,375.4 L376.2,369.7 L374.9,364.1 L373.3,358.5 L371.6,353.0 L369.6,347.6 L367.5,342.4 L365.1,337.2 L362.6,332.1 L359.8,327.2 L356.9,322.3 L353.8,317.6 L350.5,313.1 L347.1,308.7 L343.5,304.4 L339.8,300.3 L335.9,296.4 L331.9,292.6 L327.7,289.1 L323.4,285.6 L319.0,282.4 L314.5,279.4 L309.9,276.5 L305.2,273.8 L300.4,271.4 L295.6,269.1 L290.6,267.0 L285.6,265.1 L280.6,263.5 L275.5,262.0 L270.4,260.7 L265.2,259.7 L260.1,258.8 L254.9,258.2 L249.7,257.7 L244.5,257.5 L239.4,257.5 L234.2,257.6 L229.1,258.0 L224.0,258.6 L219.0,259.4 L214.0,260.3 L209.1,261.5 L204.2,262.8 L199.4,264.3 L194.7,266.0 L190.1,267.9 L185.5,270.0 L181.1,272.2 L176.8,274.6 L172.6,277.1 L168.5,279.8 L164.5,282.7 L160.7,285.7 L157.0,288.8 L153.4,292.0 L150.0,295.4 L146.8,298.9 L143.6,302.5 L140.7,306.2 L137.9,310.1 L135.2,314.0 L132.8,318.0 L130.4,322.0 L128.3,326.2 L126.3,330.4 L124.5,334.7 L122.9,339.0 L121.5,343.3 L120.2,347.7 L119.1,352.2 L118.2,356.6 L117.5,361.1 L117.0,365.5 L116.6,370.0 L116.4,374.5 L116.4,378.9 L116.5,383.3 L116.9,387.7 L117.4,392.1 L118.0,396.4 L118.9,400.7 L119.9,404.9 L121.0,409.1 L122.4,413.2 L123.8,417.2 L125.4,421.1 L127.2,425.0 L129.1,428.8 L131.2,432.5 L133.4,436.0 L135.7,439.5 L138.1,442.9 L140.7,446.2 L143.4,449.3 L146.1,452.3 L149.0,455.2 L152.0,458.0 L155.1,460.6 L158.3,463.1 L161.5,465.5 L164.8,467.7 L168.2,469.8 L171.7,471.7 L175.2,473.5 L178.8,475.1 L182.4,476.6 L186.0,478.0 L189.7,479.1 L193.4,480.2 L197.1,481.1 L200.9,481.8 L204.6,482.4 L208.4,482.8 L212.2,483.1 L215.9,483.2 L219.6,483.2 L223.3,483.1 L227.0,482.8 L230.7,482.3 L234.3,481.7 L237.8,481.0 L241.3,480.1 L244.8,479.1 L248.2,478.0 L251.5,476.7 L254.8,475.4 L258.0,473.9 L261.1,472.2 L264.2,470.5 L267.1,468.7 L270.0,466.7 L272.7,464.7 L275.4,462.5 L278.0,460.3 L280.4,458.0 L282.8,455.6 L285.0,453.1 L287.2,450.5 L289.2,447.9 L291.1,445.2 L292.9,442.4 L294.5,439.6 L296.1,436.8 L297.5,433.9 L298.8,431.0 L300.0,428.0 L301.0,425.0 L301.9,422.0 L302.7,419.0 L303.4,415.9 L304.0,412.9 L304.4,409.8 L304.7,406.8 L304.9,403.7 L304.9,400.7 L304.9,397.7 L304.7,394.7 L304.4,391.7 L304.0,388.8 L303.4,385.9 L302.8,383.1 L302.1,380.3 L301.2,377.5 L300.2,374.8 L299.2,372.2 L298.0,369.6 L296.8,367.1 L295.4,364.6 L294.0,362.2 L292.5,359.9 L290.9,357.7 L289.2,355.5 L287.5,353.5 L285.7,351.5 L283.8,349.6 L281.8,347.8 L279.8,346.1 L277.8,344.4 L275.7,342.9 L273.5,341.5 L271.3,340.1 L269.1,338.9 L266.9,337.8 L264.6,336.7 L262.3,335.8 L259.9,334.9 L257.6,334.2 L255.3,333.6 L252.9,333.0 L250.5,332.6 L248.2,332.2 L245.8,332.0 L243.5,331.8 L241.1,331.8 L238.8,331.8 L236.5,331.9 L234.3,332.2 L232.0,332.5 L229.8,332.9 L227.6,333.4 L225.5,333.9 L223.4,334.6 L221.4,335.3 L219.4,336.1 L217.4,337.0 L215.5,337.9 L213.7,339.0 L211.9,340.0 L210.2,341.2 L208.5,342.4 L206.9,343.7 L205.4,345.0 L203.9,346.3 L202.6,347.7 L201.2,349.2 L200.0,350.7 L198.8,352.2 L197.7,353.8 L196.7,355.4 L195.7,357.0 L194.9,358.6 L194.1,360.3 L193.3,361.9 L192.7,363.6 L192.1,365.3 L191.6,367.0 L191.2,368.7 L190.9,370.4 L190.6,372.1 L190.4,373.8 L190.3,375.5 L190.2,377.1 L190.3,378.8 L190.3,380.4 L190.5,382.0 L190.7,383.6 L191.0,385.1 L191.3,386.7 L191.7,388.2 L192.2,389.6 L192.7,391.0 L193.3,392.4 L193.9,393.7 L194.6,395.0 L195.3,396.3 L196.1,397.5 L196.9,398.6 L197.7,399.7 L198.6,400.8 L199.5,401.8 L200.4,402.7 L201.4,403.6 L202.4,404.5 L203.4,405.3 L204.4,406.0 L205.5,406.7 L206.6,407.3 L207.6,407.9 L208.7,408.4 L209.8,408.8 L210.9,409.2 L212.0,409.6 L213.1,409.8 L214.2,410.1 L215.3,410.3 L216.4,410.4 L217.4,410.5 L218.5,410.5 L219.5,410.5 L220.6,410.4 L221.6,410.3 L222.5,410.1 L223.5,409.9 L224.4,409.7 L225.3,409.4 L226.2,409.1 L227.0,408.7 L227.8,408.3 L228.6,407.9 L229.3,407.5 L230.0,407.0 L230.7,406.5 L231.3,405.9 L231.9,405.4 L232.4,404.8 L232.9,404.2 L233.4,403.6 L233.8,403.0 L234.2,402.4 L234.5,401.8 L234.8,401.1 L235.1,400.5 L235.3,399.8 L235.5,399.2 L235.6,398.6 L235.7,397.9 L235.8,397.3 L235.8,396.7 L235.8,396.1 L235.7,395.5 L235.6,394.9 L235.5,394.4 L235.3,393.8 L235.1,393.3 L234.9,392.8 L234.7,392.3 L234.4,391.9 L234.1,391.5 L233.8,391.1 L233.4,390.7 L233.0,390.4 L232.6,390.1 L232.2,389.9 L231.8,389.6 L231.4,389.4 L230.9,389.3 L230.5,389.2" fill="none" stroke="#232327" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M42,41 L42.0,389.0 L42.6,396.3 L43.5,403.5 L44.7,410.7 L46.1,417.8 L47.8,424.8 L49.8,431.7 L52.1,438.6 L54.6,445.3 L57.3,451.9 L60.3,458.3 L63.6,464.7 L67.1,470.9 L70.8,476.9 L74.7,482.8 L78.9,488.4 L83.3,494.0 L87.8,499.3 L92.6,504.4 L97.5,509.3 L102.6,514.0 L107.9,518.5 L113.4,522.8 L118.9,526.9 L124.7,530.7 L130.5,534.3 L136.5,537.6 L142.6,540.7 L148.8,543.5 L155.1,546.1 L161.4,548.5 L167.9,550.6 L174.3,552.4 L180.9,554.0 L187.4,555.3 L194.1,556.3 L200.7,557.1 L207.3,557.6 L213.9,557.9 L220.5,557.9 L227.1,557.6 L233.7,557.1 L240.2,556.4 L246.7,555.3 L253.1,554.1 L259.4,552.6 L265.6,550.8 L271.8,548.8 L277.8,546.6 L283.8,544.2 L289.6,541.5 L295.3,538.6 L300.9,535.5 L306.3,532.2 L311.6,528.7 L316.7,525.0 L321.7,521.1 L326.5,517.0 L331.1,512.8 L335.5,508.3 L339.8,503.8 L343.8,499.1 L347.7,494.2 L351.3,489.2 L354.8,484.1 L358.0,478.9 L361.0,473.6 L363.8,468.1 L366.4,462.6 L368.7,457.0 L370.8,451.3 L372.7,445.6 L374.4,439.8 L375.8,434.0 L377.0,428.1 L378.0,422.2 L378.7,416.3 L379.2,410.4 L379.4,404.5 L379.5,398.6 L379.3,392.8 L378.8,386.9 L378.2,381.1 L377.3,375.4 L376.2,369.7 L374.9,364.1 L373.3,358.5 L371.6,353.0 L369.6,347.6 L367.5,342.4 L365.1,337.2 L362.6,332.1 L359.8,327.2 L356.9,322.3 L353.8,317.6 L350.5,313.1 L347.1,308.7 L343.5,304.4 L339.8,300.3 L335.9,296.4 L331.9,292.6 L327.7,289.1 L323.4,285.6 L319.0,282.4 L314.5,279.4 L309.9,276.5 L305.2,273.8 L300.4,271.4 L295.6,269.1 L290.6,267.0 L285.6,265.1 L280.6,263.5 L275.5,262.0 L270.4,260.7 L265.2,259.7 L260.1,258.8 L254.9,258.2 L249.7,257.7 L244.5,257.5 L239.4,257.5 L234.2,257.6 L229.1,258.0 L224.0,258.6 L219.0,259.4 L214.0,260.3 L209.1,261.5 L204.2,262.8 L199.4,264.3 L194.7,266.0 L190.1,267.9 L185.5,270.0 L181.1,272.2 L176.8,274.6 L172.6,277.1 L168.5,279.8 L164.5,282.7 L160.7,285.7 L157.0,288.8 L153.4,292.0 L150.0,295.4 L146.8,298.9 L143.6,302.5 L140.7,306.2 L137.9,310.1 L135.2,314.0 L132.8,318.0 L130.4,322.0 L128.3,326.2 L126.3,330.4 L124.5,334.7 L122.9,339.0 L121.5,343.3 L120.2,347.7 L119.1,352.2 L118.2,356.6 L117.5,361.1 L117.0,365.5 L116.6,370.0 L116.4,374.5 L116.4,378.9 L116.5,383.3 L116.9,387.7 L117.4,392.1 L118.0,396.4 L118.9,400.7 L119.9,404.9 L121.0,409.1 L122.4,413.2 L123.8,417.2 L125.4,421.1 L127.2,425.0 L129.1,428.8 L131.2,432.5 L133.4,436.0 L135.7,439.5 L138.1,442.9 L140.7,446.2 L143.4,449.3 L146.1,452.3 L149.0,455.2 L152.0,458.0 L155.1,460.6 L158.3,463.1 L161.5,465.5 L164.8,467.7 L168.2,469.8 L171.7,471.7 L175.2,473.5 L178.8,475.1 L182.4,476.6 L186.0,478.0 L189.7,479.1 L193.4,480.2 L197.1,481.1 L200.9,481.8 L204.6,482.4 L208.4,482.8 L212.2,483.1 L215.9,483.2 L219.6,483.2 L223.3,483.1 L227.0,482.8 L230.7,482.3 L234.3,481.7 L237.8,481.0 L241.3,480.1 L244.8,479.1 L248.2,478.0 L251.5,476.7 L254.8,475.4 L258.0,473.9 L261.1,472.2 L264.2,470.5 L267.1,468.7 L270.0,466.7 L272.7,464.7 L275.4,462.5 L278.0,460.3 L280.4,458.0 L282.8,455.6 L285.0,453.1 L287.2,450.5 L289.2,447.9 L291.1,445.2 L292.9,442.4 L294.5,439.6 L296.1,436.8 L297.5,433.9 L298.8,431.0 L300.0,428.0 L301.0,425.0 L301.9,422.0 L302.7,419.0 L303.4,415.9 L304.0,412.9 L304.4,409.8 L304.7,406.8 L304.9,403.7 L304.9,400.7 L304.9,397.7 L304.7,394.7 L304.4,391.7 L304.0,388.8 L303.4,385.9 L302.8,383.1 L302.1,380.3 L301.2,377.5 L300.2,374.8 L299.2,372.2 L298.0,369.6 L296.8,367.1 L295.4,364.6 L294.0,362.2 L292.5,359.9 L290.9,357.7 L289.2,355.5 L287.5,353.5 L285.7,351.5 L283.8,349.6 L281.8,347.8 L279.8,346.1 L277.8,344.4 L275.7,342.9 L273.5,341.5 L271.3,340.1 L269.1,338.9 L266.9,337.8 L264.6,336.7 L262.3,335.8 L259.9,334.9 L257.6,334.2 L255.3,333.6 L252.9,333.0 L250.5,332.6 L248.2,332.2 L245.8,332.0 L243.5,331.8 L241.1,331.8 L238.8,331.8 L236.5,331.9 L234.3,332.2 L232.0,332.5 L229.8,332.9 L227.6,333.4 L225.5,333.9 L223.4,334.6 L221.4,335.3 L219.4,336.1 L217.4,337.0 L215.5,337.9 L213.7,339.0 L211.9,340.0 L210.2,341.2 L208.5,342.4 L206.9,343.7 L205.4,345.0 L203.9,346.3 L202.6,347.7 L201.2,349.2 L200.0,350.7 L198.8,352.2 L197.7,353.8 L196.7,355.4 L195.7,357.0 L194.9,358.6 L194.1,360.3 L193.3,361.9 L192.7,363.6 L192.1,365.3 L191.6,367.0 L191.2,368.7 L190.9,370.4 L190.6,372.1 L190.4,373.8 L190.3,375.5 L190.2,377.1 L190.3,378.8 L190.3,380.4 L190.5,382.0 L190.7,383.6 L191.0,385.1 L191.3,386.7 L191.7,388.2 L192.2,389.6 L192.7,391.0 L193.3,392.4 L193.9,393.7 L194.6,395.0 L195.3,396.3 L196.1,397.5 L196.9,398.6 L197.7,399.7 L198.6,400.8 L199.5,401.8 L200.4,402.7 L201.4,403.6 L202.4,404.5 L203.4,405.3 L204.4,406.0 L205.5,406.7 L206.6,407.3 L207.6,407.9 L208.7,408.4 L209.8,408.8 L210.9,409.2 L212.0,409.6 L213.1,409.8 L214.2,410.1 L215.3,410.3 L216.4,410.4 L217.4,410.5 L218.5,410.5 L219.5,410.5 L220.6,410.4 L221.6,410.3 L222.5,410.1 L223.5,409.9 L224.4,409.7 L225.3,409.4 L226.2,409.1 L227.0,408.7 L227.8,408.3 L228.6,407.9 L229.3,407.5 L230.0,407.0 L230.7,406.5 L231.3,405.9 L231.9,405.4 L232.4,404.8 L232.9,404.2 L233.4,403.6 L233.8,403.0 L234.2,402.4 L234.5,401.8 L234.8,401.1 L235.1,400.5 L235.3,399.8 L235.5,399.2 L235.6,398.6 L235.7,397.9 L235.8,397.3 L235.8,396.7 L235.8,396.1 L235.7,395.5 L235.6,394.9 L235.5,394.4 L235.3,393.8 L235.1,393.3 L234.9,392.8 L234.7,392.3 L234.4,391.9 L234.1,391.5 L233.8,391.1 L233.4,390.7 L233.0,390.4 L232.6,390.1 L232.2,389.9 L231.8,389.6 L231.4,389.4 L230.9,389.3 L230.5,389.2" pathLength="1" fill="none" stroke="url(#bgold)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 1; stroke-dashoffset: {{markOffF}}; transition: {{markTransF}}"></path>
+<path d="M230.5,389.2 L230.9,389.3 L231.4,389.4 L231.8,389.6 L232.2,389.9 L232.6,390.1 L233.0,390.4 L233.4,390.7 L233.8,391.1 L234.1,391.5 L234.4,391.9 L234.7,392.3 L234.9,392.8 L235.1,393.3 L235.3,393.8 L235.5,394.4 L235.6,394.9 L235.7,395.5 L235.8,396.1 L235.8,396.7 L235.8,397.3 L235.7,397.9 L235.6,398.6 L235.5,399.2 L235.3,399.8 L235.1,400.5 L234.8,401.1 L234.5,401.8 L234.2,402.4 L233.8,403.0 L233.4,403.6 L232.9,404.2 L232.4,404.8 L231.9,405.4 L231.3,405.9 L230.7,406.5 L230.0,407.0 L229.3,407.5 L228.6,407.9 L227.8,408.3 L227.0,408.7 L226.2,409.1 L225.3,409.4 L224.4,409.7 L223.5,409.9 L222.5,410.1 L221.6,410.3 L220.6,410.4 L219.5,410.5 L218.5,410.5 L217.4,410.5 L216.4,410.4 L215.3,410.3 L214.2,410.1 L213.1,409.8 L212.0,409.6 L210.9,409.2 L209.8,408.8 L208.7,408.4 L207.6,407.9 L206.6,407.3 L205.5,406.7 L204.4,406.0 L203.4,405.3 L202.4,404.5 L201.4,403.6 L200.4,402.7 L199.5,401.8 L198.6,400.8 L197.7,399.7 L196.9,398.6 L196.1,397.5 L195.3,396.3 L194.6,395.0 L193.9,393.7 L193.3,392.4 L192.7,391.0 L192.2,389.6 L191.7,388.2 L191.3,386.7 L191.0,385.1 L190.7,383.6 L190.5,382.0 L190.3,380.4 L190.3,378.8 L190.2,377.1 L190.3,375.5 L190.4,373.8 L190.6,372.1 L190.9,370.4 L191.2,368.7 L191.6,367.0 L192.1,365.3 L192.7,363.6 L193.3,361.9 L194.1,360.3 L194.9,358.6 L195.7,357.0 L196.7,355.4 L197.7,353.8 L198.8,352.2 L200.0,350.7 L201.2,349.2 L202.6,347.7 L203.9,346.3 L205.4,345.0 L206.9,343.7 L208.5,342.4 L210.2,341.2 L211.9,340.0 L213.7,339.0 L215.5,337.9 L217.4,337.0 L219.4,336.1 L221.4,335.3 L223.4,334.6 L225.5,333.9 L227.6,333.4 L229.8,332.9 L232.0,332.5 L234.3,332.2 L236.5,331.9 L238.8,331.8 L241.1,331.8 L243.5,331.8 L245.8,332.0 L248.2,332.2 L250.5,332.6 L252.9,333.0 L255.3,333.6 L257.6,334.2 L259.9,334.9 L262.3,335.8 L264.6,336.7 L266.9,337.8 L269.1,338.9 L271.3,340.1 L273.5,341.5 L275.7,342.9 L277.8,344.4 L279.8,346.1 L281.8,347.8 L283.8,349.6 L285.7,351.5 L287.5,353.5 L289.2,355.5 L290.9,357.7 L292.5,359.9 L294.0,362.2 L295.4,364.6 L296.8,367.1 L298.0,369.6 L299.2,372.2 L300.2,374.8 L301.2,377.5 L302.1,380.3 L302.8,383.1 L303.4,385.9 L304.0,388.8 L304.4,391.7 L304.7,394.7 L304.9,397.7 L304.9,400.7 L304.9,403.7 L304.7,406.8 L304.4,409.8 L304.0,412.9 L303.4,415.9 L302.7,419.0 L301.9,422.0 L301.0,425.0 L300.0,428.0 L298.8,431.0 L297.5,433.9 L296.1,436.8 L294.5,439.6 L292.9,442.4 L291.1,445.2 L289.2,447.9 L287.2,450.5 L285.0,453.1 L282.8,455.6 L280.4,458.0 L278.0,460.3 L275.4,462.5 L272.7,464.7 L270.0,466.7 L267.1,468.7 L264.2,470.5 L261.1,472.2 L258.0,473.9 L254.8,475.4 L251.5,476.7 L248.2,478.0 L244.8,479.1 L241.3,480.1 L237.8,481.0 L234.3,481.7 L230.7,482.3 L227.0,482.8 L223.3,483.1 L219.6,483.2 L215.9,483.2 L212.2,483.1 L208.4,482.8 L204.6,482.4 L200.9,481.8 L197.1,481.1 L193.4,480.2 L189.7,479.1 L186.0,478.0 L182.4,476.6 L178.8,475.1 L175.2,473.5 L171.7,471.7 L168.2,469.8 L164.8,467.7 L161.5,465.5 L158.3,463.1 L155.1,460.6 L152.0,458.0 L149.0,455.2 L146.1,452.3 L143.4,449.3 L140.7,446.2 L138.1,442.9 L135.7,439.5 L133.4,436.0 L131.2,432.5 L129.1,428.8 L127.2,425.0 L125.4,421.1 L123.8,417.2 L122.4,413.2 L121.0,409.1 L119.9,404.9 L118.9,400.7 L118.0,396.4 L117.4,392.1 L116.9,387.7 L116.5,383.3 L116.4,378.9 L116.4,374.5 L116.6,370.0 L117.0,365.5 L117.5,361.1 L118.2,356.6 L119.1,352.2 L120.2,347.7 L121.5,343.3 L122.9,339.0 L124.5,334.7 L126.3,330.4 L128.3,326.2 L130.4,322.0 L132.8,318.0 L135.2,314.0 L137.9,310.1 L140.7,306.2 L143.6,302.5 L146.8,298.9 L150.0,295.4 L153.4,292.0 L157.0,288.8 L160.7,285.7 L164.5,282.7 L168.5,279.8 L172.6,277.1 L176.8,274.6 L181.1,272.2 L185.5,270.0 L190.1,267.9 L194.7,266.0 L199.4,264.3 L204.2,262.8 L209.1,261.5 L214.0,260.3 L219.0,259.4 L224.0,258.6 L229.1,258.0 L234.2,257.6 L239.4,257.5 L244.5,257.5 L249.7,257.7 L254.9,258.2 L260.1,258.8 L265.2,259.7 L270.4,260.7 L275.5,262.0 L280.6,263.5 L285.6,265.1 L290.6,267.0 L295.6,269.1 L300.4,271.4 L305.2,273.8 L309.9,276.5 L314.5,279.4 L319.0,282.4 L323.4,285.6 L327.7,289.1 L331.9,292.6 L335.9,296.4 L339.8,300.3 L343.5,304.4 L347.1,308.7 L350.5,313.1 L353.8,317.6 L356.9,322.3 L359.8,327.2 L362.6,332.1 L365.1,337.2 L367.5,342.4 L369.6,347.6 L371.6,353.0 L373.3,358.5 L374.9,364.1 L376.2,369.7 L377.3,375.4 L378.2,381.1 L378.8,386.9 L379.3,392.8 L379.5,398.6 L379.4,404.5 L379.2,410.4 L378.7,416.3 L378.0,422.2 L377.0,428.1 L375.8,434.0 L374.4,439.8 L372.7,445.6 L370.8,451.3 L368.7,457.0 L366.4,462.6 L363.8,468.1 L361.0,473.6 L358.0,478.9 L354.8,484.1 L351.3,489.2 L347.7,494.2 L343.8,499.1 L339.8,503.8 L335.5,508.3 L331.1,512.8 L326.5,517.0 L321.7,521.1 L316.7,525.0 L311.6,528.7 L306.3,532.2 L300.9,535.5 L295.3,538.6 L289.6,541.5 L283.8,544.2 L277.8,546.6 L271.8,548.8 L265.6,550.8 L259.4,552.6 L253.1,554.1 L246.7,555.3 L240.2,556.4 L233.7,557.1 L227.1,557.6 L220.5,557.9 L213.9,557.9 L207.3,557.6 L200.7,557.1 L194.1,556.3 L187.4,555.3 L180.9,554.0 L174.3,552.4 L167.9,550.6 L161.4,548.5 L155.1,546.1 L148.8,543.5 L142.6,540.7 L136.5,537.6 L130.5,534.3 L124.7,530.7 L118.9,526.9 L113.4,522.8 L107.9,518.5 L102.6,514.0 L97.5,509.3 L92.6,504.4 L87.8,499.3 L83.3,494.0 L78.9,488.4 L74.7,482.8 L70.8,476.9 L67.1,470.9 L63.6,464.7 L60.3,458.3 L57.3,451.9 L54.6,445.3 L52.1,438.6 L49.8,431.7 L47.8,424.8 L46.1,417.8 L44.7,410.7 L43.5,403.5 L42.6,396.3 L42.0,389.0 L42,41" pathLength="1" fill="none" stroke="url(#bgold)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 1; stroke-dashoffset: {{markOffR}}; transition: {{markTransR}}"></path>
+</svg>
+<span class="bm-l bm-puram" style="opacity: {{markOp1}}; transition: {{markTransP}}">PURAM<br><em>out to the world</em></span>
+<span class="bm-l bm-agam" style="opacity: {{markOp2}}; transition: {{markTransA}}">AGAM<br><em>into the source</em></span>
+</button>
+<div style="font-size: 11px; letter-spacing: 3px; color: #6E6E68; margin-top: -14px">{{markHint}}</div>
+<div style="color: #D4AF37; font-size: 22px; font-weight: 300; opacity: {{markOp3}}; transition: {{markTrans3}}">One unbroken line, inward and outward.</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
+<a class="btn-line" href="#agam">AGAM · TO MYSELF</a>
+<a class="btn-line" href="#puram">PURAM · TO SOCIETY</a>
+</div>
+<div style="width: 100%; border-top: 1px solid #3A3A3A"></div>
+</div>
+</section>
+
+<!-- 6a AGAM -->
+<section id="agam" style="background: #141416; padding: 120px 0 110px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; gap: 12px">
+<div class="lbl" style="color: #D4AF37">Agam · to myself</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4vw, 48px); color: #F5F5F0">Into the source.</h2>
+<div style="font-size: 22px; color: #D4AF37; font-weight: 300">I become still.</div>
+<div style="font-size: 16px; color: #CFCFC8; font-weight: 300">Thavam, 2010–2018. Nada, since. Swipe the path.</div>
+</div>
+<div style="margin-top: 44px; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 24px 24px; box-sizing: border-box">
+<sc-for list="{{journey}}" as="j" hint-placeholder-count="7">
+<div style="flex: 0 0 280px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px">
+<img src="{{j.src}}" alt="{{j.alt}}" style="width: 280px; height: 380px; object-fit: cover; object-position: {{j.pos}}; display: block; background: #1A1A1D">
+<div style="font-size: 12px; letter-spacing: 3px; color: #D4AF37; text-transform: uppercase">{{j.tag}}</div>
+<div style="font-size: 21px; font-weight: 600; color: #F5F5F0">{{j.title}}</div>
+<div style="font-size: 14px; line-height: 1.6; color: #A8A8A0">{{j.line}}</div>
+</div>
+</sc-for>
+<div style="flex: 0 0 280px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 280px; height: 380px; background: #1A1A1D; border: 1px solid #3A3A3A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; box-sizing: border-box">
+<div style="font-weight: 200; font-size: 64px; letter-spacing: 6px; color: #D4AF37">NADA</div>
+</div>
+<div style="font-size: 12px; letter-spacing: 3px; color: #D4AF37">2018</div>
+<div style="font-size: 21px; font-weight: 600; color: #F5F5F0">The inner sound</div>
+<div style="font-size: 14px; line-height: 1.6; color: #A8A8A0">It came, and it stays.</div>
+</div>
+</div>
+<div style="max-width: 900px; margin: 56px auto 0; padding: 0 24px; text-align: center; display: flex; flex-direction: column; gap: 18px; align-items: center">
+<p style="margin: 0; font-weight: 300; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.6; color: #F5F5F0">The inner sound stays. It pulls everything toward oneness, and calms the mind to a thoughtless state.</p>
+<div style="font-size: 14px; letter-spacing: 2px; color: #D4AF37">— baaskaraa</div>
+</div>
+</section>
+
+<!-- 7 PURAM -->
+<section id="puram" style="background: #F5F5F0; color: #1A1A1D; padding: 120px 0 110px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; gap: 12px">
+<div class="lbl" style="color: #8A6D12">Puram · to society</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4vw, 48px)">Out to the world.</h2>
+<div style="font-size: 22px; color: #8A6D12; font-weight: 300">We become one.</div>
+<div style="font-size: 16px; color: #5A5A5A; font-weight: 300">Aalam, since 2014. Village to world. Swipe the path.</div>
+</div>
+<div style="margin-top: 44px; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 24px 24px; box-sizing: border-box">
+<sc-for list="{{outward}}" as="j" hint-placeholder-count="6">
+<div style="flex: 0 0 280px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px">
+<img src="{{j.src}}" alt="{{j.alt}}" style="width: 280px; height: 380px; object-fit: {{j.fit}}; object-position: {{j.pos}}; display: block; background: #FFFFFF">
+<div style="font-size: 12px; letter-spacing: 3px; color: #8A6D12; text-transform: uppercase">{{j.tag}}</div>
+<div style="font-size: 21px; font-weight: 600; color: #1A1A1D">{{j.title}}</div>
+<div style="font-size: 14px; line-height: 1.6; color: #5A5A5A">{{j.line}}</div>
+</div>
+</sc-for>
+<div style="flex: 0 0 280px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 280px; height: 380px; background: #FFFFFF; border: 1px solid #D8D8D0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; box-sizing: border-box">
+<div style="font-weight: 200; font-size: 64px; letter-spacing: 6px; color: #8A6D12">AALAM</div>
+<div style="font-size: 20px; color: #8A6D12">ஆலம்</div>
+</div>
+<div style="font-size: 12px; letter-spacing: 3px; color: #8A6D12">NEXT</div>
+<div style="font-size: 21px; font-weight: 600; color: #1A1A1D">Anyone can join</div>
+<div style="font-size: 14px; line-height: 1.6; color: #5A5A5A">It grows the way the tree grows.</div>
+</div>
+</div>
+<div style="max-width: 900px; margin: 56px auto 0; padding: 0 24px; text-align: center; display: flex; flex-direction: column; gap: 18px; align-items: center">
+<p style="margin: 0; font-weight: 300; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.6; color: #1A1A1D">Aalam, the banyan. Its branches send down roots that become new trunks, until one tree shelters a whole village.</p>
+<div style="font-size: 14px; letter-spacing: 2px; color: #8A6D12">— baaskaraa</div>
+<a class="btn-gold" href="mailto:studio@baaskaraa.com?subject=Join%20Aalam">JOIN AALAM</a>
+</div>
+</section>
+
+
+
+<!-- 7b ARCHIVE -->
+<section id="archive" style="background: #1A1A1D; padding: 120px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div class="lbl" style="color: #D4AF37">Archive</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4vw, 48px); color: #F5F5F0">For curators, writers and press.</h2>
+<div style="font-size: 18px; color: #CFCFC8; font-weight: 300">Everything needed to study, write about or present the work.</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+<div style="border: 1px solid #3A3A3A; border-top: 3px solid #D4AF37; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">Open to all</div>
+<div style="font-size: 24px; font-weight: 600; color: #F5F5F0">Press kit</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.9; color: #CFCFC8">
+<li>Biography, short and long</li>
+<li>CV (PDF)</li>
+<li>Portraits and key works, high resolution</li>
+<li>Awards with certificates</li>
+<li>Major projects and press clippings</li>
+</ul>
+<a class="btn-gold" href="mailto:studio@baaskaraa.com?subject=Press%20kit" style="align-self: flex-start; margin-top: auto">REQUEST PRESS KIT</a>
+</div>
+<div style="border: 1px solid #3A3A3A; border-top: 3px solid #D4AF37; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">By request</div>
+<div style="font-size: 24px; font-weight: 600; color: #F5F5F0">Full archive</div>
+<ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.9; color: #CFCFC8">
+<li>Complete catalogue of works</li>
+<li>Certificates, letters and documents</li>
+<li>Project documentation and video</li>
+<li>Digital portfolio and showreels</li>
+<li>Poems, Tamil originals with English</li>
+</ul>
+<a class="btn-line" href="mailto:studio@baaskaraa.com?subject=Archive%20access" style="align-self: flex-start; margin-top: auto">REQUEST ACCESS</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 8 ENGAGE -->
+<section id="engage" style="background: #F5F5F0; color: #1A1A1D; padding: 120px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div class="lbl" style="color: #8A6D12">Engage</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(30px, 3.6vw, 44px)">Collect, commission, visit.</h2>
+<div style="font-size: 17px; color: #5A5A5A">Direct with the studio. No intermediaries.</div>
+</div>
+
+<div class="aw-split eg-4">
+<sc-for list="{{egPanels}}" as="p" hint-placeholder-count="4">
+<div class="aw-col">
+<div class="aw-panel" aria-label="{{p.name}} slideshow">
+<sc-for list="{{p.slides}}" as="s" hint-placeholder-count="4">
+<sc-if value="{{s.blur}}" hint-placeholder-val="{{ false }}"><img src="{{s.src}}" alt="" aria-hidden="true" loading="lazy" style="opacity: {{s.bop}}; filter: blur(22px) brightness(0.45); transform: scale(1.25)"></sc-if>
+<sc-if value="{{s.isImg}}" hint-placeholder-val="{{ true }}"><img src="{{s.src}}" alt="{{s.label}}" loading="lazy" style="opacity: {{s.op}}; object-fit: {{s.fit}}; object-position: {{s.pos}}; transform: {{s.zoom}}"></sc-if>
+<sc-if value="{{s.isVid}}" hint-placeholder-val="{{ false }}"><video src="{{s.src}}" poster="{{s.poster}}" muted="" loop="" playsinline="" autoplay="" preload="metadata" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: {{s.op}}; transition: opacity 1.4s ease"></video></sc-if>
+</sc-for>
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.88) 100%); pointer-events: none"></div>
+<div style="position: absolute; top: 18px; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: center; pointer-events: none">
+<div style="font-size: 11px; letter-spacing: 3px; color: #CFCFC8">{{p.no}}</div>
+<div style="font-size: 11px; letter-spacing: 3px; color: #CFCFC8">{{p.pos}}</div>
+</div>
+<sc-if value="{{p.paused}}" hint-placeholder-val="{{ false }}">
+<button type="button" class="aw-play" onClick="{{p.toggle}}" aria-label="Play {{p.name}}">▶</button>
+</sc-if>
+<div style="position: absolute; left: 20px; right: 20px; bottom: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-weight: 200; font-size: clamp(30px, 3vw, 44px); letter-spacing: 0.08em; line-height: 1; color: #F5F5F0">{{p.name}}</div>
+<div style="display: flex; align-items: flex-end; gap: 12px">
+<div style="flex: 1; min-width: 0; font-size: 13px; line-height: 1.45; color: #E8E6DF">{{p.caption}}</div>
+<button type="button" class="aw-mini" onClick="{{p.toggle}}" aria-label="{{p.toggleAria}}">{{p.toggleIcon}}</button>
+</div>
+<div style="display: flex; gap: 4px">
+<sc-for list="{{p.dots}}" as="d" hint-placeholder-count="5">
+<span style="flex: 1; height: 2px; background: {{d.bg}}"></span>
+</sc-for>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<a class="btn-gold" href="{{p.href}}" style="min-height: 46px; padding: 0 20px; font-size: 12px">{{p.cta}}</a>
+<button type="button" class="btn-line" onClick="{{p.toggleMore}}" style="min-height: 46px; padding: 0 16px; font-size: 12px; color: #8A6D12; border-color: #8A6D12">{{p.moreLabel}}</button>
+</div>
+</div>
+</sc-for>
+</div>
+<div id="eg-detail" style="scroll-margin-top: 80px; display: flex; flex-direction: column; gap: 0">
+<sc-if value="{{egShowCollect}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 3px solid #D4AF37; background: #FFFFFF; padding: 28px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #8A6D12; font-weight: 600">Collect · ways in</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+<sc-for list="{{tiers}}" as="t" hint-placeholder-count="4">
+<div style="background: #FFFFFF; border: 1px solid #E8E8E8; border-top: 3px solid #D4AF37; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 19px; font-weight: 600">{{t.name}}</div><div style="font-size: 14px; line-height: 1.6; color: #4A4A4A">{{t.line}}</div></div>
+</sc-for>
+</div>
+<span style="font-size: 14px; color: #5A5A5A">Every work signed, with certificate of authenticity · crated, insured and shipped from Singapore or Chennai.</span>
+</div>
+</sc-if>
+<sc-if value="{{egShowPatron}}" hint-placeholder-val="{{ false }}">
+<div style="background: #1A1A1D; color: #F5F5F0; padding: 32px; display: flex; flex-wrap: wrap; gap: 24px 40px">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">Founding patrons · [12] places</div>
+<div style="font-size: 22px; font-weight: 600">[Series name], the first series in two decades.</div>
+<div style="font-size: 15px; line-height: 1.7; color: #CFCFC8">A small circle who support the series from its beginning.</div>
+</div>
+<ul style="flex: 1 1 280px; margin: 0; padding-left: 18px; font-size: 15px; line-height: 2; color: #CFCFC8"><li>First choice of works, before public release</li><li>Name in the exhibition catalogue</li><li>A studio evening with the artist</li><li>[A signed print]</li></ul>
+</div>
+</sc-if>
+<sc-if value="{{egShowCommission}}" hint-placeholder-val="{{ false }}">
+<div style="border-top: 3px solid #D4AF37; background: #FFFFFF; padding: 28px; font-size: 15px; line-height: 1.7; color: #3A3A3A">Portraits from life or sitting, and realistic oil on canvas up to 240 cm. Painting, sculpture and work for architecture.</div>
+</sc-if>
+<sc-if value="{{egShowVisit}}" hint-placeholder-val="{{ false }}">
+<div style="border-top: 3px solid #D4AF37; background: #FFFFFF; padding: 28px; font-size: 15px; line-height: 1.7; color: #3A3A3A">Singapore. A gallery-studio at home. Visits by appointment. Video walkthroughs for collectors abroad.</div>
+</sc-if>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; border-top: 1px solid #D8D8D0; padding-top: 24px; font-size: 15px">
+<div><span style="color: #5A5A5A">Next:</span> <span style="font-weight: 600">Solo exhibition, Singapore, [year]</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px"><a href="mailto:studio@baaskaraa.com" style="color: #8A6D12; font-weight: 600">studio@baaskaraa.com</a><a href="#archive" style="color: #8A6D12; font-weight: 600">Download CV →</a></div>
+</div>
+</div>
+</section>
+
+<!-- LIVE · the digital studio -->
+<section id="live" style="background: #0B0B0D; color: #F5F5F0; padding: 120px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 72px">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div class="lbl" style="color: #D4AF37">Live</div>
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.1">The studio is open.<br><span style="color: #D4AF37">Follow the line as it happens.</span></h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #CFCFC8">One artist, every screen. Painting, sculpture, poetry and digital form, made in the open: daily lines, weekly live studio, monthly dialogues. Nothing staged. Watch, ask, draw along.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin-top: 6px"><span style="font-size: clamp(26px, 3vw, 36px); font-weight: 300; color: #D4AF37; letter-spacing: 1px">#bWithMe</span><span style="font-size: 14px; color: #A8A8A0">The one tag for everything. Every series, every share, every line you draw along.</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, auto); gap: 8px 28px; text-align: left">
+<div><div style="font-size: 28px; font-weight: 700; color: #D4AF37">Daily</div><div style="font-size: 11px; letter-spacing: 2px; color: #8A8A84; text-transform: uppercase">One line a day</div></div>
+<div><div style="font-size: 28px; font-weight: 700; color: #D4AF37">Weekly</div><div style="font-size: 11px; letter-spacing: 2px; color: #8A8A84; text-transform: uppercase">Studio live</div></div>
+<div><div style="font-size: 28px; font-weight: 700; color: #D4AF37">Monthly</div><div style="font-size: 11px; letter-spacing: 2px; color: #8A8A84; text-transform: uppercase">Agam talks</div></div>
+</div>
+</div>
+
+<!-- 1 · Live player + schedule -->
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<div style="flex: 1 1 560px; position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; border: 1px solid #2E2E33">
+<img src="/_blob/12b1ca9f3e0c52d65fe6332cf0d2ee85" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.55">
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.75))"></div>
+<div style="position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.6); border: 1px solid #4A4A4A; border-radius: 999px; padding: 6px 14px; font-size: 11px; letter-spacing: 2px"><span style="width: 8px; height: 8px; border-radius: 50%; background: {{liveDot}}; display: inline-block"></span>{{liveBadge}}</div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-size: 12px; letter-spacing: 3px; color: #D4AF37; text-transform: uppercase">Saturday Studio · Live</div><div style="font-size: clamp(22px, 2.6vw, 30px); font-weight: 600">Painting in the open, 8 pm Singapore</div><div style="font-size: 14px; color: #CFCFC8">{{liveCount}}</div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px"><a class="btn-gold" href="{{icsHref}}" download="baaskaraa-saturday-studio.ics">ADD TO CALENDAR</a><a class="btn-line" href="https://www.youtube.com/@baaskaraa" target="_blank" rel="noopener">WATCH ON YOUTUBE</a></div>
+</div>
+</div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 0; border-top: 1px solid #2E2E33">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #8A8A84; padding: 14px 0">The week in the studio</div>
+<sc-for list="{{week}}" as="w" hint-placeholder-count="5">
+<div style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid #1F1F23"><div style="font-size: 13px; font-weight: 700; color: #D4AF37; letter-spacing: 1px">{{w.day}}</div><div style="display: flex; flex-direction: column; gap: 3px"><div style="font-size: 15px; font-weight: 600">{{w.what}}</div><div style="font-size: 12px; color: #8A8A84">{{w.where}}</div></div></div>
+</sc-for>
+</div>
+</div>
+
+<!-- 2 · Series -->
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px"><div style="display: flex; flex-direction: column; gap: 8px"><div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">Series</div><div style="font-size: clamp(24px, 2.8vw, 34px); font-weight: 600">Six ways into the work.</div></div><div style="font-size: 14px; color: #8A8A84; max-width: 420px">Each series has its own rhythm and its own screen. Follow one, or all.</div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
+<sc-for list="{{series}}" as="x" hint-placeholder-count="6">
+<div style="position: relative; display: flex; flex-direction: column; background: #141416; border: 1px solid #2E2E33; overflow: hidden">
+<div style="aspect-ratio: 4 / 3; overflow: hidden; background: #000"><img src="{{x.src}}" alt="{{x.name}}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: {{x.pos}}; display: block; opacity: 0.9"></div>
+<div style="padding: 18px; display: flex; flex-direction: column; gap: 8px; flex: 1">
+<div style="display: flex; justify-content: space-between; gap: 8px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase"><span style="color: #D4AF37">{{x.when}}</span><span style="color: #8A8A84">{{x.where}}</span></div>
+<div style="font-size: 20px; font-weight: 600">{{x.name}}</div>
+<div style="font-size: 14px; line-height: 1.6; color: #A8A8A0">{{x.line}}</div>
+<div style="margin-top: auto; padding-top: 8px; font-size: 12px; color: #6E6E68">{{x.tag}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<!-- 3 · The wall -->
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px"><div style="display: flex; flex-direction: column; gap: 8px"><div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">From the studio</div><div style="font-size: clamp(24px, 2.8vw, 34px); font-weight: 600">The wall.</div></div><a href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener" style="font-size: 13px; letter-spacing: 2px">SEE EVERYTHING →</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px">
+<sc-for list="{{wall}}" as="p" hint-placeholder-count="8">
+<a href="{{p.href}}" target="_blank" rel="noopener" style="position: relative; display: block; aspect-ratio: 1 / 1; overflow: hidden; background: #141416; text-decoration: none; color: #F5F5F0">
+<img src="{{p.src}}" alt="{{p.cap}}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: {{p.pos}}; display: block">
+<span style="position: absolute; top: 8px; left: 8px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; background: rgba(0,0,0,0.65); padding: 4px 8px">{{p.kind}}</span>
+<span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 10px 8px; font-size: 12px; line-height: 1.4; background: linear-gradient(transparent, rgba(0,0,0,0.85))">{{p.cap}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+
+<!-- 4 · One Unbroken Line -->
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; background: #141416; border: 1px solid #2E2E33; padding: clamp(24px, 4vw, 48px)">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">#OneUnbrokenLine</div>
+<div style="font-size: clamp(26px, 3vw, 38px); font-weight: 600; line-height: 1.15">Draw one line.<br>Don't lift.</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #CFCFC8">Every work by baaskaraa begins as one continuous line. Try it: one stroke, no lifting, no undo. Save it, share it with #OneUnbrokenLine, and the best lines join the wall.</p>
+<div style="font-size: 14px; color: #D4AF37; min-height: 22px">{{lineMsg}}</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" class="btn-gold" onClick="{{saveLine}}">SAVE MY LINE</button>
+<button type="button" class="btn-line" onClick="{{shareLine}}">SHARE</button>
+<button type="button" class="btn-line" onClick="{{clearLine}}" style="border-color: #4A4A4A; color: #CFCFC8">START AGAIN</button>
+</div>
+</div>
+<div style="flex: 1 1 420px; max-width: 560px; width: 100%; margin: 0 auto">
+<canvas id="oul-canvas" aria-label="Drawing area: draw one continuous line" style="width: 100%; aspect-ratio: 4 / 3; display: block; background: #F4F1E8; touch-action: none; cursor: crosshair"></canvas>
+</div>
+</div>
+
+<!-- 5 · Join -->
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px"><div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">Come closer</div><div style="font-size: clamp(24px, 2.8vw, 34px); font-weight: 600">Three circles around the studio.</div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+<div style="border: 1px solid #2E2E33; background: #141416; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="font-size: 11px; letter-spacing: 3px; color: #8A8A84; text-transform: uppercase">Open to all</div><div style="font-size: 22px; font-weight: 600">Follower</div><div style="font-size: 14px; line-height: 1.7; color: #A8A8A0">Daily lines, weekly live studio, the wall. Free, on every platform.</div><a class="btn-line" href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener" style="margin-top: auto; align-self: flex-start">FOLLOW</a></div>
+<div style="border: 1px solid #D4AF37; background: #141416; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="font-size: 11px; letter-spacing: 3px; color: #D4AF37; text-transform: uppercase">Inner circle</div><div style="font-size: 22px; font-weight: 600">Studio Circle</div><div style="font-size: 14px; line-height: 1.7; color: #A8A8A0">The Studio Letter each month, the WhatsApp studio channel, first sight of new work and live sessions before they go public.</div>
+<form onSubmit="{{join}}" style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px"><label for="email" style="position: absolute; left: -9999px">Your email</label><input id="email" type="email" placeholder="your@email.com" style="flex: 1 1 160px; min-height: 46px; padding: 0 14px; border: 1px solid #4A4A4A; background: #0B0B0D; color: #F5F5F0; font-family: inherit; font-size: 15px"><button type="submit" class="btn-gold" style="min-height: 46px">{{joinLabel}}</button></form></div>
+<div style="border: 1px solid #2E2E33; background: #141416; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="font-size: 11px; letter-spacing: 3px; color: #8A8A84; text-transform: uppercase">By invitation</div><div style="font-size: 22px; font-weight: 600">Founding Patron</div><div style="font-size: 14px; line-height: 1.7; color: #A8A8A0">A small circle who collect the work as it is made, visit the studio and see the next works in private.</div><a class="btn-line" href="#engage" style="margin-top: auto; align-self: flex-start">ENQUIRE</a></div>
+</div>
+</div>
+
+<!-- 6 · Everywhere -->
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px"><div style="display: flex; flex-direction: column; gap: 8px"><div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">Everywhere</div><div style="font-size: clamp(24px, 2.8vw, 34px); font-weight: 600">One artist. Every screen.</div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; letter-spacing: 1px"><a href="https://wa.me/?text=Meet%20the%20artist%20baaskaraa%3A%20https%3A%2F%2Fbaaskaraa.com" target="_blank" rel="noopener">SHARE ON WHATSAPP</a><button type="button" onClick="{{copyLink}}" style="background: none; border: 0; padding: 0; color: #D4AF37; font: inherit; letter-spacing: 1px; cursor: pointer">{{copyLabel}}</button></div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px"><a href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">Instagram</span><span style="font-size: 12px; color: #8A8A84">@baaskaraa.studio</span></span></a><a href="https://www.youtube.com/@baaskaraa" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"></rect><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">YouTube</span><span style="font-size: 12px; color: #8A8A84">@baaskaraa</span></span></a><a href="https://www.tiktok.com/@baaskaraa.studio" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3.5c.6 2.6 2.4 4.2 5 4.5"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">TikTok</span><span style="font-size: 12px; color: #8A8A84">@baaskaraa.studio</span></span></a><a href="https://www.facebook.com/baaskaraa.studio" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H16V5h-2a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h2.2l.6-3H13V9.2c0-.7.4-1.2 1.5-1.2z"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">Facebook</span><span style="font-size: 12px; color: #8A8A84">/baaskaraa.studio</span></span></a><a href="https://www.threads.net/@baaskaraa.studio" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.8 11.2c-.4-3-2.3-4.4-4.8-4.4-3 0-5 2.2-5 5.3 0 3.2 2 5.3 5.1 5.3 2.3 0 4-1.2 4.6-3"></path><circle cx="12.3" cy="12.2" r="2.4"></circle></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">Threads</span><span style="font-size: 12px; color: #8A8A84">@baaskaraa.studio</span></span></a><a href="https://www.linkedin.com/in/baaskaraa" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10.5V17M8 7.3v.01M12 17v-3.8a2 2 0 0 1 4 0V17M12 10.5V17"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">LinkedIn</span><span style="font-size: 12px; color: #8A8A84">in/baaskaraa</span></span></a><a href="https://whatsapp.com/channel/0029Vb9SGON47XeA1YSWOy3j" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.2-3.7A8 8 0 1 1 8 19z"></path><path d="M9.3 9.2c.3 1.9 1.6 3.4 3.6 4.2l1-.9 1.5.8"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">WhatsApp</span><span style="font-size: 12px; color: #8A8A84">Studio channel</span></span></a><a href="mailto:studio@baaskaraa.com" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #2E2E33; color: #F5F5F0; text-decoration: none; background: #141416"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5 12 13l8.5-6.5"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 14px; font-weight: 600">Email</span><span style="font-size: 12px; color: #8A8A84">studio@baaskaraa.com</span></span></a></div>
+</div>
+
+<!-- 7 · The digital realm -->
+<div style="display: flex; flex-direction: column; gap: 24px; border-top: 1px solid #2E2E33; padding-top: 48px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 720px"><div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-weight: 600">The digital realm · in development</div><div style="font-size: clamp(24px, 2.8vw, 34px); font-weight: 600">Beyond the screen.</div><div style="font-size: 15px; line-height: 1.7; color: #A8A8A0">The studio is built to grow: from posts to presence, from images to places you can stand inside.</div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px">
+<sc-for list="{{realm}}" as="r" hint-placeholder-count="4">
+<div style="border-top: 2px solid #D4AF37; padding-top: 16px; display: flex; flex-direction: column; gap: 8px"><div style="font-size: 11px; letter-spacing: 2px; color: #8A8A84; text-transform: uppercase">{{r.tag}}</div><div style="font-size: 19px; font-weight: 600">{{r.name}}</div><div style="font-size: 14px; line-height: 1.6; color: #A8A8A0">{{r.line}}</div></div>
+</sc-for>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft" style="background: #141416; padding: 88px 24px 32px; color: #CFCFC8; border-top: 1px solid #2D2D2D">
+<div style="max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+<a href="#top" aria-label="baaskaraa, back to top" style="display: flex; flex-direction: column; align-items: center; gap: 16px; text-decoration: none"><img src="/_blob/4a0dda6146ce98637ade1920a1b6dc8e" alt="" style="height: 64px; width: auto; display: block"><span style="font-weight: 300; font-size: 28px; letter-spacing: 8px; padding-left: 8px; color: #D4AF37">baaskaraa</span></a>
+<p style="margin: 0; font-weight: 200; font-size: 18px; letter-spacing: 0.5px; color: #F5F5F0">Understanding is all. Expression is art.</p>
+<p style="margin: 0; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #8A8A84">Painter · Sculptor · Poet · Digital artist</p>
+</div>
+<div style="max-width: 1120px; margin: 64px auto 0; padding-top: 48px; border-top: 1px solid #2D2D2D; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 48px 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div class="ft-h">The studio</div>
+<a href="mailto:studio@baaskaraa.com" style="font-size: 16px; color: #F5F5F0">studio@baaskaraa.com</a>
+<span style="font-size: 14px">Singapore · India</span>
+<a href="#engage" style="font-size: 14px">Visits by appointment</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div class="ft-h">Explore</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; font-size: 14px">
+<a href="#journal">Now</a><a href="#archive">Archive</a>
+<a href="#artist">The Artist</a><a href="#engage">Engage</a>
+<a href="#works">Artworks</a><a href="#live"><span style="color: #E5484D">●</span> Live</a>
+<a href="#statement">Awaken</a><a href="#top">Home</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div class="ft-h">The studio letter</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.7">Once a month, from the studio. First sight of new work and live sessions before they go public.</p>
+<a class="btn-line" href="#live" style="align-self: flex-start; min-height: 46px; font-size: 12px">JOIN THE STUDIO CIRCLE</a>
+</div>
+</div>
+<nav aria-label="baaskaraa elsewhere" style="max-width: 1120px; margin: 56px auto 0; padding: 28px 0; border-top: 1px solid #2D2D2D; border-bottom: 1px solid #2D2D2D; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 32px">
+<a class="ft-soc" href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener">Instagram</a>
+<a class="ft-soc" href="https://www.youtube.com/@baaskaraa" target="_blank" rel="noopener">YouTube</a>
+<a class="ft-soc" href="https://www.facebook.com/baaskaraa.studio" target="_blank" rel="noopener">Facebook</a>
+<a class="ft-soc" href="https://www.tiktok.com/@baaskaraa.studio" target="_blank" rel="noopener">TikTok</a>
+<a class="ft-soc" href="https://www.threads.net/@baaskaraa.studio" target="_blank" rel="noopener">Threads</a>
+<a class="ft-soc" href="https://www.linkedin.com/in/baaskaraa" target="_blank" rel="noopener">LinkedIn</a>
+<a class="ft-soc" href="https://whatsapp.com/channel/0029Vb9SGON47XeA1YSWOy3j" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+<div style="max-width: 1120px; margin: 24px auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; font-size: 12px; color: #8A8A84">
+<span>© 2026 Kasinathan Baskar. All rights reserved.</span>
+<span style="letter-spacing: 3px; color: #D4AF37">b with me · #bWithMe</span>
+<a href="#top" style="color: #8A8A84; letter-spacing: 2px; text-transform: uppercase">Back to top ↑</a>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { navGo: false, hLbl: '', intro: 'on', introDraw: false, markSeen: false, markRev: false, egIdx: { collect: 0, patron: 0, commission: 0, visit: 0 }, egPlay: { collect: true, patron: false, commission: false, visit: false }, egOpen: '', rcIdx: { artist: 0, india: 0, usa: 0, sg: 0 }, rcPlay: { artist: true, india: false, usa: false, sg: false }, awIdx: { art: 0, digital: 0, lit: 0 }, awPlay: { art: true, digital: false, lit: false }, awCh: '', awFilter: 'All', awOpen: -1, awLimit: 8, active: 'top', joined: false, filter: 'All', open: -1, chapter: 'Art', record: false, story: false, limit: 8, slide: 0, teachers: false, nowMore: false, digiMore: false, litMore: false, menu: false, navHidden: false, hero: 0, tick: 0, lineDone: false, lineMsg: 'Touch the paper and draw.', copied: false };
+    this.onScroll = this.onScroll.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+    this.startSlides();
+    this.startAw();
+    this.runIntro();
+    var me = this;
+    this.tickTimer = setInterval(function () { me.setState({ tick: Date.now() }); }, 30000);
+    setTimeout(function () { me.setupLine(); }, 0);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.slideTimer) clearInterval(this.slideTimer);
+    if (this.heroTimer) clearInterval(this.heroTimer);
+    if (this.tickTimer) clearInterval(this.tickTimer);
+    if (this.awTimer) clearInterval(this.awTimer);
+    (this.introTimers || []).forEach(clearTimeout);
+  }
+  startSlides() {
+    var self = this;
+    if (this.slideTimer) clearInterval(this.slideTimer);
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce) this.slideTimer = setInterval(function () { self.setState({ slide: (self.state.slide + 1) % 7 }); }, 4000);
+    if (!reduce && !this.heroTimer) this.heroTimer = setInterval(function () { self.setState({ hero: (self.state.hero + 1) % 4 }); }, 3800);
+  }
+  setupLine() {
+    var self = this;
+    var c = document.getElementById('oul-canvas');
+    if (!c || c.dataset.ready) return;
+    c.dataset.ready = '1';
+    var dpr = window.devicePixelRatio || 1;
+    var w = c.clientWidth || 560, h = Math.round(w * 0.75);
+    c.width = w * dpr; c.height = h * dpr;
+    var ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.lineWidth = 3; ctx.strokeStyle = '#1A1A1D';
+    var down = false, started = false, ended = false, n = 0;
+    function pos(e) { var r = c.getBoundingClientRect(); return [(e.clientX - r.left) * (w / r.width), (e.clientY - r.top) * (h / r.height)]; }
+    c.addEventListener('pointerdown', function (e) { if (ended) { self.setState({ lineMsg: 'One line only. Start again to draw a new one.' }); return; } down = true; started = true; c.setPointerCapture(e.pointerId); var p = pos(e); ctx.beginPath(); ctx.moveTo(p[0], p[1]); self.setState({ lineMsg: 'Keep going. Don\u2019t lift.' }); });
+    c.addEventListener('pointermove', function (e) { if (!down) return; var p = pos(e); n++; ctx.lineTo(p[0], p[1]); ctx.stroke(); ctx.beginPath(); ctx.moveTo(p[0], p[1]); });
+    function end() { if (!down) return; down = false; ended = true; self.setState({ lineDone: true, lineMsg: n > 40 ? 'Your line is complete. Save it, share it.' : 'A short line. Every line counts. Save it, or start again.' }); }
+    c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
+    this.lineCtx = { c: c, ctx: ctx, w: w, h: h, reset: function () { ctx.clearRect(0, 0, w, h); down = false; started = false; ended = false; n = 0; } };
+  }
+  lineImage() {
+    var L = this.lineCtx; if (!L) return null;
+    var o = document.createElement('canvas'); o.width = L.c.width; o.height = L.c.height;
+    var x = o.getContext('2d'); x.fillStyle = '#F4F1E8'; x.fillRect(0, 0, o.width, o.height); x.drawImage(L.c, 0, 0);
+    var d = window.devicePixelRatio || 1; x.fillStyle = '#8A6D12'; x.font = (13 * d) + 'px Montserrat, sans-serif'; x.fillText('#bWithMe \u00b7 #OneUnbrokenLine \u00b7 baaskaraa.com', 14 * d, o.height - 14 * d);
+    return o.toDataURL('image/png');
+  }
+  goSlide(i) {
+    this.setState({ slide: (i + 7) % 7 });
+    this.startSlides();
+  }
+  onScroll() {
+    if (!this.state.markSeen) { var bm = document.getElementById('bmark'); if (bm && bm.getBoundingClientRect().top < window.innerHeight * 0.7) this.setState({ markSeen: true }); }
+    var ids = ['top', 'journal', 'artist', 'works', 'statement', 'agam', 'puram', 'archive', 'engage', 'live'];
+    var current = 'top';
+    for (var i = 0; i < ids.length; i++) {
+      var el = document.getElementById(ids[i]);
+      if (el && el.getBoundingClientRect().top <= 140) current = ids[i];
+    }
+    var y = window.scrollY || 0, last = this.lastY || 0, hide = this.state.navHidden;
+    hide = false;
+    this.lastY = y;
+    if (current !== this.state.active || hide !== this.state.navHidden) this.setState({ active: current, navHidden: hide });
+  }
+  works() {
+    /* TEMPORARILY HIDDEN (21 Oct 2026): remove a title from this list to show the work again */
+    var HIDDEN_TEMP = [];
+    return [
+      { title: 'Sacred Presence', year: '2023', medium: 'Oil and gold leaf', cat: 'Painting', src: '/_blob/7571ad066ea9cc36dc402b78607c3630', pos: 'center', status: 'Enquire' },
+      { title: 'Self-portrait', year: '2020', medium: "Ballpoint and colour pencil on paper \u00b7 signed and dated 29.3.20 \u00b7 looking within is not easy", cat: 'Drawing', src: '/_blob/0a8c0ebb12e6c6662865597edc6a4ed8', pos: 'center', fit: 'contain', status: 'Enquire' },
+      { title: 'The Unbroken Line', year: '2020', medium: 'Pastel on paper', cat: 'Drawing', src: '/_blob/9d9201aa624824d5f64f9a82ccc5f985', pos: 'center', status: 'Enquire' },
+      { title: 'Face, line study', year: '2020', medium: 'Pastel and ink on paper', cat: 'Drawing', src: '/_blob/6bf515999adf83f32546114591a3f337', pos: 'center', status: 'Enquire' },
+      { title: 'Head, line study', year: '2020', medium: 'Oil pastel and pencil on paper', cat: 'Drawing', src: '/_blob/3d91c6ce5623c11ae766ba80b6c9773c', pos: 'center', status: 'Enquire' },
+      { title: 'Installation Concept', year: '2020', medium: 'Pastel and pencil on paper', cat: 'Concept', src: '/_blob/05203e1ea313aa28892265b8652ee8c7', pos: 'center', status: 'Concept' },
+      { title: 'Torso Study', year: '2020', medium: 'Mixed media in gold mirror case', cat: 'Sculpture', src: '/_blob/48f5ea841735ea814339e2507bb1d045', pos: 'center', status: 'Enquire' },
+      { title: 'Convergence', year: '2014', medium: 'Mixed media on silver ground', cat: 'Painting', src: '/_blob/335d0b1723868adb57865a30a8f311fa', pos: 'center', status: 'Enquire' },
+      { title: 'Kolam Knot', year: '2014', medium: 'Painted relief, wall sculpture', cat: 'Sculpture', src: '/_blob/c457f647337ded2bab77794f73a3a613', pos: 'center', status: 'Enquire' },
+      { title: 'சினேகம் தீர்ந்த காதல் · Sinegam Theerndha Kaadhal', year: '2014', medium: 'Digital sculpture printed on canvas, with oil · after the poem by Suguna Baskar, Golden Point Award 2013, 1st Prize', cat: 'Painting', src: '/_blob/834b474cda9a6c016a9262dd6fcf69e8', pos: 'center top', status: 'Enquire' },
+      { title: 'சினேகம் தீர்ந்த காதல் · the sculpture', year: '2014', medium: 'Digital sculpture · after the poem by Suguna Baskar · in development as a cast sculpture', cat: 'Concept', src: '/_blob/e2279d01771cef4e7aa49d6d1d9ae8ea', pos: 'center', status: 'Enquire' },
+      { title: 'Look Within', year: '2014', medium: 'Acrylic on canvas, 6 \u00d7 4 ft (183 \u00d7 122 cm) \u00b7 shown on the studio floor with the artist', cat: 'Painting', src: '/_blob/bd7c13eeb1e132c85233e6387e14c1a7', pos: 'center', status: 'Enquire' },
+      { title: 'Bird Sanctum', year: '2014', medium: 'Installation after the novel Kuruvi Kottam · Project LAVA, NAC', cat: 'Installation', src: '/_blob/ecf99a8ea52645c196803a9b0da839ba', pos: 'center', status: 'Public commission' },
+      { title: 'Bird Sanctum, the nest', year: '2014', medium: 'Installation detail \u00b7 white birds around a red nest \u00b7 Project LAVA, NAC', cat: 'Installation', src: '/_blob/971aef6b1be0d46e3c2a58eafad4e328', pos: 'center', status: 'Public commission' },
+      { title: 'Bird Sanctum, with the artist', year: '2014', medium: 'Installation at library@chinatown \u00b7 Project LAVA, NAC and NLB', cat: 'Installation', src: '/_blob/7a71bc2ba5db994de09e71c4681a5116', pos: 'center 30%', status: 'Public commission' },
+      { title: 'Bird Sanctum, on tour', year: '2014', medium: 'Installation touring the public libraries \u00b7 Project LAVA', cat: 'Installation', src: '/_blob/a530a6dce3dc65e2653c243b02735f93', pos: 'center', status: 'Public commission' },
+      { title: 'GREY', year: '2013', medium: 'Rooftop murals for Maya Dance Theatre\'s production GREY, Singai Tamil Sangam, Little India · with Charlie Lim', cat: 'Installation', src: '/_blob/8438c0b648449fd0134b2c3c5dda1600', pos: 'center', status: 'Public work' },
+      { title: 'In the studio, Singapore', year: '2004', medium: "Photograph", cat: 'Studio', src: '/_blob/d2b1595fad69ee2afc7f318057287f13', pos: 'center', status: 'Studio, 2004' },
+      { title: 'In the studio, Singapore', year: '2004', medium: "Photograph", cat: 'Studio', src: '/_blob/4c21446775197356d15b224d59c4182b', pos: 'center', status: 'Studio, 2004' },
+      { title: 'Untitled (red and orange)', year: '2004', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/b6615e7a7bd3804962c9fc5f94cad97d', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled (blue and green)', year: '2004', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/57bf58c1b9e037355ee53084219e22cb', pos: 'center', status: 'Enquire' },
+      { title: 'Abstract (violet and white)', year: '2000', medium: "Mixed media", cat: 'Painting', src: '/_blob/60db54a421b0f02437145b0d4671dedd', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled 2K, I', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/0ae24d64b50551c494447131481f7e3c', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled 2K, II', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/6317b3d92eb111e5c8434edc2e319585', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled 2K, III', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/216c3978f5eab73fe09a932b6d364a70', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled 2K, IV', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/d33d8e396c4379eee514e056948314c7', pos: 'center', status: 'Enquire' },
+      { title: 'Untitled 2K, V', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/dc01d3abd53a20ab8826325b0d61e8bb', pos: 'center', status: 'Enquire' },
+      { title: 'Abstract (red with symbols)', year: '2000', medium: "Oil on canvas \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/ee6c010b9d9a3241b09bffaa7fbc6b51', pos: 'center', status: 'Enquire' },
+      { title: 'Abstract (green and ochre)', year: '2000', medium: "Oil on canvas \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/12b1ca9f3e0c52d65fe6332cf0d2ee85', pos: 'center', status: 'Enquire' },
+      { title: 'Water reflections', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/4a0886ac8006e76a9aaaaf9d0768cb4f', pos: 'center', status: 'Enquire' },
+      { title: 'Tree and herd at dusk', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/41fc4d1679ed3b759cdac884781d2a42', pos: 'center', status: 'Enquire' },
+      { title: 'Blue hills rocks and palms', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/e0146b97854173937d43fad0e96258fe', pos: 'center', status: 'Enquire' },
+      { title: 'My Native Land', year: '1998', medium: "Oil on canvas \u00b7 VTI Gandhi Centenary Memorial Award", cat: 'Painting', src: '/_blob/f723bb7a2aa3afd8289da14a9cbeede5', pos: 'center', status: 'Enquire' },
+      { title: 'Sleeping Figure', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/72763affba90410c1312676285d3b70b', pos: 'center', status: 'Enquire' },
+      { title: 'Portrait of an elder (bearded)', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/aa8d3bd5df85008bbc452560d15f3ef4', pos: 'center', status: 'Enquire' },
+      { title: 'Portrait of an elder', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/1d8a6a6838484560bc7fdcfebedce465', pos: 'center', status: 'Enquire' },
+      { title: 'Abstract (earth and white)', year: '1998', medium: "Mixed media", cat: 'Painting', src: '/_blob/db0580be12f65b78f2f9906adf1d68bf', pos: 'center', status: 'Enquire' },
+      { title: 'Cliff path (violet)', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/52e374acb75b89af47709a5fc26ada11', pos: 'center', status: 'Enquire' },
+      { title: 'Three Elders', year: '1998', medium: "Charcoal on joined newsprint (full size)", cat: 'Drawing', src: '/_blob/98906c51eb7af139fb38b0f9ad7d43a6', pos: 'center', status: 'Enquire' },
+      { title: 'Fort landscape with goats', year: '1998', medium: "Acrylic on canvas, 120 \u00d7 90 cm", cat: 'Painting', src: '/_blob/ce12693f8272f45dae986da341b3fbb1', pos: 'center', status: 'Enquire' },
+      { title: 'Composition (landscape)', year: '1998', medium: "Acrylic on canvas, 90 \u00d7 60 cm", cat: 'Painting', src: '/_blob/22bb8ce5284ce8ff265900a92fb04e19', pos: 'center', status: 'Enquire' },
+      { title: 'Two horses running', year: '1998', medium: 'Oil on canvas, 240 \u00d7 180 cm \u00b7 private commission', cat: 'Painting', src: '/_blob/a0d60bebd44c13abf2b246d5708e0cc2', pos: 'center', status: 'Commission (private)' },
+      { title: 'Two horses', year: '1998', medium: 'Oil on canvas, 90 \u00d7 120 cm \u00b7 private commission', cat: 'Painting', src: '/_blob/525876d74e4a5ebe94dd465bc58a3bc1', pos: 'center', status: 'Commission (private)' },
+      { title: 'Light on Scape Series-1', year: '1998', medium: "Acrylic on paper, 90 \u00d7 120 cm \u00b7 Tamil Nadu State Award", cat: 'Painting', src: '/_blob/06a63ee5e0cbe33dc81d9fbb86fc731e', pos: 'center', status: 'Enquire' },
+      { title: 'Portrait of Senthil Kumaran', year: '1997', medium: "Pen and ink on paper \u00b7 one continuous line", cat: 'Drawing', src: '/_blob/8cacd1a0d5dec1faa6c4689f093973a4', pos: 'center top', status: 'Not for sale' },
+      { title: 'Hill path', year: '1997', medium: "Acrylic on canvas · Ooty series \u00b7 an imagined landscape, shaped by the college study trip, not a real place · an early experiment with the new medium · Collection of sculptor Rubesh Kannan", cat: 'Painting', src: '/_blob/ff200e6d459b6cd7339caae1e2fdcc74', thumb: '/_blob/e01192a56bf632ab18f65c1d65889325', pos: 'center', status: 'Private collection' },
+      { title: 'Herder with goats', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/646da263c9ff42410e1ac4245afa0f53', pos: 'center', status: 'Enquire' },
+      { title: 'Village lane', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/5d79c93603f694e950d6775af24ed014', pos: 'center', status: 'Enquire' },
+      { title: 'Tree cattle and farmer', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', status: 'Enquire' },
+      { title: 'Lotus pond', year: '1997', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/a2521a3bf02456d1e237530569dd05fd', pos: 'center', status: 'Enquire' },
+      { title: 'Great tree two figures', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', status: 'Enquire' },
+      { title: 'Seated Figure', year: '1997', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/0d929a9cc7dbd6eeea9caec23bf3c8e7', thumb: '/_blob/4047576e44c5ac0c4f010512380e29e8', pos: 'center', status: 'Enquire' },
+      { title: 'Life study', year: '1997', medium: "Charcoal on paper, 50 \u00d7 70 cm", cat: 'Drawing', src: '/_blob/3413dca48b1ca156b6d93b5763f8225f', pos: 'center', status: 'Enquire' },
+      { title: 'Banyan, Theosophical Society, Adyar', year: '1996', medium: "Acrylic on canvas \u00b7 painted in the open air, Theosophical Society, Adyar, Chennai", cat: 'Painting', src: '/_blob/a0f1e9b46df79f76b203d67952d83a45', pos: 'center', status: 'Enquire' },
+      { title: 'Abstract (gold and black)', year: '1996', medium: "Mixed media \u00b7 acquired for the national collection, National Gallery of Modern Art, New Delhi, 1997", cat: 'Painting', src: '/_blob/391ac8e76e892260a27cf3fbb7715747', pos: 'center', status: 'National collection' },
+      { title: 'Blue forest path', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/5f8aeb35e877a0002fd026328619f941', pos: 'center', status: 'Enquire' },
+      { title: 'Fields under evening sky', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/981db5f1ab9087f98b2e1f39de1559c9', pos: 'center', status: 'Enquire' },
+      { title: 'Still life with pomegranate', year: '1996', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/994f86bb37001b032a4989177fbaad80', pos: 'center', status: 'Enquire' },
+      { title: 'Palms', year: '1996', medium: "Charcoal on paper", cat: 'Drawing', src: '/_blob/3897a7779721fa2f107b70e6a6a7327e', pos: 'center', status: 'Enquire' },
+      { title: 'Bamboo thicket', year: '1996', medium: "Charcoal on paper", cat: 'Drawing', src: '/_blob/c6a19bb06fb979ce44192fd92838cd16', pos: 'center', status: 'Enquire' },
+      { title: 'Emergence', year: '2020', medium: '3D digital sculpture · Stillness opened into pure observation. A dialogue began with no intention: questions arose and answered themselves. This work is what remained.', cat: 'Digital', src: '/_blob/d01cc77666d1f3280807d635a18f08ea', pos: 'center', status: 'Edition on request' },
+      { title: 'Coral Figures', year: '2024', medium: '3D digital composition, series of 5', cat: 'Digital', src: '/_blob/00de530c8f67b2982dfaa07bb08a4414', pos: '30% center', status: 'Edition on request' },
+      { title: 'Coral Figures, Bow', year: '2024', medium: '3D digital sculpture', cat: 'Digital', src: '/_blob/75396a15219fcfb9079bd36d91fe1d27', pos: 'center', status: 'Edition on request' }
+    ].filter(function (w) { return HIDDEN_TEMP.indexOf(w.title) < 0; });
+  }
+  startAw() {
+    var self = this;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { this.setState({ awPlay: { art: false, digital: false, lit: false }, rcPlay: { artist: false, india: false, usa: false, sg: false }, egPlay: { collect: false, patron: false, commission: false, visit: false } }); }
+    this.awTimer = setInterval(function () {
+      var idx = Object.assign({}, self.state.awIdx), p = self.state.awPlay, sets = self.awSets(), ch = false;
+      ['art', 'digital', 'lit'].forEach(function (k) { if (p[k]) { idx[k] = (idx[k] + 1) % sets[k].length; ch = true; } });
+      if (ch) self.setState({ awIdx: idx });
+      var ri = Object.assign({}, self.state.rcIdx), rp = self.state.rcPlay, rs = self.rcSets(), rch = false;
+      Object.keys(rs).forEach(function (k) { if (rp[k]) { ri[k] = (ri[k] + 1) % rs[k].length; rch = true; } });
+      if (rch) self.setState({ rcIdx: ri });
+      var ei = Object.assign({}, self.state.egIdx), ep = self.state.egPlay, es = self.egSets(), ech = false;
+      Object.keys(es).forEach(function (k) { if (ep[k]) { ei[k] = (ei[k] + 1) % es[k].length; ech = true; } });
+      if (ech) self.setState({ egIdx: ei });
+    }, 3600);
+  }
+  awSets() {
+    if (this._awSets) return this._awSets;
+    var all = this.works();
+    var by = function (t) { for (var i = 0; i < all.length; i++) if (all[i].title.indexOf(t) === 0) return all[i]; return null; };
+    var art = ['Sacred Presence', 'சினேகம் தீர்ந்த காதல் · Sinegam', 'Bird Sanctum, the nest', 'Kolam Knot', 'The Unbroken Line', 'Convergence', 'Banyan, Theosophical Society, Adyar', 'Torso Study', 'Water reflections', 'Untitled 2K, I'].map(by).filter(Boolean).map(function (w) { return { isImg: true, src: w.src, pos: w.pos || 'center', label: w.title + ' · ' + w.year }; });
+    var digital = all.filter(function (w) { return w.cat === 'Digital'; }).map(function (w) { return { isImg: true, src: w.src, pos: w.pos || 'center', label: w.title + ' · ' + w.year }; });
+    var lit = [
+      ['On creation', 'Stillness opens into observation.\nA dialogue begins without intention.\nQuestions arise and answer themselves.\nWhat remains is the artwork.'],
+      ['On art', 'Understanding is all.\nExpression is art.\nExpression alone doesn’t become art.'],
+      ['Statement II', 'I think in the digital.\nI reach to make it physical.\nBetween the two — a loss, unnamed.'],
+      ['On life', 'Understanding is all.\nExpression is life.\nExpression alone doesn’t become life.'],
+      ['Statement I', 'This world searches for artists.\nBut those who step forward\nare imitators, recreators,\ncareful copiers…'],
+      ['Golden Point Award', 'Tamil Poetry, 2011 and 2013.\nTwo poets, one home, one language.']
+    ].map(function (t) { return { isTxt: true, label: t[0], text: t[1] }; });
+    this._awSets = { art: art, digital: digital, lit: lit };
+    return this._awSets;
+  }
+  runIntro() {
+    var self = this, seen = false;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (seen || reduce) { this.setState({ intro: 'off', introDraw: true }); return; }
+    this.introTimers = [
+      setTimeout(function () { self.setState({ introDraw: true }); }, 120),
+      setTimeout(function () { self.setState({ intro: 'off' }); }, 2600),
+      setTimeout(function () { self.setState({ hLbl: 'a' }); }, 350),
+      setTimeout(function () { self.setState({ hLbl: 'ap' }); }, 2500),
+      setTimeout(function () { self.setState({ hLbl: 'p' }); }, 3700),
+      setTimeout(function () { self.setState({ hLbl: 'h' }); }, 4900),
+      setTimeout(function () { self.setState({ hLbl: '' }); }, 8400)
+    ];
+  }
+  rcSets() {
+    if (this._rcSets) return this._rcSets;
+    var B = function (id) { return '/_blob/' + id; };
+    var im = function (id, label, fit, pos) { return { isImg: true, src: B(id), label: label, fit: fit || 'contain', pos: pos || 'center' }; };
+    this._rcSets = {
+      artist: [
+        im('fbfa54ec33ddc83e52e6663fdd838f40', 'baaskaraa · photograph by Deva Baskar', 'cover', '30% 25%'),
+        im('b96ecfe52e521411043b2a6fe4f7ca94', 'With Suguna Baskar at the Golden Point Award, 2013: her 1st Prize, his 3rd, for Tamil poetry'),
+        im('d2b1595fad69ee2afc7f318057287f13', 'In the studio, Singapore, 2004'),
+        im('4c21446775197356d15b224d59c4182b', 'In the studio, Singapore, 2004')
+      ],
+      india: [
+        im('391ac8e76e892260a27cf3fbb7715747', '1997 · Abstract (gold and black) · National Gallery of Modern Art, New Delhi, national collection'),
+        im('8185b280f940e5f11f1b28cef88d337f', '1998 · Receiving the painting prize, Gandhi Mandapam, Chennai'),
+        im('f723bb7a2aa3afd8289da14a9cbeede5', '1998 · My Native Land · Victoria Technical Institute award'),
+        im('06a63ee5e0cbe33dc81d9fbb86fc731e', '1998 · Light on Scape Series-1 · Tamil Nadu State Award'),
+        im('aa4ccb6edb9097aa2012a1e872d01ccb', '1999 · Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award')
+      ],
+      usa: [
+        im('e3d509517cbfbf36e430ecf65ead61ee', '2015 · PromaxBDA Global Excellence Award, Bronze, Los Angeles · for CNA, Mediacorp'),
+        { isVid: true, src: B('2a61142416205ac763a5a5b6380a1090'), poster: B('a75605ac6e384582f6f962af4f65e180'), label: 'CNA brand animation, concept to creation · © Mediacorp' },
+        im('75aa4a699493cd0ffdcb81a846d595bb', 'At work in the CNA newsroom: motion design for an international news channel')
+      ],
+      sg: [
+        im('036c7a1032e65d92936861ab67fdf272', '2011 · 2013 · Golden Point Award, Tamil Poetry, National Arts Council'),
+        im('83d9fdd77e04b5acec37090a8bb35685', 'Tamil Murasu, November 2013: Suguna 1st Prize, Baskar 3rd Prize'),
+        im('3556958c05ecf413bae5e86e65b6f7f2', 'Tabla!, 16 May 2014 · Bird Sanctum, Project LAVA, NAC and NLB')
+      ]
+    };
+    return this._rcSets;
+  }
+  rcPanel(k, name, no) {
+    var self = this, list = this.rcSets()[k], cur = this.state.rcIdx[k] % list.length, playing = this.state.rcPlay[k];
+    return {
+      name: name, no: no, pos: (cur + 1) + ' / ' + list.length,
+      slides: list.map(function (s, i) { var on = i === cur; return Object.assign({ poster: '', fit: 'contain', pos: 'center' }, s, { isImg: !!s.isImg, isVid: !!s.isVid, blur: !!s.isImg && (s.fit || 'contain') === 'contain', op: on ? 1 : 0, bop: on ? 1 : 0, zoom: on && playing ? 'scale(1.05)' : 'scale(1)' }); }),
+      caption: list[cur].label,
+      dots: list.map(function (s, i) { return { bg: i === cur ? '#D4AF37' : 'rgba(245,245,240,0.25)' }; }),
+      paused: !playing, toggleIcon: playing ? '❚❚' : '▶', toggleAria: playing ? 'Pause' : 'Play',
+      toggle: function (e) { if (e && e.stopPropagation) e.stopPropagation(); var p = Object.assign({}, self.state.rcPlay); p[k] = !p[k]; self.setState({ rcPlay: p }); }
+    };
+  }
+  egSets() {
+    if (this._egSets) return this._egSets;
+    var all = this.works();
+    var by = function (t, label) { for (var i = 0; i < all.length; i++) if (all[i].title === t) return { isImg: true, src: all[i].src, label: label, fit: 'cover', pos: all[i].pos || 'center' }; return null; };
+    var B = function (id, label, fit) { return { isImg: true, src: '/_blob/' + id, label: label, fit: fit || 'cover', pos: 'center' }; };
+    this._egSets = {
+      collect: [by('Untitled (red and orange)', 'Signed works, from prints to monumental.'), by('Abstract (violet and white)', 'Signed works, from prints to monumental.'), by('Blue hills rocks and palms', 'Signed works, from prints to monumental.')].filter(Boolean),
+      patron: [by('Installation Concept', 'Be there from the first line.'), by('Head, line study', 'Be there from the first line.'), by('Face, line study', 'Be there from the first line.')].filter(Boolean),
+      commission: [by('Portrait of an elder (bearded)', 'Portraits and large oils, from life.'), by('Sleeping Figure', 'Portraits and large oils, from life.'), by('Portrait of an elder', 'Portraits and large oils, from life.')].filter(Boolean),
+      visit: [B('bd7c13eeb1e132c85233e6387e14c1a7', 'The studio is open, by appointment.')].filter(Boolean)
+    };
+    return this._egSets;
+  }
+  egPanel(k, name, no, cta, href) {
+    var self = this, list = this.egSets()[k], cur = this.state.egIdx[k] % list.length, playing = this.state.egPlay[k], open = this.state.egOpen === k;
+    return {
+      name: name, no: no, pos: '', cta: cta, href: href,
+      slides: list.map(function (s, i) { var on = i === cur; return Object.assign({ poster: '', fit: 'cover', pos: 'center' }, s, { isImg: true, isVid: false, blur: s.fit === 'contain', op: on ? 1 : 0, bop: on ? 1 : 0, zoom: on && playing ? 'scale(1.05)' : 'scale(1)' }); }),
+      caption: list[cur].label,
+      dots: list.map(function (s, i) { return { bg: i === cur ? '#D4AF37' : 'rgba(245,245,240,0.25)' }; }),
+      paused: !playing, toggleIcon: playing ? '❚❚' : '▶', toggleAria: playing ? 'Pause' : 'Play',
+      toggle: function (e) { if (e && e.stopPropagation) e.stopPropagation(); var p = Object.assign({}, self.state.egPlay); p[k] = !p[k]; self.setState({ egPlay: p }); },
+      moreLabel: open ? 'LESS ↑' : 'READ MORE',
+      toggleMore: function () { var nx = self.state.egOpen === k ? '' : k; self.setState({ egOpen: nx }); if (nx) setTimeout(function () { var el = document.getElementById('eg-detail'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 60); }
+    };
+  }
+  renderVals() {
+    var self = this;
+    var HS = [['/_blob/ecf99a8ea52645c196803a9b0da839ba', 'Bird Sanctum', 'Bird Sanctum, installation after the novel Kuruvi Kottam'], ['/_blob/971aef6b1be0d46e3c2a58eafad4e328', 'The nest', 'Bird Sanctum, white birds around a red nest'], ['/_blob/7a71bc2ba5db994de09e71c4681a5116', 'With the artist', 'Baskar with Bird Sanctum at library@chinatown'], ['/_blob/a530a6dce3dc65e2653c243b02735f93', 'On tour', 'Bird Sanctum touring the public libraries']];
+    var hc = this.state.hero;
+    var heroSlides = HS.map(function (x, i) { return { src: x[0], alt: x[2] + ', Project LAVA, 2014', op: i === hc ? '1' : '0' }; });
+    var now = Date.now(), dd = new Date(now), live = false, target = 0;
+    for (var q = -1; q < 8; q++) { var cand = Date.UTC(dd.getUTCFullYear(), dd.getUTCMonth(), dd.getUTCDate() + q, 12, 0, 0); if (new Date(cand).getUTCDay() !== 6) continue; if (now >= cand && now < cand + 5400000) { live = true; target = cand; break; } if (cand > now) { target = cand; break; } }
+    var left = Math.max(0, target - now), dys = Math.floor(left / 86400000), hrs = Math.floor(left % 86400000 / 3600000), mins = Math.floor(left % 3600000 / 60000);
+    var cd = (dys ? dys + 'd ' : '') + hrs + 'h ' + mins + 'm';
+    var tz = new Date(target), icsStart = tz.getUTCFullYear() + String(tz.getUTCMonth() + 1).padStart(2, '0') + String(tz.getUTCDate()).padStart(2, '0') + 'T120000Z';
+    var SL = [['/_blob/ae95672147c0f5818844b10ae777168f', '01', 'The Word'], ['/_blob/9e51cd938c38fbd3a365c6ef805944fc', '02', 'The Line'], ['/_blob/5c7eb60a8b452d6d8fa31665b442ed1a', '03', 'The Image'], ['/_blob/f7eb850711d99f547fb0ea625f2eec21', '04', 'The Object'], ['/_blob/2e9d2dc2de2024752177dc5d5147f45c', '05', 'The Space'], ['/_blob/f25ebe2c6a4b228acd86fedbfe720504', '06', 'The Experience'], ['/_blob/819580e6194d00d0595dd7b19a79a4ed', '07', 'Digital / VR']];
+    var cur = this.state.slide;
+    var slides = SL.map(function (x, i) { return { src: x[0], alt: 'Vinayagar Agaval, ' + x[2], op: i === cur ? '1' : '0', dot: i === cur ? '#D4AF37' : 'transparent', thumbOp: i === cur ? '1' : '0.55', pick: function () { self.goSlide(i); } }; });
+    var navDefs = [['journal', 'Now'], ['artist', 'The Artist'], ['works', 'Artworks'], ['statement', 'Awaken'], ['archive', 'Archive'], ['engage', 'Engage']];
+    var ch = this.state.chapter;
+    var all = this.works().filter(function (w) { return ch === 'Digital' ? w.cat === 'Digital' : w.cat !== 'Digital'; });
+    var shown = ch === 'Art' && this.state.filter !== 'All' ? all.filter(function (w) { return self.state.filter === 'Available' ? /^(Available|Reserved|Sold)$/.test(w.status) : w.cat === self.state.filter; }) : all;
+    var open = this.state.open;
+    var openWork = open >= 0 && open < shown.length ? shown[open] : { title: '', year: '', medium: '', src: '', status: '' };
+    var cats = ['All', 'Available', 'Painting', 'Drawing', 'Sculpture', 'Installation', 'Studio', 'Concept'];
+    var withOpen = shown.map(function (w, i) { return Object.assign({}, w, { fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { self.setState({ open: i }); } }); });
+    var aw_st = this.state, aw_sets = this.awSets(), aw_all = this.works();
+    var aw_names = { art: 'ART', digital: 'DIGITAL', lit: 'LITERATURE' }, aw_chs = { art: 'Art', digital: 'Digital', lit: 'Literature' };
+    var aw_nums = { art: '01', digital: '02', lit: '03' };
+    var aw_panels = ['art', 'digital', 'lit'].map(function (k) {
+      var list = aw_sets[k], cur = aw_st.awIdx[k], playing = aw_st.awPlay[k], isOpen = aw_st.awCh === aw_chs[k];
+      return {
+        name: aw_names[k], no: aw_nums[k] + ' · ' + aw_names[k].toLowerCase(), pos: (cur + 1) + ' / ' + list.length,
+        slides: list.map(function (s, i) { return Object.assign({}, s, { op: i === cur ? 1 : 0, zoom: i === cur && playing ? 'scale(1.06)' : 'scale(1)', isImg: !!s.isImg, isTxt: !!s.isTxt }); }),
+        caption: list[cur].isTxt ? 'Writing · ' + list[cur].label : list[cur].label,
+        dots: list.map(function (s, i) { return { bg: i === cur ? '#D4AF37' : 'rgba(245,245,240,0.25)' }; }),
+        paused: !playing, toggleIcon: playing ? '❚❚' : '▶', toggleAria: playing ? 'Pause' : 'Play',
+        toggle: function (e) { if (e && e.stopPropagation) e.stopPropagation(); var p = Object.assign({}, self.state.awPlay); p[k] = !p[k]; self.setState({ awPlay: p }); },
+        moreLabel: isOpen ? 'SHOW LESS ↑' : 'SHOW MORE · ' + aw_names[k] + ' ↓',
+        moreStyle: isOpen ? 'background: #D4AF37; color: #1A1A1D' : '',
+        more: function () { var next = self.state.awCh === aw_chs[k] ? '' : aw_chs[k]; self.setState({ awCh: next, awOpen: -1, awLimit: 8 }); if (next) setTimeout(function () { var el = document.getElementById('aw-gallery'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60); }
+      };
+    });
+    var aw_cats = ['All', 'Painting', 'Drawing', 'Sculpture', 'Installation', 'Studio', 'Concept'];
+    var aw_artAll = aw_all.filter(function (w) { return w.cat !== 'Digital'; });
+    var aw_artShown = aw_st.awFilter === 'All' ? aw_artAll : aw_artAll.filter(function (w) { return w.cat === aw_st.awFilter; });
+    var aw_mk = function (w) { var gi = aw_all.indexOf(w); return Object.assign({}, w, { thumb: w.thumb || w.src, fit: w.fit || 'cover', pos: w.pos || 'center', open: function () { self.setState({ awOpen: gi }); } }); };
+    var aw_ow = aw_st.awOpen >= 0 ? aw_all[aw_st.awOpen] : { title: '', src: '', year: '', medium: '' };
+    return {
+      rcArtist: [this.rcPanel('artist', 'baaskaraa', 'the artist')],
+      navGo: this.state.navGo ? 'go' : '',
+      navDraw: function () { self.setState({ navGo: false }); setTimeout(function () { self.setState({ navGo: true }); }, 30); clearTimeout(self.navT); self.navT = setTimeout(function () { self.setState({ navGo: false }); }, 1900); },
+      introOff: this.state.introDraw ? 0 : 1, introTrans: this.state.introDraw ? 'stroke-dashoffset 3s cubic-bezier(.55,0,.35,1)' : 'none',
+      hAgamOp: (this.state.hLbl === 'a' || this.state.hLbl === 'ap') ? 1 : 0, hPuramOp: (this.state.hLbl === 'ap' || this.state.hLbl === 'p') ? 1 : 0,
+      heroOp: this.state.intro === 'on' ? 0 : 1, heroShift: this.state.intro === 'on' ? 'translateY(14px)' : 'none',
+      markOffF: (this.state.markSeen && !this.state.markRev) ? 0 : 1, markOffR: (this.state.markSeen && this.state.markRev) ? 0 : 1,
+      markTransF: (this.state.markSeen && !this.state.markRev) ? 'stroke-dashoffset 4.2s cubic-bezier(.55,0,.35,1)' : 'none',
+      markTransR: (this.state.markSeen && this.state.markRev) ? 'stroke-dashoffset 4.2s cubic-bezier(.55,0,.35,1)' : 'none',
+      markOp1: this.state.markSeen ? 1 : 0, markOp2: this.state.markSeen ? 1 : 0, markOp3: this.state.markSeen ? 1 : 0,
+      markTransP: this.state.markSeen ? (this.state.markRev ? 'opacity 1s ease 3.2s' : 'opacity 1s ease .3s') : 'none',
+      markTransA: this.state.markSeen ? (this.state.markRev ? 'opacity 1s ease .3s' : 'opacity 1s ease 3.2s') : 'none',
+      markTrans3: this.state.markSeen ? 'opacity 1s ease 4.3s' : 'none',
+      markHint: this.state.markRev ? 'AGAM → PURAM · TAP TO REVERSE' : 'PURAM → AGAM · TAP TO REVERSE',
+      replayMark: function () { var r = !self.state.markRev; self.setState({ markSeen: false, markRev: r }); setTimeout(function () { self.setState({ markSeen: true }); }, 80); },
+      artistPanels: [this.rcPanel('artist', 'THE ARTIST', '01 · the artist'), this.rcPanel('india', 'INDIA', '02 · india'), this.rcPanel('usa', 'USA', '03 · usa'), this.rcPanel('sg', 'SINGAPORE', '04 · singapore')],
+      egPanels: [this.egPanel('collect', 'COLLECT', '01', 'PRICE LIST', 'mailto:studio@baaskaraa.com?subject=Price%20list'), this.egPanel('patron', 'PATRON', '02', 'APPLY', 'mailto:studio@baaskaraa.com?subject=Founding%20patron'), this.egPanel('commission', 'COMMISSION', '03', 'ENQUIRE', 'mailto:studio@baaskaraa.com?subject=Commission'), this.egPanel('visit', 'VISIT', '04', 'ARRANGE', 'mailto:studio@baaskaraa.com?subject=Studio%20visit')],
+      egShowCollect: this.state.egOpen === 'collect', egShowPatron: this.state.egOpen === 'patron', egShowCommission: this.state.egOpen === 'commission', egShowVisit: this.state.egOpen === 'visit',
+      rcPanels: [this.rcPanel('india', 'INDIA', '01 · india'), this.rcPanel('usa', 'USA', '02 · usa'), this.rcPanel('sg', 'SINGAPORE', '03 · singapore')],
+      awPanels: aw_panels,
+      awOpenArt: aw_st.awCh === 'Art', awOpenDigital: aw_st.awCh === 'Digital', awOpenLit: aw_st.awCh === 'Literature',
+      awArtCount: aw_artShown.length,
+      awFilters: aw_cats.map(function (c) { var on = aw_st.awFilter === c; return { label: c, pick: function () { self.setState({ awFilter: c, awLimit: 8 }); }, style: on ? 'background: #D4AF37; color: #1A1A1D; border-color: #D4AF37' : '' }; }),
+      awArtGrid: aw_artShown.slice(0, aw_st.awLimit).map(aw_mk),
+      awHasMore: aw_artShown.length > aw_st.awLimit, awShownCount: Math.min(aw_st.awLimit, aw_artShown.length),
+      awMore: function () { self.setState({ awLimit: self.state.awLimit + 8 }); }, awAll: function () { self.setState({ awLimit: 999 }); },
+      awDigiGrid: aw_all.filter(function (w) { return w.cat === 'Digital'; }).map(aw_mk),
+      awHasOpen: aw_st.awOpen >= 0, awWork: aw_ow, awClose: function () { self.setState({ awOpen: -1 }); },
+      heroSlides: heroSlides, heroNo: '0' + (hc + 1), heroName: HS[hc][1],
+      liveDot: live ? '#E5484D' : '#D4AF37', liveBadge: live ? 'LIVE NOW' : 'NEXT LIVE', liveCount: live ? 'On now on YouTube and Instagram' : 'Starts in ' + cd,
+      icsHref: 'data:text/calendar;charset=utf-8,' + encodeURIComponent('BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//baaskaraa//studio//EN\r\nBEGIN:VEVENT\r\nUID:saturday-studio@baaskaraa.com\r\nDTSTART:' + icsStart + '\r\nDURATION:PT1H30M\r\nRRULE:FREQ=WEEKLY;BYDAY=SA\r\nSUMMARY:baaskaraa \u00b7 Saturday Studio Live\r\nDESCRIPTION:Painting in the open. Watch at youtube.com/@baaskaraa\r\nEND:VEVENT\r\nEND:VCALENDAR'),
+      week: [
+        { day: 'DAILY', what: 'One Line a Day', where: '60-second reel · Instagram, TikTok, YouTube Shorts' },
+        { day: 'WED', what: 'From Plant to Form', where: 'Process film · YouTube, Instagram' },
+        { day: 'FRI', what: 'Tamil Verse, Drawn', where: 'A line of poetry, drawn live · Instagram, Facebook' },
+        { day: 'SAT', what: 'Saturday Studio Live, 8 pm', where: 'Live painting, questions answered · YouTube, Instagram' },
+        { day: 'MONTH', what: 'Agam Talks', where: 'A live dialogue on stillness and making · YouTube, Threads' }
+      ],
+      series: [
+        { name: 'One Line a Day', when: 'Daily', where: 'Reels · Shorts · TikTok', line: 'A single unbroken line, from first touch to last, in under a minute.', tag: '#OneUnbrokenLine', src: '/_blob/0a8c0ebb12e6c6662865597edc6a4ed8', pos: 'center' },
+        { name: 'From Plant to Form', when: 'Weekly', where: 'YouTube · Instagram', line: 'How a living plant becomes a line, and a line becomes sculpture.', tag: '#Emergence', src: '/_blob/3413dca48b1ca156b6d93b5763f8225f', pos: 'center' },
+        { name: 'Saturday Studio', when: 'Live · Sat 8 pm', where: 'YouTube · Instagram Live', line: 'Painting in the open for ninety minutes. Ask anything while the work happens.', tag: '#SaturdayStudio', src: '/_blob/981db5f1ab9087f98b2e1f39de1559c9', pos: 'center 30%' },
+        { name: 'Tamil Verse, Drawn', when: 'Weekly', where: 'Instagram · Facebook', line: 'A line of Tamil poetry, read aloud and drawn as it is spoken.', tag: '#VerseDrawn', src: '/_blob/98906c51eb7af139fb38b0f9ad7d43a6', pos: 'center 30%' },
+        { name: 'The Travelling Studio', when: 'On the road', where: 'Live · Stories', line: 'The portable studio opens in coffee shops, villages and cities. Sketching wherever it lands.', tag: '#TravellingStudio', src: '/_blob/5d79c93603f694e950d6775af24ed014', pos: '38% center' },
+        { name: 'Agam Talks', when: 'Monthly', where: 'YouTube · Threads', line: 'A slow conversation about stillness, observation and why the work appears.', tag: '#AgamTalks', src: '/_blob/db0580be12f65b78f2f9906adf1d68bf', pos: 'center 20%' }
+      ],
+      wall: [
+        { kind: 'Archive', cap: 'Hill path, 1997', src: '/_blob/e01192a56bf632ab18f65c1d65889325', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Herder with goats, 1997', src: '/_blob/646da263c9ff42410e1ac4245afa0f53', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Lotus pond, 1997', src: '/_blob/a2521a3bf02456d1e237530569dd05fd', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Tree cattle and farmer, 1997', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Great tree two figures, 1997', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Blue forest path, 1996', src: '/_blob/5f8aeb35e877a0002fd026328619f941', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Bamboo thicket, 1996', src: '/_blob/c6a19bb06fb979ce44192fd92838cd16', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Cliff path (violet), 1998', src: '/_blob/52e374acb75b89af47709a5fc26ada11', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' }
+      ],
+      realm: [
+        { tag: 'Augmented reality', name: 'Sculpture in your room', line: 'Place Emergence on your table through your phone camera, at true scale.' },
+        { tag: 'Virtual gallery', name: 'Walk through Vinayagar Agaval', line: 'The seven stages as a space you enter, on the web or in a headset.' },
+        { tag: 'Digital editions', name: 'Certified digital works', line: 'Limited editions of digital sculpture, each with a signed certificate of authenticity.' },
+        { tag: 'Live archive', name: 'Every session, kept', line: 'Saturday Studio and Agam Talks, searchable and replayable, the studio\u2019s memory.' }
+      ],
+      lineMsg: this.state.lineMsg,
+      saveLine: function () { var u = self.lineImage(); if (!u) return; var a = document.createElement('a'); a.href = u; a.download = 'my-one-unbroken-line.png'; document.body.appendChild(a); a.click(); a.remove(); self.setState({ lineMsg: 'Saved. Share it with #OneUnbrokenLine.' }); },
+      shareLine: function () { var t = 'I drew one unbroken line with baaskaraa. #bWithMe #OneUnbrokenLine https://baaskaraa.com'; if (navigator.share) { navigator.share({ title: 'One Unbroken Line', text: t }).catch(function () {}); } else if (navigator.clipboard) { navigator.clipboard.writeText(t); self.setState({ lineMsg: 'Copied. Paste it with your saved line.' }); } },
+      clearLine: function () { if (self.lineCtx) self.lineCtx.reset(); self.setState({ lineDone: false, lineMsg: 'Touch the paper and draw.' }); },
+      copyLabel: this.state.copied ? 'LINK COPIED' : 'COPY LINK',
+      copyLink: function () { if (navigator.clipboard) navigator.clipboard.writeText('https://baaskaraa.com'); self.setState({ copied: true }); },
+      slides: slides, prevSlide: function () { self.goSlide(self.state.slide - 1); }, nextSlide: function () { self.goSlide(self.state.slide + 1); },
+      touchStart: function (e) { self.touchX = e.touches && e.touches[0] ? e.touches[0].clientX : null; },
+      touchEnd: function (e) { if (self.touchX == null) return; var x = e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : self.touchX; var d = x - self.touchX; self.touchX = null; if (Math.abs(d) > 40) self.goSlide(self.state.slide + (d < 0 ? 1 : -1)); }, slideNo: 'STAGE ' + SL[cur][1], slideName: SL[cur][2],
+      isArt: ch === 'Art', isDigital: ch === 'Digital', isLit: ch === 'Literature',
+      chapters: ['Art', 'Digital', 'Literature'].map(function (c) {
+        var on = ch === c;
+        return { label: c, on: on ? 'true' : 'false', pick: function () { self.setState({ chapter: c, filter: 'All', open: -1 }); },
+          style: 'background: none; border: none; border-bottom: 2px solid ' + (on ? '#D4AF37' : 'transparent') + '; color: ' + (on ? '#D4AF37' : '#CFCFC8') + '; font-family: inherit; font-size: 18px; letter-spacing: 3px; text-transform: uppercase; padding: 14px 28px 14px 0; margin-right: 28px; cursor: pointer; min-height: 48px' };
+      }),
+      digitalWorks: withOpen,
+      storyPics: [
+        { year: '1998', cap: 'Receiving the painting prize at Gandhi Mandapam, Chennai, 2 October', src: '/_blob/8185b280f940e5f11f1b28cef88d337f' },
+        { year: '1999', cap: 'Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award for My Native Land, 6 January', src: '/_blob/aa4ccb6edb9097aa2012a1e872d01ccb' }
+      ],
+      navShift: this.state.navHidden ? 'translateY(-100%)' : 'none', menuCls: this.state.menu ? 'open' : '', menuLabel: this.state.menu ? 'CLOSE' : 'MENU',
+      toggleMenu: function () { self.setState({ menu: !self.state.menu, navHidden: false }); }, closeMenu: function () { self.setState({ menu: false }); },
+      showNowMore: this.state.nowMore,
+      showDigiMore: this.state.digiMore, digiMoreLabel: this.state.digiMore ? 'READ LESS' : 'READ MORE',
+      toggleDigiMore: function () { self.setState({ digiMore: !self.state.digiMore }); },
+      showLitMore: this.state.litMore, litMoreLabel: this.state.litMore ? 'READ LESS' : 'READ MORE',
+      toggleLitMore: function () { self.setState({ litMore: !self.state.litMore }); },
+      watchReel: function () { self.setState({ record: true }); setTimeout(function () { var el = document.getElementById('cna-reel'); if (el) { el.scrollIntoView({ block: 'center' }); var v = el.querySelector('video'); if (v) { try { v.play(); } catch (e) {} } } }, 60); },
+      nowMoreLabel: this.state.nowMore ? 'READ LESS' : 'READ MORE',
+      toggleNowMore: function () { self.setState({ nowMore: !self.state.nowMore }); },
+      showTeachers: this.state.teachers,
+      teachersLabel: this.state.teachers ? 'READ LESS' : 'READ MORE',
+      toggleTeachers: function () { self.setState({ teachers: !self.state.teachers }); },
+      showRecord: this.state.record,
+      recordLabel: this.state.record ? 'HIDE THE FULL RECORD' : 'SEE THE FULL RECORD',
+      toggleRecord: function () { self.setState({ record: !self.state.record }); },
+      showStory: this.state.story,
+      storyLabel: this.state.story ? 'CLOSE THE STORY' : 'READ THE FULL STORY',
+      toggleStory: function () { self.setState({ story: !self.state.story }); },
+      closeStory: function () { self.setState({ story: false }); setTimeout(function () { var el = document.getElementById('story-btn'); if (el) el.scrollIntoView({ block: 'center' }); }, 0); },
+      closeRecord: function () { self.setState({ record: false }); setTimeout(function () { var el = document.getElementById('record-btn'); if (el) el.scrollIntoView({ block: 'center' }); }, 0); },
+      story: [{"t": "baaskaraa is an Indian artist living in Singapore: a painter, sculptor, poet and digital artist.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "He was born Baskar in 1974 in Irumbulikkurichi, a village in Tamil Nadu, India. He won first prizes in painting at school three years running, then trained at the Government College of Arts and Crafts, Chennai, India's oldest art school, founded in 1850, graduating with a Bachelor of Fine Arts, First Class with Distinction.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "While still a student, his work was shown at the 40th National Exhibition of Art in Bangalore and acquired by the National Gallery of Modern Art. In 1998 he received the Victoria Technical Institute's Mahatma Gandhi Birth Centenary Memorial Award for My Native Land, and the Tamil Nadu state award for Light on Scape Series-1. In May 2000 he held his first solo exhibition, at Apparao Galleries, Chennai, sponsored by the Tamil Nadu state art body.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "The painter who fell into language", "fs": "22px", "fw": "600", "c": "#1A1A1D", "mt": "14px"}, {"t": "In 2000 he landed in Singapore with a painter's hands and no canvas. What he found instead was a language: his own.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "For nearly a decade he worked inside Tamil, building it in pixels and sound for the children of a new country. He drew it, animated it and edited its voice, frame by frame and syllable by syllable. Day after day the language passed through his hands, and something turned. His thoughts stopped arriving as images. They arrived as words.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "So he wrote.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "In 2003 he married Suguna, a poet. Two writers at one table, then twice a month at Kavimaalai and Kavi Solai, the Tamil poetry circles where Singapore's poets read and are judged by each other. It went on for over a decade. The circles became the national stage: the Golden Point Award for Tamil Poetry in 2011, and again in 2013, when Suguna took first prize in the same ceremony. Two poets, one home, one language.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "Then the words came back to the canvas. Today a work by baaskaraa begins as a thought, becomes a line, and only then becomes a form, often a whole series. Bird Sanctum was the first time the public saw it: a Tamil novel turned into nests of real twigs, touring Singapore's national libraries in 2014.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "The work also left the studio. In 2013, for Maya Dance Theatre's production GREY, he and the photographer Charlie Lim made the murals on the rooftop of the Singai Tamil Sangam in Little India, guiding the dancers, residents and students who painted them. For four nights in June the walls were the stage. The murals have since been painted over; the photographs remain.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "He doesn't illustrate literature. He writes it, and then he builds it.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}],
+      proofs: [
+        { year: '1997', what: 'Collection, National Gallery of Modern Art', where: 'New Delhi' },
+        { year: '2000', what: 'First solo exhibition, Apparao Galleries', where: 'Chennai' },
+        { year: '2011 · 13', what: 'Golden Point Award', where: 'Singapore' },
+        { year: '2015', what: 'PromaxBDA Global Excellence Award, Bronze', where: 'Los Angeles, USA · for CNA, Mediacorp' },
+        { year: '2021', what: 'Long Service Award', where: 'Mediacorp, Singapore' }
+      ],
+      navItems: navDefs.map(function (it) {
+        var on = self.state.active === it[0] || (it[0] === 'statement' && (self.state.active === 'agam' || self.state.active === 'puram'));
+        return { href: '#' + it[0], label: it[1], style: on ? 'color: #D4AF37; border-bottom: 1px solid #D4AF37' : 'color: #CFCFC8; border-bottom: 1px solid transparent' };
+      }),
+      filters: cats.map(function (c) {
+        var on = self.state.filter === c;
+        return { label: c, pick: function () { self.setState({ filter: c, open: -1, limit: 8 }); }, style: on ? 'background: #D4AF37; color: #1A1A1D; border-color: #D4AF37' : '' };
+      }),
+      shownWorks: withOpen.slice(0, this.state.limit),
+      hasMore: withOpen.length > this.state.limit,
+      isEmpty: withOpen.length === 0,
+      shownCount: Math.min(this.state.limit, withOpen.length),
+      totalCount: withOpen.length,
+      showMore: function () { self.setState({ limit: self.state.limit + 8 }); },
+      showAll: function () { self.setState({ limit: 999 }); },
+      hasOpen: open >= 0 && open < shown.length,
+      openWork: openWork,
+      closeWork: function () { self.setState({ open: -1 }); },
+      nextWork: function () { self.setState({ open: (open + 1) % shown.length }); },
+      prevWork: function () { self.setState({ open: (open - 1 + shown.length) % shown.length }); },
+      teachers: [
+        { name: 'Alphonso Arul Doss', role: 'Painter. Principal, 1992–1997.' },
+        { name: 'R.B. Bhaskaran', role: 'Painter. Principal; Chairman, Lalit Kala Akademi.' },
+        { name: 'C. Dakshinamoorthy', role: 'Sculptor. Ceramics.' },
+        { name: 'Prof. Chandru Gurusamy', role: 'Sculptor. Painter. Principal.' },
+        { name: 'N.S. Manohar', role: 'Watercolour painter. Principal.' },
+        { name: 'Pugazhendhi', role: 'Painter. Principal.' }
+      ],
+      timeline: [
+        { year: '2015', text: 'PromaxBDA Global Excellence Awards, Bronze · Art Direction & Design, Program-Specific Logo, Documentary of the Week · Channel NewsAsia, Mediacorp · credited for motion graphics' },
+        { year: '2014–23', text: 'Senior Graphic Designer, Mediacorp (Channel NewsAsia)' },
+        { year: '2014', text: 'Bird Sanctum, installation after Ma. Elangkannan\'s novel Kuruvi Kottam · Project LAVA, National Arts Council and National Library Board · toured library@chinatown, Ang Mo Kio, Bedok and Jurong East libraries · public dialogue with the novelist, Ang Mo Kio Library, 18 July' },
+        { year: '2013', text: 'GREY, rooftop murals for Maya Dance Theatre\'s dance production GREY, Singai Tamil Sangam, Little India, with Charlie Lim; painted with the dancers and the community (19–22 June), with thanks to the National Arts Council · Golden Point Award, Tamil Poetry, 3rd Prize; his wife, the poet Suguna Baskar, won 1st Prize at the same ceremony (7 November)' },
+        { year: '2010', text: 'Short Story Workshop, Association of Singapore Tamil Writers, led by Kalaimamani Prapanchan, Umaru Pulavar Tamil Language Centre, Singapore (29 August)' },
+        { year: '2010–14', text: 'Full-time painter, digital freelancer and founder of RiGHTMiND studio' },
+        { year: '2011', text: 'SPH–NAC Golden Point Award, Tamil Poetry, 3rd Prize (27 October; Guest of Honour Ms Grace Fu) · Organising committee, World Tamil Writers Conference' },
+        { year: '2008', text: 'Art and Visual Effects Director for television, Tantra Inc., Singapore · Opening titles, trailers and visual effects for TV series · Art direction and visual effects for TV commercials · Set design' },
+        { year: '2007', text: 'Digital stage backdrops for "37 Pearls" (முத்துக்கள்), Singapore Indian Artistes’ Association and Manimaran Dance Group, Victoria Theatre, Singapore (3 March) · "Understanding Contemporary Art", sharing session, Ang Mo Kio Library, Read Singapore campaign' },
+        { year: '2003–14', text: 'Kavimaalai and Kavi Solai, monthly Tamil poetry circles, Singapore, with his wife, the poet Suguna Baskar' },
+        { year: '2001–08', text: 'Digital creation for Tamil language and culture, Ministry of Education projects, Singapore · New-media education projects for Malaysia and China' },
+        { year: '2000', text: 'First solo exhibition, A Portfolio of Art Happenings, Apparao Galleries, Chennai (15–30 May) · Sponsored by Tamil Nadu Oviya Nunkalai Kuzhu, the state art body · MFA first year, Government College of Arts and Crafts, Chennai' },
+        { year: '1999', text: 'Best Outgoing Student Award · Diploma in Multimedia Design, Grade A · MFA Students\' Exhibition, Chennai' },
+        { year: '1998', text: 'Mahatma Gandhi Birth Centenary Memorial Award, Victoria Technical Institute, Chennai, for "My Native Land" (South Zone award, open to artists from four South Indian states) · State Award, Tamil Nadu Oviya Nunkalai Kuzhu, for "Light on Scape Series-1" · "Light on Scape Series-1" singled out in The Hindu (11 September) · Painting prize, Gandhi Mandapam, Chennai (presented 2 October in the presence of the Governor and Chief Minister) · Metaphor, Lalit Kala Akademi, Chennai · All India Drawing Exhibition, Jaipur · Tamil Nadu Oviya Nunkalai Kuzhu Exhibition, Chennai · World-record long painting, Youth Festival, Jawaharlal Nehru Indoor Stadium, Chennai · Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai' },
+        { year: '1997', text: '40th National Exhibition of Art, Lalit Kala Akademi, Bangalore · Work acquired by the National Gallery of Modern Art, New Delhi · Exhibition, Victoria Technical Institute, Chennai · Annual Exhibition, Government College of Arts and Crafts, Chennai · Kala Mela, New Delhi · Genesis II, print exhibition, Chennai · Young Artists\' Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai · 50th Independence Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai · Square Group, four-artist show of paintings and sculptures, Saga Art Gallery, Chennai (15–30 September) · Reviewed in The Hindu (26 September) and Dinamani (17 October) · Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai' },
+        { year: '1996', text: 'Exhibition, Victoria Technical Institute, Chennai · Award, Tamil Nadu Tourism \'96 · 4th South Zone Level Art Exhibition, Arikkamedu Art Academy, Pondicherry · Artist Improvement Association Exhibition, Chennai · Annual Exhibition, Government College of Arts and Crafts, Chennai' },
+        { year: '1995', text: '1st Prize, Painting, Chemfest \'95, Chengalpattu Medical College · 1st Prize, Collage, Chemfest \'95, Chengalpattu Medical College · Young Artists\' Workshop, Tamil Nadu Oviya Nunkalai Kuzhu · Young Artists\' Workshop, South Zone Cultural Centre, All India Craft Mela · 16th All India Fine Arts Exhibition, Chitrakala Parishath, Bangalore · All India Art and Craft Festival \'95, South Zone Cultural Centre, Thanjavur · Exhibition, Victoria Technical Institute, Chennai · First painting sold: a watercolour of white daisies, through the Victoria Technical Institute' },
+        { year: '1995–98', text: 'Mahatma Gandhi Birth Centenary Memorial Exhibition, Chennai' },
+        { year: '1994–99', text: 'Bachelor of Fine Arts in Painting, First Class with Distinction, University of Madras, including a preparatory course in printmaking, visual communication design, textile design, ceramics, photography and sculpture' },
+        { year: '1992', text: 'Government Technical Examination, Higher Grade, Freehand Outline and Model Drawing, Tamil Nadu' },
+        { year: '1990', text: '1st Prize, Painting, Government Higher Secondary School, Ponparappi · 2nd Prize, Essay, Government Higher Secondary School, Ponparappi' },
+        { year: '1989', text: '1st Prize, Drawing, Government High School, Irumbulikkurichi' },
+        { year: '1988', text: '1st Prize, Drawing, Government High School, Irumbulikkurichi' }
+      ].map(function (t) { return { year: t.year, items: t.text.split(' · ') }; }),
+      outward: [
+        { tag: '2014', title: 'The banyan takes root', line: 'Aalam begins: Irumbulikkurichi people in Singapore, working for the village at home.', src: '/_blob/5646264453546d552ddd2c5bf18ee30b', pos: 'center', fit: 'contain', alt: 'Aalam banyan logo' },
+        { tag: 'Pongal', title: 'The harvest, together', line: 'Festivals and village events, carried by volunteers.', src: '/_blob/0a2b51442b9ec16319ebb9103c291f9c', pos: 'center', fit: 'cover', alt: 'Aalam volunteers at the Pongal festival' },
+        { tag: 'Elders', title: 'Honouring the roots', line: 'The village thanks those who held it together.', src: '/_blob/563c3e0a7ae774cc3f929351223b5449', pos: 'center', fit: 'cover', alt: 'Honouring village elders at an Aalam event' },
+        { tag: '2023', title: 'Back under the banyan', line: 'Painting in the open in the home village.', src: '/_blob/5a0b499c1d9551cfff90d76cb3f476ed', pos: '38% center', fit: 'cover', alt: 'Baskar painting beneath the village banyan' }
+      ],
+      journey: [
+        { tag: '2010', title: 'Seeking', line: 'The search begins, through the yogis and siddhas of Tamil tradition.', src: '/_blob/7aba3ad9ec4febf2cfc2302c9cd4c53e', pos: 'center', alt: 'Baskar with a teacher' },
+        { tag: 'Pilgrimage', title: 'Arunachala', line: 'Tiruvannamalai, and the temples of Tamil Nadu.', src: '/_blob/6e375e8021941f235d2ae0d747ad1097', pos: '60% center', alt: 'Baskar above the Arunachala temple' },
+        { tag: 'Roots', title: 'The village gods', line: 'The living worship of home.', src: '/_blob/1928f61d4e0fd07e6b0f338f54e7b4f5', pos: 'center', alt: 'Village shrine during worship' },
+        { tag: 'Teachers', title: 'Sitting with masters', line: 'Teachers in India and Singapore.', src: '/_blob/e8ad506928dfc70daffee00724f08441', pos: 'center', alt: 'Baskar with a teacher' },
+        { tag: 'Practice', title: 'Vasi Yoga', line: 'Sivananda Gurukulam, in the Siddha tradition.', src: '/_blob/fd5c888c981b43dd843af8e92b84a22c', pos: '30% center', alt: 'Baskar with his Vasi yoga teacher' },
+        { tag: '2016', title: 'Hatha Yoga', line: 'Nikam Guruji Yoga Kutir, at the Ramakrishna Mission.', src: '/_blob/3a4b81db4da71976f926d5dd0fbc1134', pos: '65% center', alt: 'Receiving the Hatha Yoga course certificate' }
+      ],
+      path: [
+        { when: 'Month 1', what: 'Studio period begins', color: '#D4AF37', bar: '2px solid #D4AF37' },
+        { when: 'Month 12', what: 'First studio viewing', color: '#A8A8A0', bar: '1px solid #3A3A3A' },
+        { when: 'Month 18', what: 'Exhibition preparation', color: '#A8A8A0', bar: '1px solid #3A3A3A' },
+        { when: 'Month 24', what: 'Public exhibition', color: '#A8A8A0', bar: '1px solid #3A3A3A' }
+      ],
+      stages: ['Idea', 'Sketch', 'Study', 'Painting', 'Finished'].map(function (l, i) { var on = i <= 1; return { label: l, color: on ? '#8A6D12' : '#9A988F', bar: on ? '2px solid #D4AF37' : '1px solid #C9C7BE' }; }),
+      tiers: [
+        { name: 'Editions and prints', line: 'Signed, numbered editions. The first way in.' },
+        { name: 'Works on paper', line: 'Drawings, studies and watercolours.' },
+        { name: 'Canvases', line: 'Paintings up to 120 cm.' },
+        { name: 'Large and monumental', line: 'Major canvases and sculpture, by appointment.' }
+      ],
+      cards: [
+        { title: 'Private Collection', line: 'By invitation', body: 'Further works are shown to collectors, curators and galleries by invitation.', cta: 'Request access' },
+        { title: 'Founding Patron', line: 'By invitation', body: 'A small circle supporting the studio period. Details are shared in conversation.', cta: 'Request access' },
+        { title: 'Commission', line: 'By enquiry', body: 'Painting, sculpture, and work for architecture and public space.', cta: 'Enquire' }
+      ],
+      joinLabel: this.state.joined ? 'THANK YOU' : 'JOIN',
+      join: function (e) { if (e && e.preventDefault) e.preventDefault(); self.setState({ joined: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

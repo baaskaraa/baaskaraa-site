@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Squarespace-like test</title>
+<style>/* rough Squarespace 7.1 defaults that could leak */
+body{font-family:Georgia,serif;font-size:18px;line-height:1.8;color:#333;background:#fff;margin:0}
+h1,h2,h3{font-family:Georgia;letter-spacing:.05em;line-height:1.1;margin:2rem 0}p{margin:1rem 0}
+a{color:blue;text-decoration:underline}button{font-family:Georgia;border-radius:20px}img{max-width:100%}
+#header{position:fixed;top:0;left:0;right:0;height:80px;background:#fff;z-index:9;border-bottom:1px solid #ccc}
+.content-wrapper{max-width:1200px;margin:0 auto;padding:120px 6vw}</style></head>
+<body class="sqs-site">
+<header id="header">Squarespace header (should be hidden)</header>
+<main id="page"><section class="page-section"><div class="content-wrapper"><div class="sqs-block code-block"><div class="sqs-block-content">
+<div id="bk-app" data-page="home" data-home="/preview"></div><script>var q=/page=([a-z-]+)/.exec(location.search);if(q)document.getElementById("bk-app").setAttribute("data-page",q[1])</script><script src="/site/bk-site.js"></script>
+</div></div></div></section></main>
+<footer id="footer-sections">Squarespace footer (should be hidden)</footer>
+</body></html>
