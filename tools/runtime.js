@@ -177,7 +177,9 @@
       me.parentNode.insertBefore(host, me);
     }
     if (!host) return;
-    page = host.getAttribute('data-page') || 'home'; if (!(page in PAGES)) page = 'home';
+    /* the page's own address decides which sections show (/now, /the-artist …); otherwise data-page; otherwise home */
+    var slug = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
+    page = (slug in PAGES && slug !== 'home') ? slug : (host.getAttribute('data-page') || 'home'); if (!(page in PAGES)) page = 'home';
     homeUrl = host.getAttribute('data-home') || HOME;
     var inEditor = window.top !== window.self || /\/config(\/|$)/.test(location.pathname) || document.body.classList.contains('sqs-edit-mode');
     if (!document.querySelector('link[data-bk-fonts]')) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = FONTS; l.setAttribute('data-bk-fonts', ''); document.head.appendChild(l); }
