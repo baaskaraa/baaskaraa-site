@@ -45,6 +45,7 @@ put('__TEMPLATE__', JSON.stringify(tpl));
 put('__CSS__', JSON.stringify(css));
 put('__ASSETS__', JSON.stringify(ASSETS));
 put('__LOGIC__', logic.trim());
+put('__ARCHIVE__', fs.readFileSync(path.join(__dirname, 'archive-view.js'), 'utf8').trim());
 out = '/*! morphdom (MIT) © Patrick Steele-Idem · https://github.com/patrick-steele-idem/morphdom */\n' + out;
 fs.mkdirSync(path.join(R, 'site'), { recursive: true });
 fs.writeFileSync(path.join(R, 'site', 'bk-site.js'), out);

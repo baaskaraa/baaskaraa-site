@@ -47,6 +47,8 @@
     }
   };
 
+  __ARCHIVE__
+
   /* ---------- tiny component base (what the prototype's logic expects) ---------- */
   var comp, queued = false;
   function DCLogic(props) { this.props = props || {}; this.state = {}; }
@@ -122,6 +124,7 @@
       childrenOnly: true,
       onBeforeElUpdated: function (from, to) {
         if (from.localName === 'canvas') return false;
+        if (from.hasAttribute('data-bk-keep')) return false;   /* filled by its own code (archive view) */
         if ((from.localName === 'input' || from.localName === 'textarea' || from.localName === 'select') && !to.hasAttribute('value')) {
           for (var i = 0; i < to.attributes.length; i++) if (from.getAttribute(to.attributes[i].name) !== to.attributes[i].value) from.setAttribute(to.attributes[i].name, to.attributes[i].value);
           return false;
@@ -133,6 +136,7 @@
         return true;
       }
     });
+    if (root) ARCHIVE.mount(root);
     var hs = mountEl.querySelectorAll('[data-bk-ev]');
     for (var i = 0; i < hs.length; i++) {
       var spec = hs[i].getAttribute('data-bk-ev').split(' ');
