@@ -24,7 +24,8 @@
 
   var me = document.currentScript;
   var BASE = (me && me.src ? me.src.replace(/site\/bk-site(\.min)?\.js.*$/, '') : 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/') + 'assets/';
-  function asset(s) { return String(s).replace(/\/_blob\/([0-9a-f]{32})/g, function (m, id) { return BASE + id + (ASSETS[id] || '.jpg'); }); }
+  var CDN_ASSETS = 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/';
+  function asset(s) { s = String(s); if (s.indexOf(CDN_ASSETS) >= 0) s = s.split(CDN_ASSETS).join(BASE); return s.replace(/\/_blob\/([0-9a-f]{32})/g, function (m, id) { return BASE + id + (ASSETS[id] || '.jpg'); }); }
 
   var host, root, mountEl, page, homeUrl, sub = false;
   var BK = window.BK = {
@@ -48,6 +49,10 @@
   };
 
   __ARCHIVE__
+  /* hooks the archive view and the prototype use */
+  BK.rerender = function () { schedule(); };
+  BK.onArchive = function (t) { if (comp && comp.state.archTab !== t) comp.setState({ archTab: t }); };
+  BK.inv = function (title, year) { return ARCHIVE.invFor(title, year); };
 
   /* ---------- tiny component base (what the prototype's logic expects) ---------- */
   var comp, queued = false;
@@ -147,7 +152,17 @@
   /* ---------- links: in-page anchors, home, sub-pages ---------- */
   function pageUrl(p) { return p === 'home' ? homeUrl : '/' + p; }
   function go(id) {
-    var el = BK.$(id);
+    var el = BK.$(id), r = null;
+    /* addresses that need something opened first (a story chapter, an Artworks tab) */
+    if ((!el || !BK.visible(el)) && comp && comp.reveal) r = comp.reveal(id);
+    if (r) {
+      var sec = BK.$(r.sec);
+      if (sec && BK.visible(sec)) {
+        setTimeout(function () { var t = BK.$(r.to); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); try { history.replaceState(null, '', '#' + id); } catch (e) {} }, 90);
+        return true;
+      }
+      location.href = pageUrl(SECTION_PAGE[r.sec] || 'home') + '#' + id; return true;
+    }
     if (!el) return false;
     if (BK.visible(el)) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); try { history.replaceState(null, '', '#' + id); } catch (e) {} return true; }
     var sec = el.closest('section'), p = SECTION_PAGE[sec ? sec.id : id] || 'home';
@@ -165,7 +180,19 @@
       window.scrollTo({ top: 0, behavior: 'smooth' }); return;
     }
     if (h === '/' || h === homeUrl) { e.preventDefault(); if (page === 'home') window.scrollTo({ top: 0, behavior: 'smooth' }); else location.href = homeUrl; return; }
-    if (h.charAt(0) === '#') { if (go(h.slice(1))) e.preventDefault(); }
+    if (h.charAt(0) === '#') {
+      var id = decodeURIComponent(h.slice(1));
+      /* archive addresses (#BK-…, #PR-…, #DOC-…, #chronology-YYYY, #catalogue …) open their record from anywhere */
+      if (ARCHIVE.handles(id)) { e.preventDefault(); if (!ARCHIVE.route(id)) location.href = pageUrl('archive') + '#' + id; return; }
+      if (go(id)) e.preventDefault();
+    }
+  }
+  function arrive() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    if (ARCHIVE.handles(id)) { if (!ARCHIVE.route(id)) location.replace(pageUrl('archive') + '#' + id); return; }
+    var el = BK.$(id);
+    if (el && BK.visible(el)) el.scrollIntoView({ block: 'start' }); else go(id);
   }
 
   /* ---------- Squarespace page: take the whole page (not inside the editor) ---------- */
@@ -192,7 +219,7 @@
     root = host.attachShadow ? host.attachShadow({ mode: 'open' }) : host;
     var css = document.createElement('style');
     var hide = PAGES[page] ? 'section[id]:not(' + PAGES[page].map(function (s) { return '#' + s; }).join(',') + '){display:none!important}' : '';
-    css.textContent = CSS + '\n' + hide + '\nsection[id],[id]{scroll-margin-top:64px}';
+    css.textContent = CSS + '\n' + hide + '\nsection[id],[id]{scroll-margin-top:124px}';
     root.appendChild(css);
     mountEl = document.createElement('div'); mountEl.className = 'bk-root'; root.appendChild(mountEl);
     tpl.innerHTML = TEMPLATE;
@@ -200,7 +227,8 @@
     comp = new Component({});
     render();
     if (comp.componentDidMount) comp.componentDidMount();
-    if (location.hash.length > 1) setTimeout(function () { var el = BK.$(location.hash.slice(1)); if (el && BK.visible(el)) el.scrollIntoView({ block: 'start' }); }, 400);
+    if (location.hash.length > 1) setTimeout(arrive, 400);
+    window.addEventListener('hashchange', arrive);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();

@@ -25,4 +25,7 @@ Loaded on the site through jsDelivr. Every change is a version, so any update ca
   `<div id="bk-app" data-page="home" data-home="/preview"></div><script src="https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/site/bk-site.js"></script>`
   `data-page`: home · now · the-artist · artworks · awaken · archive · engage · live (each shows only its sections). `data-home`: the address of the full home page.
 - Studio Circle signups use the same Apps Script as the guest book (message column: "Studio Circle · website").
+- `data/record.json` is the public record that is not in the archive app: the Chronology (the life year by year) and Documents & Media (DOC-YYYY-NN: press, certificates, photographs, poems). It links to works and projects by number. `data/archive.json` (works BK-, projects PR-) is published from the archive app.
+- Every record has an address that works on every page: #BK-YYYY-NNN · #PR-YYYY-NN · #PR-YYYY-NN-NNN · #DOC-YYYY-NN · #chronology-YYYY · #catalogue · #projects · #documents. Works and documents open in the viewer where you are; the rest go to /archive.
+- Two-layer menu: the second row comes from `subs()` in the prototype logic; `reveal(id)` opens a story chapter or an Artworks tab before scrolling.
 - `test/sqs.html` is a Squarespace-like test page (`python3 -m http.server`, then open /test/sqs.html?page=awaken).

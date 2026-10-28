@@ -57,6 +57,43 @@ a{color:#D4AF37}a:hover{color:#F0D27A}
 @keyframes nmdraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8s cubic-bezier(.55,0,.35,1)}
 @media (prefers-reduced-motion: reduce){a:hover .nm-draw{animation:none}}
+
+/* two-layer menu (28 Oct 2026) */
+.subnav{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;justify-content:center;gap:0 28px;overflow-x:auto;scrollbar-width:none;border-top:1px solid #2D2D2D}
+.subnav::-webkit-scrollbar{display:none}
+.sublink{flex:none;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;padding:11px 0 10px;border-bottom:1px solid transparent;white-space:nowrap;color:#A8A8A0}
+.sublink:hover{color:#F0D27A}
+.sublink[aria-current=true]{color:#D4AF37;border-bottom-color:#D4AF37}
+@media (max-width:760px){.subnav{justify-content:flex-start;padding:0 16px;gap:0 20px}.sublink{letter-spacing:2px}}
+/* The Artist: story in chapters */
+.ch-wrap{display:flex;flex-direction:column;border-top:1px solid #D8D8D0}
+.ch-index{display:flex;flex-wrap:wrap;gap:6px 26px;padding:22px 0;border-bottom:1px solid #D8D8D0}
+.ch-index a{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#5A5A5A;text-decoration:none;padding:6px 0}
+.ch-index a:hover{color:#8A6D12}
+.ch{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;padding:64px 0;border-bottom:1px solid #D8D8D0;align-items:start}
+.ch-fig{margin:0;display:flex;flex-direction:column;gap:8px;position:sticky;top:120px}
+.ch-fig a{display:block;background:#E9E7DF}
+.ch-fig img{width:100%;display:block;transition:opacity .2s}
+.ch-fig a:hover img{opacity:.92}
+.ch-fig figcaption{font-size:12px;line-height:1.55;color:#6B6B6B}
+.ch-txt{display:flex;flex-direction:column;gap:14px;max-width:660px}
+.ch-txt h3{margin:4px 0 6px;font-weight:600;font-size:clamp(24px,2.8vw,34px);line-height:1.25;color:#1A1A1D}
+.ch-txt p{margin:0;font-size:17px;line-height:1.8;color:#3A3A3A}
+.ch-rec{align-self:flex-start;margin-top:8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8A6D12;text-decoration:none;border-bottom:1px solid #D4AF37;padding-bottom:3px}
+@media (max-width:860px){.ch{grid-template-columns:1fr;gap:22px;padding:44px 0}.ch-fig{position:static}}
+/* Recognition, linked to the record */
+.rc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px 40px}
+.rc-r{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8A6D12;padding-top:14px;border-top:2px solid #D4AF37;margin-bottom:12px}
+.rc-g ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.rc-g a{color:#1A1A1D;text-decoration:none;font-size:16px;line-height:1.5;font-weight:500;background:linear-gradient(#D4AF37,#D4AF37) no-repeat 0 100%/0 1px;transition:background-size .25s}
+.rc-g a:hover,.rc-g a:focus-visible{background-size:100% 1px}
+.rc-g a::after{content:"\00a0\2192";color:#8A6D12}
+/* catalogue numbers on Artworks */
+.wno{font-size:11px;letter-spacing:1.5px;color:#D4AF37;font-variant-numeric:tabular-nums;min-height:15px;opacity:0;transition:opacity .2s}
+.wno:empty{display:none}
+@media (hover:hover){.work:hover .wno,.work:focus-visible .wno{opacity:1}}
+.wno-v{font-size:12px;letter-spacing:2px;color:#D4AF37;text-decoration:none;border:1px solid #4A4232;padding:10px 14px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
+.wno-v:hover{background:#D4AF37;color:#1A1A1D}
 </style>
 </helmet>
 <div style="width: 100%; background: #1A1A1D; color: #F5F5F0">
@@ -78,6 +115,13 @@ a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8
 </div>
 <div class="navsoc" style="display: flex; align-items: center; gap: 0"><a href="https://www.instagram.com/baaskaraa.studio/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.youtube.com/@baaskaraa" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"></rect><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"></path></svg></a><a href="https://www.tiktok.com/@baaskaraa.studio" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"></path><path d="M14 3.5c.6 2.6 2.4 4.2 5 4.5"></path></svg></a><a href="https://www.facebook.com/baaskaraa.studio" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; color: #CFCFC8; text-decoration: none"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H16V5h-2a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h2.2l.6-3H13V9.2c0-.7.4-1.2 1.5-1.2z"></path></svg></a></div>
 </nav>
+<sc-if value="{{hasSub}}" hint-placeholder-val="{{ false }}">
+<nav aria-label="{{subLabel}}" class="subnav">
+<sc-for list="{{subItems}}" as="s" hint-placeholder-count="5">
+<a class="sublink" href="{{s.href}}" aria-current="{{s.cur}}">{{s.label}}</a>
+</sc-for>
+</nav>
+</sc-if>
 </header>
 
 <!-- 1 HERO -->
@@ -171,41 +215,48 @@ a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8
 <div style="flex: 0 1 380px; width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 28px">
 <figure style="width: 100%; margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/fbfa54ec33ddc83e52e6663fdd838f40" alt="baaskaraa in profile, looking away: shaved head, silver beard, printed shirt" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 30% 25%; display: block"><figcaption style="font-size: 12px; letter-spacing: 1px; color: #6B6B6B">Photograph: Deva Baskar</figcaption></figure>
 <figure style="margin: 0; width: 100%; display: flex; flex-direction: column; gap: 8px"><img src="/_blob/b96ecfe52e521411043b2a6fe4f7ca94" alt="Baskar and Suguna Baskar at the Golden Point Award 2013, Suguna holding her 1st Prize trophy for Tamil poetry" style="width: 100%; display: block"><figcaption style="font-size: 13px; line-height: 1.5; color: #5A5A5A">Baskar and Suguna Baskar at the Golden Point Award, Singapore, 7 November 2013. Same night, same language: her 1st Prize, his 3rd, for Tamil poetry.</figcaption></figure>
-<sc-if value="{{showStory}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 22px">
-<sc-for list="{{storyPics}}" as="q" hint-placeholder-count="6">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 6px"><img src="{{q.src}}" alt="{{q.cap}}" loading="lazy" style="width: 100%; display: block; background: #E9E7DF"><figcaption style="font-size: 12px; line-height: 1.5; color: #6B6B6B"><span style="color: #8A6D12; font-weight: 700">{{q.year}}</span> · {{q.cap}}</figcaption></figure>
-</sc-for>
-</div>
-</sc-if>
 </div>
 <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 20px">
 <div class="lbl" style="color: #8A6D12">The Artist</div>
 <h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.25">A traditional painter. A digital creator. A poet. Now a multidisciplinary artist.</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #3A3A3A">Born in 1974 in a village in Tamil Nadu, India, Baskar trained as a painter at the Government College of Arts and Crafts, Chennai, India's oldest art school. In 2000 he moved to Singapore and carried the painter's line into the digital medium. There, working inside his own language, he became a poet, twice honoured with the Golden Point Award for Tamil Poetry. His wife, Suguna Baskar, is an award-winning poet too: an artistic couple, two poets in one home. Today he works across painting, sculpture, digital form and writing as baaskaraa.</p>
-<button type="button" id="story-btn" class="btn-line" onClick="{{toggleStory}}" style="align-self: flex-start; color: #8A6D12; border-color: #8A6D12">{{storyLabel}}</button>
-<sc-if value="{{showStory}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
-<sc-for list="{{story}}" as="b" hint-placeholder-count="6">
-<p style="margin: {{b.mt}} 0 0; font-size: {{b.fs}}; font-weight: {{b.fw}}; line-height: 1.8; color: {{b.c}}">{{b.t}}</p>
+<sc-for list="{{summary}}" as="p" hint-placeholder-count="5">
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #3A3A3A">{{p}}</p>
 </sc-for>
-<button type="button" class="btn-line" onClick="{{closeStory}}" style="align-self: flex-start; margin-top: 10px; color: #8A6D12; border-color: #8A6D12">CLOSE THE STORY ↑</button>
-</div>
-</sc-if>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0; border-top: 1px solid #D8D8D0; margin-top: 8px">
-<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">1994–2000</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">The painter</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Chennai · BFA, First Class with Distinction · first solo show, 2000</div></div>
-<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">2000–2023</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">The digital creator and poet</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Singapore · education, broadcast, design · Tamil poetry circles · Golden Point Award 2011, 2013</div></div>
-<div style="padding: 16px 12px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px"><div style="font-size: 22px; font-weight: 700; color: #8A6D12">Now</div><div style="font-size: 15px; font-weight: 600; margin-top: 6px; color: #1A1A1D">baaskaraa</div><div style="font-size: 14px; margin-top: 4px; line-height: 1.5; color: #3A3A3A">Painting · sculpture · digital · writing</div></div>
-</div>
+<button type="button" id="story-btn" class="btn-line" onClick="{{toggleStory}}" style="align-self: flex-start; margin-top: 8px; color: #8A6D12; border-color: #8A6D12">{{storyLabel}}</button>
 </div>
 </div>
 
+<!-- The full story, in chapters -->
+<sc-if value="{{showStory}}" hint-placeholder-val="{{ false }}">
+<div id="artist-story" class="ch-wrap">
+<nav class="ch-index" aria-label="Chapters">
+<sc-for list="{{chs}}" as="c" hint-placeholder-count="6">
+<a href="#{{c.id}}">{{c.no}} · {{c.title}}</a>
+</sc-for>
+</nav>
+<sc-for list="{{chs}}" as="c" hint-placeholder-count="6">
+<article id="{{c.id}}" class="ch">
+<figure class="ch-fig"><a href="{{c.rec}}" title="Open in the archive"><img src="{{c.src}}" alt="{{c.alt}}" loading="lazy"></a><figcaption>{{c.cap}}</figcaption></figure>
+<div class="ch-txt">
+<div class="lbl" style="color: #8A6D12">Chapter {{c.no}} · {{c.years}}</div>
+<h3>{{c.title}}</h3>
+<sc-for list="{{c.paras}}" as="p" hint-placeholder-count="4">
+<p>{{p}}</p>
+</sc-for>
+<a class="ch-rec" href="{{c.rl}}">In the record · {{c.years}} →</a>
+</div>
+</article>
+</sc-for>
+<button type="button" class="btn-line" onClick="{{closeStory}}" style="align-self: flex-start; margin-top: 32px; color: #8A6D12; border-color: #8A6D12">CLOSE THE STORY ↑</button>
+</div>
+</sc-if>
+
 <!-- Lineage -->
-<div style="background: #1A1A1D; color: #F5F5F0; padding: 56px clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 28px">
+<div id="artist-lineage" style="background: #1A1A1D; color: #F5F5F0; padding: 56px clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 12px; max-width: 820px">
 <div class="lbl" style="color: #D4AF37">The institution · since 1850</div>
-<h3 style="margin: 0; font-weight: 600; font-size: clamp(24px, 3vw, 34px)">175 years. India's oldest art school.</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #CFCFC8">The Government College of Arts and Crafts, Chennai: the school of K.C.S. Paniker and the Madras Art Movement, the home of Cholamandal's founders. Baskar studied there in the company of the masters of his time: Bachelor of Fine Arts, 1994–1999, then the Master of Fine Arts, until the digital age called in 2000.</p>
+<h3 style="margin: 0; font-weight: 600; font-size: clamp(24px, 3vw, 34px)">Since 1850. India's oldest art school.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #CFCFC8">The Government College of Arts and Crafts, Chennai: the school of K.C.S. Paniker and the Madras Art Movement, and of the founders of Cholamandal Artists' Village. Baskar studied there among the masters of his time: Bachelor of Fine Arts, First Class with Distinction, 1994–1999, then the Master of Fine Arts, until the digital age called in 2000.</p>
 </div>
 <button type="button" class="btn-line" onClick="{{toggleTeachers}}" style="align-self: flex-start">{{teachersLabel}}</button>
 <sc-if value="{{showTeachers}}" hint-placeholder-val="{{ false }}">
@@ -220,52 +271,33 @@ a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8
 </sc-if>
 </div>
 
-<!-- Recognition, within The Artist -->
-<div style="display: flex; flex-direction: column; gap: 28px">
+<!-- Recognition, every line linked to its record -->
+<div id="artist-recognition" style="display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <div class="lbl" style="color: #8A6D12">Recognition</div>
-<h3 style="margin: 0; font-weight: 600; font-size: clamp(26px, 3.2vw, 38px)">Recognised in every medium he practises.</h3>
+<h3 style="margin: 0; font-weight: 600; font-size: clamp(26px, 3.2vw, 38px)">Recognised in India, the USA and Singapore.</h3>
 </div>
-<div style="display: flex; flex-direction: column; gap: 8px"><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">India</span> · Work in the national collection, National Gallery of Modern Art, New Delhi. Tamil Nadu State Award, 1998.</span></div><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">USA</span> · PromaxBDA Global Excellence Award, Bronze, Los Angeles, 2015, for motion design at CNA, Mediacorp.</span></div><div style="display: flex; align-items: baseline; gap: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; color: #1A1A1D"><span style="width: 28px; height: 2px; background: #D4AF37; display: inline-block; flex: 0 0 28px; transform: translateY(-4px)"></span><span><span style="color: #8A6D12">Singapore</span> · Golden Point Award twice, National Arts Council and SPH. Commissioned by the National Arts Council and National Library Board.</span></div></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid #D8D8D0">
-<sc-for list="{{proofs}}" as="p" hint-placeholder-count="4">
-<div style="padding: 20px 16px 0 0; border-top: 2px solid #D4AF37; margin-top: -1px">
-<div style="font-size: 36px; font-weight: 700; color: #8A6D12">{{p.year}}</div>
-<div style="font-size: 15px; font-weight: 600; margin-top: 6px">{{p.what}}</div>
-<div style="font-size: 13px; color: #5A5A5A; margin-top: 4px">{{p.where}}</div>
-</div>
+<div class="rc-list">
+<sc-for list="{{recog}}" as="g" hint-placeholder-count="3">
+<div class="rc-g"><div class="rc-r">{{g.region}}</div><ul>
+<sc-for list="{{g.items}}" as="i" hint-placeholder-count="3">
+<li><a href="{{i.h}}">{{i.t}}</a></li>
+</sc-for>
+</ul></div>
 </sc-for>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 56px; margin-top: 8px">
-<div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 8px">
-<button type="button" id="record-btn" class="btn-line" onClick="{{toggleRecord}}" style="align-self: flex-start; color: #8A6D12; border-color: #8A6D12">{{recordLabel}}</button>
-<sc-if value="{{showRecord}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; margin-top: 8px">
-<sc-for list="{{timeline}}" as="t" hint-placeholder-count="7">
-<div style="display: flex; gap: 20px; padding: 12px 0; border-bottom: 1px solid #E8E8E8">
-<div style="width: 92px; flex: 0 0 92px; font-weight: 700; font-size: 17px; color: #8A6D12">{{t.year}}</div>
-<div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; color: #2D2D2D">
-<sc-for list="{{t.items}}" as="it" hint-placeholder-count="2">
-<div style="padding-left: 14px; border-left: 2px solid #E3D6A6">{{it}}</div>
-</sc-for>
+<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; margin-top: 8px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3A3A3A; max-width: 560px">The full record, year by year from 1988, with every award, exhibition, project and press notice linked to its document, is kept in the Archive.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn-line" href="#chronology" style="color: #8A6D12; border-color: #8A6D12">SEE THE FULL RECORD</a>
+<a class="btn-line" href="#documents" style="color: #8A6D12; border-color: #8A6D12">DOCUMENTS & MEDIA</a>
 </div>
 </div>
-</sc-for>
-<button type="button" class="btn-line" onClick="{{closeRecord}}" style="align-self: flex-start; margin-top: 18px; color: #8A6D12; border-color: #8A6D12">HIDE THE FULL RECORD ↑</button>
-</div>
-</sc-if>
-</div>
-<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 12px">
+<a href="#PR-2014-01-024" style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit">
 <img src="/_blob/3556958c05ecf413bae5e86e65b6f7f2" alt="Tabla! newspaper, 16 May 2014: Bird Sanctum by Baskar for Project LAVA" style="width: 100%; display: block">
-<div style="font-size: 14px; font-style: italic; color: #5A5A5A">Tabla!, Singapore, 16 May 2014 — <span style="font-style: normal">Bird Sanctum</span>, after Ma. Elangkannan's novel <span style="font-style: normal">Kuruvi Kottam</span>, Project LAVA, National Arts Council and National Library Board.</div>
-<sc-if value="{{showRecord}}" hint-placeholder-val="{{ false }}">
-<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/7a71bc2ba5db994de09e71c4681a5116" alt="Baskar with Bird Sanctum at library@chinatown, 2014" loading="lazy" style="width: 100%; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Baskar with <i>Bird Sanctum</i>, Project LAVA, at library@chinatown, 2014.</figcaption></figure>
-<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/533f26fcb5479f2c044ac859332900a4" alt="Baskar with dancers and volunteers at the GREY rooftop murals, Maya Dance Theatre, 2013" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A"><i>GREY</i>, rooftop murals for <a href="https://www.mayadancetheatre.org/" target="_blank" rel="noopener" style="color: #8A6D12">Maya Dance Theatre</a>'s production <i>GREY</i>, Singai Tamil Sangam, Little India, Singapore, June 2013. Murals by Baskar and the photographer <a href="https://charlie-lim.squarespace.com/" target="_blank" rel="noopener" style="color: #8A6D12">Charlie Lim</a>, painted with the dancers, volunteers, Kampong Glam Rowell Court RC and Republic Polytechnic's Indian Cultural Group. Artistic director: Kavitha Krishnan. With thanks to the National Arts Council.</figcaption></figure>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img loading="lazy" src="/_blob/036c7a1032e65d92936861ab67fdf272" alt="Baskar receiving the Golden Point Award for Tamil Poetry in 2011 and in 2013" style="width: 100%; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Golden Point Award for Tamil Poetry, National Arts Council, Singapore: 2011 (left) and 2013 (right), both 3rd Prize.</figcaption></figure>
-<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/83d9fdd77e04b5acec37090a8bb35685" alt="Tamil Murasu report on the Golden Point Award 2013" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">Tamil Murasu, November 2013: "Golden Point Award 2013". In the same competition, Suguna Samidurai won 1st Prize and Baskar 3rd Prize for Tamil poetry.</figcaption></figure>
-<figure style="margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px"><img src="/_blob/e3d509517cbfbf36e430ecf65ead61ee" alt="PromaxBDA 2015 Global Excellence Award trophy" loading="lazy" style="width: 100%; height: auto; display: block"><figcaption style="font-size: 14px; color: #5A5A5A">PromaxBDA Global Excellence Award, Bronze, Los Angeles, USA, 2015: Art Direction &amp; Design, Program-Specific Logo, for CNA's <i>Documentary of the Week</i>, Mediacorp, Singapore. Presented at PromaxBDA's annual global conference, alongside winners such as CNN and FX.</figcaption></figure>
-</sc-if>
-</div>
+<span style="font-size: 14px; font-style: italic; color: #5A5A5A">Tabla!, Singapore, 16 May 2014 — <span style="font-style: normal">Bird Sanctum</span>, after Ma. Elangkannan's novel <span style="font-style: normal">Kuruvi Kottam</span>, Project LAVA, National Arts Council and National Library Board.</span>
+</a>
 </div>
 </div>
 </div>
@@ -294,9 +326,10 @@ a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px 20px">
 <sc-for list="{{shownWorks}}" as="w" hint-placeholder-count="9">
-<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}">
+<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}" title="{{w.tip}}">
 <img src="{{w.thumb}}" alt="{{w.title}}, {{w.medium}}" style="width: 100%; aspect-ratio: 4 / 5; object-fit: {{w.fit}}; object-position: {{w.pos}}; display: block; background: #1A1A1D">
 <div style="display: flex; flex-direction: column; gap: 4px">
+<div class="wno">{{w.inv}}</div>
 <div style="font-size: 16px; font-weight: 600; color: #F5F5F0">{{w.title}}</div>
 <div style="font-size: 13px; color: #A8A8A0">{{w.year}} · {{w.medium}}</div>
 </div>
@@ -320,9 +353,10 @@ a:hover .nm-draw,a:focus-visible .nm-draw,a:active .nm-draw{animation:nmdraw 1.8
 <div style="display: flex; flex-direction: column; gap: 40px">
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px 20px">
 <sc-for list="{{digitalWorks}}" as="w" hint-placeholder-count="3">
-<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}">
+<button type="button" class="work" onClick="{{w.open}}" aria-label="View {{w.title}}" title="{{w.tip}}">
 <img src="{{w.src}}" alt="{{w.title}}, {{w.medium}}" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: {{w.pos}}; display: block; background: #1A1A1D">
 <div style="display: flex; flex-direction: column; gap: 4px">
+<div class="wno">{{w.inv}}</div>
 <div style="font-size: 16px; font-weight: 600; color: #F5F5F0">{{w.title}}</div>
 <div style="font-size: 13px; color: #A8A8A0">{{w.year}} · {{w.medium}}</div>
 </div>
@@ -410,6 +444,7 @@ and those who hunger only for success.</p>
 <div style="font-size: 20px; font-weight: 600; color: #F5F5F0">{{openWork.title}}</div>
 <div style="font-size: 14px; color: #CFCFC8">{{openWork.year}} · {{openWork.medium}}</div>
 <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #D4AF37">{{openWork.status}}</div>
+<sc-if value="{{openInv}}" hint-placeholder-val="{{ false }}"><a class="wno-v" href="#{{openInv}}" onClick="{{closeWork}}" style="align-self: center; margin-top: 6px">{{openInv}} · OPEN IN THE ARCHIVE</a></sc-if>
 </div>
 <div style="display: flex; gap: 12px">
 <button type="button" class="btn-line" onClick="{{prevWork}}" style="min-height: 44px">← PREV</button>
@@ -522,7 +557,7 @@ and those who hunger only for success.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
 <div style="border: 1px solid #3A3A3A; border-top: 3px solid #D4AF37; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">Open to all</div>
+<div id="archive-kit" style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">Open to all</div>
 <div style="font-size: 24px; font-weight: 600; color: #F5F5F0">Press kit</div>
 <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.9; color: #CFCFC8">
 <li>Biography, short and long</li>
@@ -534,7 +569,7 @@ and those who hunger only for success.</p>
 <a class="btn-gold" href="mailto:studio@baaskaraa.com?subject=Press%20kit" style="align-self: flex-start; margin-top: auto">REQUEST PRESS KIT</a>
 </div>
 <div style="border: 1px solid #3A3A3A; border-top: 3px solid #D4AF37; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<div style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">By request</div>
+<div id="archive-full" style="font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37">By request</div>
 <div style="font-size: 24px; font-weight: 600; color: #F5F5F0">Full archive</div>
 <ul style="margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.9; color: #CFCFC8">
 <li>Complete catalogue of works</li>
@@ -802,7 +837,7 @@ and those who hunger only for success.</p>
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { navGo: false, hLbl: '', intro: 'on', introDraw: false, markSeen: false, markRev: false, egIdx: { collect: 0, patron: 0, commission: 0, visit: 0 }, egPlay: { collect: true, patron: false, commission: false, visit: false }, egOpen: '', rcIdx: { artist: 0, india: 0, usa: 0, sg: 0 }, rcPlay: { artist: true, india: false, usa: false, sg: false }, awIdx: { art: 0, digital: 0, lit: 0 }, awPlay: { art: true, digital: false, lit: false }, awCh: '', awFilter: 'All', awOpen: -1, awLimit: 8, active: 'top', joined: false, filter: 'All', open: -1, chapter: 'Art', record: false, story: false, limit: 8, slide: 0, teachers: false, nowMore: false, digiMore: false, litMore: false, menu: false, navHidden: false, hero: 0, tick: 0, lineDone: false, lineMsg: 'Touch the paper and draw.', copied: false };
+    this.state = { navGo: false, hLbl: '', intro: 'on', introDraw: false, markSeen: false, markRev: false, egIdx: { collect: 0, patron: 0, commission: 0, visit: 0 }, egPlay: { collect: true, patron: false, commission: false, visit: false }, egOpen: '', rcIdx: { artist: 0, india: 0, usa: 0, sg: 0 }, rcPlay: { artist: true, india: false, usa: false, sg: false }, awIdx: { art: 0, digital: 0, lit: 0 }, awPlay: { art: true, digital: false, lit: false }, awCh: '', awFilter: 'All', awOpen: -1, awLimit: 8, active: 'top', sub: '', archTab: 'chronology', joined: false, filter: 'All', open: -1, chapter: 'Art', record: false, story: false, limit: 8, slide: 0, teachers: false, nowMore: false, digiMore: false, litMore: false, menu: false, navHidden: false, hero: 0, tick: 0, lineDone: false, lineMsg: 'Touch the paper and draw.', copied: false };
     this.onScroll = this.onScroll.bind(this);
   }
   componentDidMount() {
@@ -871,7 +906,28 @@ class Component extends DCLogic {
     var y = window.scrollY || 0, last = this.lastY || 0, hide = this.state.navHidden;
     hide = false;
     this.lastY = y;
-    if (current !== this.state.active || hide !== this.state.navHidden) this.setState({ active: current, navHidden: hide });
+    var grp = (current === 'agam' || current === 'puram') ? 'statement' : current, list = this.subs()[grp] || [], sub = '';
+    if (grp === 'works') sub = 'works-' + String(this.state.chapter || 'Art').toLowerCase();
+    else if (grp === 'archive') { var av = document.getElementById('bk-archive-view'); sub = (av && av.getBoundingClientRect().top <= 160) ? (this.state.archTab || 'chronology') : 'archive-kit'; }
+    else for (var j = 0; j < list.length; j++) { var se = document.getElementById(list[j][0]); if (se && se.getClientRects().length && se.getBoundingClientRect().top <= 160) sub = list[j][0]; }
+    if (!sub && list.length) sub = list[0][0];
+    if (current !== this.state.active || sub !== this.state.sub || hide !== this.state.navHidden) this.setState({ active: current, sub: sub, navHidden: hide });
+  }
+  subs() {
+    /* second menu row, per section (two-layer menu, 28 Oct 2026) */
+    return {
+      artist: [['artist', 'Overview'], ['artist-story', 'The story'], ['artist-lineage', 'Lineage'], ['artist-recognition', 'Recognition'], ['chronology', 'Full record']],
+      works: [['works-art', 'Art'], ['works-digital', 'Digital'], ['works-literature', 'Literature']],
+      statement: [['statement', 'Not two'], ['agam', 'Agam'], ['puram', 'Puram']],
+      archive: [['archive-kit', 'Press kit'], ['archive-full', 'Full archive'], ['chronology', 'Chronology'], ['catalogue', 'Catalogue'], ['projects', 'Projects'], ['documents', 'Documents & Media']]
+    };
+  }
+  reveal(id) {
+    /* addresses that need something opened first; the site runtime calls this before scrolling */
+    var m;
+    if (/^(chapter-[1-9]|artist-story)$/.test(id)) { if (!this.state.story) this.setState({ story: true }); return { sec: 'artist', to: id }; }
+    if ((m = /^works-(art|digital|literature)$/.exec(id))) { var c = m[1].charAt(0).toUpperCase() + m[1].slice(1); this.setState({ chapter: c, filter: 'All', open: -1 }); return { sec: 'works', to: 'works' }; }
+    return null;
   }
   works() {
     /* TEMPORARILY HIDDEN (21 Oct 2026): remove a title from this list to show the work again */
@@ -1077,7 +1133,8 @@ class Component extends DCLogic {
     var open = this.state.open;
     var openWork = open >= 0 && open < shown.length ? shown[open] : { title: '', year: '', medium: '', src: '', status: '' };
     var cats = ['All', 'Available', 'Painting', 'Drawing', 'Sculpture', 'Installation', 'Studio', 'Concept'];
-    var withOpen = shown.map(function (w, i) { return Object.assign({}, w, { fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { self.setState({ open: i }); } }); });
+    var invOf = function (w) { return (typeof BK !== 'undefined' && BK.inv && w && w.title) ? BK.inv(w.title, w.year) : ''; };
+    var withOpen = shown.map(function (w, i) { var inv = invOf(w); return Object.assign({}, w, { inv: inv, tip: inv ? inv + ' · ' + w.title + ', ' + w.year : w.title + ', ' + w.year, fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { self.setState({ open: i }); } }); });
     var aw_st = this.state, aw_sets = this.awSets(), aw_all = this.works();
     var aw_names = { art: 'ART', digital: 'DIGITAL', lit: 'LITERATURE' }, aw_chs = { art: 'Art', digital: 'Digital', lit: 'Literature' };
     var aw_nums = { art: '01', digital: '02', lit: '03' };
@@ -1179,10 +1236,17 @@ class Component extends DCLogic {
           style: 'background: none; border: none; border-bottom: 2px solid ' + (on ? '#D4AF37' : 'transparent') + '; color: ' + (on ? '#D4AF37' : '#CFCFC8') + '; font-family: inherit; font-size: 18px; letter-spacing: 3px; text-transform: uppercase; padding: 14px 28px 14px 0; margin-right: 28px; cursor: pointer; min-height: 48px' };
       }),
       digitalWorks: withOpen,
-      storyPics: [
-        { year: '1998', cap: 'Receiving the painting prize at Gandhi Mandapam, Chennai, 2 October', src: '/_blob/8185b280f940e5f11f1b28cef88d337f' },
-        { year: '1999', cap: 'Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award for My Native Land, 6 January', src: '/_blob/aa4ccb6edb9097aa2012a1e872d01ccb' }
-      ],
+      summary: ["baaskaraa is an Indian artist based in Singapore, working across painting, sculpture, digital art and Tamil poetry.", "Born Baskar in 1974 in Tamil Nadu, India, he trained at the Government College of Arts and Crafts, Chennai, India's oldest art school, graduating with First Class Distinction.", "While still a student, his work entered the collection of the National Gallery of Modern Art, New Delhi.", "In Singapore since 2000, he carried the painter's discipline into the screen, earning a PromaxBDA Global Excellence Award in Los Angeles for his design work at CNA, Mediacorp. He carried it into language too: he has twice been honoured with the Golden Point Award for Tamil Poetry.", "Literature drives the work. Each piece begins as a thought, becomes a line, and only then takes form, often as a whole series."],
+      chs: [{"id": "chapter-1", "no": "I", "years": "1974–1994", "title": "The village", "src": "https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/4015ef5f94e4aaf4b6b1042f7af4c69c-l.webp", "alt": "My Native Land, oil on canvas, 1998", "cap": "My Native Land, oil on canvas, 1998. Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award.", "rec": "#BK-1998-016", "rl": "#chronology-1974", "paras": ["He was born Baskar in 1974 in Irumbulikkurichi, a village in the Ariyalur district of Tamil Nadu, India.", "The first images he knew were not in books. In the village stands the shrine of his family's deity, the kula deivam: an open-air sanctuary of giant painted horses and elephants, seated guardian warriors and small domed shrines beneath a great tree. Figures larger than a man, painted in full colour, standing in the open. These were the places that first inspired him.", "At school he won first prizes three years running: for drawing in 1988 and 1989 at the Government High School, Irumbulikkurichi, and for painting in 1990 at the Government Higher Secondary School, Ponparappi. That same year he took second prize for an essay. The writer was already there.", "In 1992 he passed the Government Technical Examination, Higher Grade, in freehand outline and model drawing. Two years later he left for Chennai and its art school.", "The village never left the work. His home there is one of his three studios, and since 2014 Aalam has joined the village's people working in Singapore to the village at home."]}, {"id": "chapter-2", "no": "II", "years": "1994–2000", "title": "Chennai", "src": "/_blob/8185b280f940e5f11f1b28cef88d337f", "alt": "Receiving the painting prize at Gandhi Mandapam, Chennai, 1998", "cap": "Receiving the painting prize at Gandhi Mandapam, Chennai, 2 October 1998.", "rec": "#DOC-1998-01", "rl": "#chronology-1994", "paras": ["In 1994 he entered the Government College of Arts and Crafts, Chennai. Founded in 1850, it is India's oldest art school. The preparatory course took him through drawing, painting, printmaking, visual communication design, textile design, ceramics, photography and sculpture.", "In his first year a watercolour of white daisies sold through the Victoria Technical Institute. It was his first sale, and it gave him the confidence to go on.", "By 1997 he was exhibiting across India. With the Square Group, four young artists at Saga Art Gallery, Chennai, he drew reviews in The Hindu and Dinamani. His work was shown at the 40th National Exhibition of Art in Bangalore, and Abstract (gold and black) entered the collection of the National Gallery of Modern Art, New Delhi. A college study trip to Ooty set off the Ooty series: far landscapes, wholly imagined.", "1998 brought three honours. The Victoria Technical Institute's Mahatma Gandhi Birth Centenary Memorial Award, for the oil painting My Native Land. The State Award of the Tamil Nadu Oviya Nunkalai Kuzhu, for Light on Scape Series-1, which The Hindu singled out for its handling of light. Second prize at Gandhi Mandapam, presented in the presence of the Governor and the Chief Minister of Tamil Nadu.", "In 1999 he graduated Bachelor of Fine Arts in Painting, First Class with Distinction, with the Best Outgoing Student Award. The same year he earned a Diploma in Multimedia Design and Presentation, Grade A: the screen was already calling. He began the Master of Fine Arts, and in May 2000 held his first solo exhibition, A Portfolio of Art Happenings, at Apparao Galleries, Chennai. In October he left for Singapore."]}, {"id": "chapter-3", "no": "III", "years": "2000–2013", "title": "The painter who fell into language", "src": "/_blob/036c7a1032e65d92936861ab67fdf272", "alt": "Baskar receiving the Golden Point Award for Tamil Poetry in 2011 and in 2013", "cap": "Golden Point Award for Tamil Poetry, Singapore: 2011 (left) and 2013 (right), both 3rd Prize.", "rec": "#DOC-2011-01", "rl": "#chronology-2000", "paras": ["In 2000 he landed in Singapore with a painter's hands and no canvas. What he found instead was a language: his own.", "For nearly a decade he worked inside Tamil, building it in pixels and sound for the children of a new country. He drew it, animated it and edited its voice, frame by frame and syllable by syllable. Day after day the language passed through his hands, and something turned. His thoughts stopped arriving as images. They arrived as words.", "So he wrote.", "In 2003 he married Suguna, a poet. Two writers at one table, then twice a month at Kavimaalai and Kavi Solai, the Tamil poetry circles where Singapore's poets read and are judged by each other. It went on for over a decade. The circles became the national stage: the Golden Point Award for Tamil Poetry in 2011, and again in 2013, when Suguna took first prize in the same ceremony. Two poets, one home, one language.", "In 2004 he became a life member of the Association of Singapore Tamil Writers, and served on its committee from 2006 to 2012. In 2011 he sat on the organising committee of the World Tamil Writers Conference, Singapore."]}, {"id": "chapter-4", "no": "IV", "years": "2007–2014", "title": "From the word, the form", "src": "/_blob/533f26fcb5479f2c044ac859332900a4", "alt": "Baskar with dancers and volunteers at the GREY rooftop murals, Maya Dance Theatre, 2013", "cap": "GREY, rooftop murals for Maya Dance Theatre's production GREY, Singai Tamil Sangam, Little India, June 2013. With thanks to the National Arts Council.", "rec": "#PR-2013-01", "rl": "#chronology-2007", "paras": ["Then the words came back to the canvas. Today a work by baaskaraa begins as a thought, becomes a line, and only then becomes a form, often a whole series.", "Bird Sanctum was the first time the public saw it: a Tamil novel turned into nests of real twigs, touring Singapore's national libraries in 2014. Commissioned for Project LAVA by the National Arts Council and the National Library Board, it grew from Ma. Elangkannan's novel Kuruvi Kottam. The twigs for the nest were gathered at MacRitchie Reservoir with the novelist himself. The work travelled to library@chinatown, Ang Mo Kio, Bedok and Jurong East, and on 18 July artist and novelist spoke together at Ang Mo Kio Library.", "The same year he gave form to a poem by Suguna Baskar, Sinegam Theerndha Kaadhal: first as a digital sculpture, then as a painting.", "The work also left the studio. In 2013, for Maya Dance Theatre's production GREY, he and the photographer Charlie Lim made the murals on the rooftop of the Singai Tamil Sangam in Little India, guiding the dancers, residents and students who painted them, with thanks to the National Arts Council. For four nights in June the walls were the stage. The murals have since been painted over; the photographs remain.", "The theatre had called earlier. In 2007 his digital backdrops framed 37 Pearls at the Victoria Theatre, an evening of Tamil theatre and dance by the Singapore Indian Artistes' Association and the Manimaran Dance Group.", "He doesn't illustrate literature. He writes it, and then he builds it."]}, {"id": "chapter-5", "no": "V", "years": "2001–2023", "title": "The same hand, on screen", "src": "/_blob/e3d509517cbfbf36e430ecf65ead61ee", "alt": "PromaxBDA 2015 Global Excellence Award trophy", "cap": "PromaxBDA Global Excellence Award, Bronze, Los Angeles, 2015: Art Direction & Design, Program-Specific Logo, for CNA's Documentary of the Week.", "rec": "#DOC-2015-01", "rl": "#chronology-2001", "paras": ["Alongside the poet, a second discipline was growing: the screen. It began in 2001 with digital creation for Tamil language and culture, for Ministry of Education projects, and it became a profession.", "From November 2008 he was Art and Visual Effects Director for television at Tantra Inc., Singapore: opening titles, trailers and visual effects for television series, art direction and effects for commercials, set design.", "From 2010 to 2014 he worked independently, as a full-time painter, digital freelancer and founder of the RiGHTMiND studio.", "In 2014 he joined Mediacorp as Senior Graphic Designer at CNA, Singapore's international news channel, and stayed nine years, designing motion graphics and branding for the channel. A CNA logo animation is his, from concept to final frame.", "In 2015 that work was recognised in Los Angeles: a PromaxBDA Global Excellence Award, Bronze, in Art Direction & Design, Program-Specific Logo, for CNA's Documentary of the Week, presented at PromaxBDA's annual global conference alongside winners such as CNN and FX. In 2021 Mediacorp honoured him with its Long Service Award.", "The screen never replaced the canvas. It trained the same hand in time, motion and light: the hand that now builds digital sculpture, 3D works and virtual space."]}, {"id": "chapter-6", "no": "VI", "years": "since 2010", "title": "Agam. Puram. Now.", "src": "https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/e5a08b61426bbcc8cc9047ad408ee1b4-l.webp", "alt": "Emergence, 3D digital sculpture, 2020", "cap": "Emergence, 3D digital sculpture, May 2020.", "rec": "#BK-2020-059", "rl": "#chronology-2010", "paras": ["In 2010 a second journey began, inward. Agam, the inner path, led him through the yogis and siddhas of Tamil tradition, to Arunachala and the temples of Tamil Nadu, back to the village gods, and to sit with masters in India and Singapore. Vasi Yoga in the Siddha tradition. Hatha Yoga from 2016. Nada from 2018.", "Stillness opened into pure observation: a dialogue with no intention, in which questions arose and answered themselves. In his words: “Stillness opens into observation. A dialogue begins without intention. Questions arise and answer themselves. What remains is the artwork.” What remained, in May 2020, was Emergence: a living plant traced as line, the line set free, the line resolved into a gold sculpture in three dimensions.", "Puram, the outer path, runs the other way. On 14 January 2014 he brought together the people of Irumbulikkurichi working in Singapore as Aalam, for the village at home: Pongal, village festivals, honouring the elders.", "The line itself is the signature: non-stop, never defined, everything connected and flowing. The Unbroken Line, the line studies and a self-portrait, all of 2020, carry it.", "Now the work turns on literature again. Vinayagar Agaval, after Avvaiyar's verse, has been in the making since a sketch of 3 February 2020. Kavi, a study of Suguna Baskar in gouache and Japanese gold, opens the way to a planned life-size portrait in oil and 24-carat gold."]}],
+      recog: [{"region": "India", "items": [{"t": "Work in the national collection, National Gallery of Modern Art, New Delhi, 1997", "h": "#BK-1996-002"}, {"t": "Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award, 1998", "h": "#DOC-1999-01"}, {"t": "Tamil Nadu State Award, 1998", "h": "#DOC-1998-03"}]}, {"region": "USA", "items": [{"t": "PromaxBDA Global Excellence Award, Bronze, Los Angeles, 2015: Art Direction & Design, for CNA, Mediacorp", "h": "#DOC-2015-01"}]}, {"region": "Singapore", "items": [{"t": "Golden Point Award for Tamil Poetry, 2011 and 2013", "h": "#DOC-2011-01"}, {"t": "Commissioned by the National Arts Council and the National Library Board: Bird Sanctum, Project LAVA, 2014", "h": "#PR-2014-01"}, {"t": "Mediacorp Long Service Award, 2021", "h": "#DOC-2021-01"}]}],
+      openInv: invOf(openWork),
+      hasSub: !!(this.subs()[(this.state.active === 'agam' || this.state.active === 'puram') ? 'statement' : this.state.active]),
+      subLabel: 'In this section',
+      subItems: (function () {
+        var g = (self.state.active === 'agam' || self.state.active === 'puram') ? 'statement' : self.state.active, cur = self.state.sub;
+        if (g === 'archive' && /^(chronology|catalogue|projects|documents)$/.test(cur)) cur = self.state.archTab;
+        return (self.subs()[g] || []).map(function (x) { return { href: '#' + x[0], label: x[1], cur: x[0] === cur }; });
+      })(),
       navShift: this.state.navHidden ? 'translateY(-100%)' : 'none', menuCls: this.state.menu ? 'open' : '', menuLabel: this.state.menu ? 'CLOSE' : 'MENU',
       toggleMenu: function () { self.setState({ menu: !self.state.menu, navHidden: false }); }, closeMenu: function () { self.setState({ menu: false }); },
       showNowMore: this.state.nowMore,
@@ -1204,14 +1268,6 @@ class Component extends DCLogic {
       toggleStory: function () { self.setState({ story: !self.state.story }); },
       closeStory: function () { self.setState({ story: false }); setTimeout(function () { var el = document.getElementById('story-btn'); if (el) el.scrollIntoView({ block: 'center' }); }, 0); },
       closeRecord: function () { self.setState({ record: false }); setTimeout(function () { var el = document.getElementById('record-btn'); if (el) el.scrollIntoView({ block: 'center' }); }, 0); },
-      story: [{"t": "baaskaraa is an Indian artist living in Singapore: a painter, sculptor, poet and digital artist.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "He was born Baskar in 1974 in Irumbulikkurichi, a village in Tamil Nadu, India. He won first prizes in painting at school three years running, then trained at the Government College of Arts and Crafts, Chennai, India's oldest art school, founded in 1850, graduating with a Bachelor of Fine Arts, First Class with Distinction.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "While still a student, his work was shown at the 40th National Exhibition of Art in Bangalore and acquired by the National Gallery of Modern Art. In 1998 he received the Victoria Technical Institute's Mahatma Gandhi Birth Centenary Memorial Award for My Native Land, and the Tamil Nadu state award for Light on Scape Series-1. In May 2000 he held his first solo exhibition, at Apparao Galleries, Chennai, sponsored by the Tamil Nadu state art body.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "The painter who fell into language", "fs": "22px", "fw": "600", "c": "#1A1A1D", "mt": "14px"}, {"t": "In 2000 he landed in Singapore with a painter's hands and no canvas. What he found instead was a language: his own.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "For nearly a decade he worked inside Tamil, building it in pixels and sound for the children of a new country. He drew it, animated it and edited its voice, frame by frame and syllable by syllable. Day after day the language passed through his hands, and something turned. His thoughts stopped arriving as images. They arrived as words.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "So he wrote.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "In 2003 he married Suguna, a poet. Two writers at one table, then twice a month at Kavimaalai and Kavi Solai, the Tamil poetry circles where Singapore's poets read and are judged by each other. It went on for over a decade. The circles became the national stage: the Golden Point Award for Tamil Poetry in 2011, and again in 2013, when Suguna took first prize in the same ceremony. Two poets, one home, one language.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "Then the words came back to the canvas. Today a work by baaskaraa begins as a thought, becomes a line, and only then becomes a form, often a whole series. Bird Sanctum was the first time the public saw it: a Tamil novel turned into nests of real twigs, touring Singapore's national libraries in 2014.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "The work also left the studio. In 2013, for Maya Dance Theatre's production GREY, he and the photographer Charlie Lim made the murals on the rooftop of the Singai Tamil Sangam in Little India, guiding the dancers, residents and students who painted them. For four nights in June the walls were the stage. The murals have since been painted over; the photographs remain.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}, {"t": "He doesn't illustrate literature. He writes it, and then he builds it.", "fs": "17px", "fw": "400", "c": "#3A3A3A", "mt": "0"}],
-      proofs: [
-        { year: '1997', what: 'Collection, National Gallery of Modern Art', where: 'New Delhi' },
-        { year: '2000', what: 'First solo exhibition, Apparao Galleries', where: 'Chennai' },
-        { year: '2011 · 13', what: 'Golden Point Award', where: 'Singapore' },
-        { year: '2015', what: 'PromaxBDA Global Excellence Award, Bronze', where: 'Los Angeles, USA · for CNA, Mediacorp' },
-        { year: '2021', what: 'Long Service Award', where: 'Mediacorp, Singapore' }
-      ],
       navItems: navDefs.map(function (it) {
         var on = self.state.active === it[0] || (it[0] === 'statement' && (self.state.active === 'agam' || self.state.active === 'puram'));
         return { href: '#' + it[0], label: it[1], style: on ? 'color: #D4AF37; border-bottom: 1px solid #D4AF37' : 'color: #CFCFC8; border-bottom: 1px solid transparent' };
@@ -1240,31 +1296,6 @@ class Component extends DCLogic {
         { name: 'N.S. Manohar', role: 'Watercolour painter. Principal.' },
         { name: 'Pugazhendhi', role: 'Painter. Principal.' }
       ],
-      timeline: [
-        { year: '2015', text: 'PromaxBDA Global Excellence Awards, Bronze · Art Direction & Design, Program-Specific Logo, Documentary of the Week · Channel NewsAsia, Mediacorp · credited for motion graphics' },
-        { year: '2014–23', text: 'Senior Graphic Designer, Mediacorp (Channel NewsAsia)' },
-        { year: '2014', text: 'Bird Sanctum, installation after Ma. Elangkannan\'s novel Kuruvi Kottam · Project LAVA, National Arts Council and National Library Board · toured library@chinatown, Ang Mo Kio, Bedok and Jurong East libraries · public dialogue with the novelist, Ang Mo Kio Library, 18 July' },
-        { year: '2013', text: 'GREY, rooftop murals for Maya Dance Theatre\'s dance production GREY, Singai Tamil Sangam, Little India, with Charlie Lim; painted with the dancers and the community (19–22 June), with thanks to the National Arts Council · Golden Point Award, Tamil Poetry, 3rd Prize; his wife, the poet Suguna Baskar, won 1st Prize at the same ceremony (7 November)' },
-        { year: '2010', text: 'Short Story Workshop, Association of Singapore Tamil Writers, led by Kalaimamani Prapanchan, Umaru Pulavar Tamil Language Centre, Singapore (29 August)' },
-        { year: '2010–14', text: 'Full-time painter, digital freelancer and founder of RiGHTMiND studio' },
-        { year: '2011', text: 'SPH–NAC Golden Point Award, Tamil Poetry, 3rd Prize (27 October; Guest of Honour Ms Grace Fu) · Organising committee, World Tamil Writers Conference' },
-        { year: '2008', text: 'Art and Visual Effects Director for television, Tantra Inc., Singapore · Opening titles, trailers and visual effects for TV series · Art direction and visual effects for TV commercials · Set design' },
-        { year: '2007', text: 'Digital stage backdrops for "37 Pearls" (முத்துக்கள்), Singapore Indian Artistes’ Association and Manimaran Dance Group, Victoria Theatre, Singapore (3 March) · "Understanding Contemporary Art", sharing session, Ang Mo Kio Library, Read Singapore campaign' },
-        { year: '2003–14', text: 'Kavimaalai and Kavi Solai, monthly Tamil poetry circles, Singapore, with his wife, the poet Suguna Baskar' },
-        { year: '2001–08', text: 'Digital creation for Tamil language and culture, Ministry of Education projects, Singapore · New-media education projects for Malaysia and China' },
-        { year: '2000', text: 'First solo exhibition, A Portfolio of Art Happenings, Apparao Galleries, Chennai (15–30 May) · Sponsored by Tamil Nadu Oviya Nunkalai Kuzhu, the state art body · MFA first year, Government College of Arts and Crafts, Chennai' },
-        { year: '1999', text: 'Best Outgoing Student Award · Diploma in Multimedia Design, Grade A · MFA Students\' Exhibition, Chennai' },
-        { year: '1998', text: 'Mahatma Gandhi Birth Centenary Memorial Award, Victoria Technical Institute, Chennai, for "My Native Land" (South Zone award, open to artists from four South Indian states) · State Award, Tamil Nadu Oviya Nunkalai Kuzhu, for "Light on Scape Series-1" · "Light on Scape Series-1" singled out in The Hindu (11 September) · Painting prize, Gandhi Mandapam, Chennai (presented 2 October in the presence of the Governor and Chief Minister) · Metaphor, Lalit Kala Akademi, Chennai · All India Drawing Exhibition, Jaipur · Tamil Nadu Oviya Nunkalai Kuzhu Exhibition, Chennai · World-record long painting, Youth Festival, Jawaharlal Nehru Indoor Stadium, Chennai · Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai' },
-        { year: '1997', text: '40th National Exhibition of Art, Lalit Kala Akademi, Bangalore · Work acquired by the National Gallery of Modern Art, New Delhi · Exhibition, Victoria Technical Institute, Chennai · Annual Exhibition, Government College of Arts and Crafts, Chennai · Kala Mela, New Delhi · Genesis II, print exhibition, Chennai · Young Artists\' Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai · 50th Independence Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai · Square Group, four-artist show of paintings and sculptures, Saga Art Gallery, Chennai (15–30 September) · Reviewed in The Hindu (26 September) and Dinamani (17 October) · Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai' },
-        { year: '1996', text: 'Exhibition, Victoria Technical Institute, Chennai · Award, Tamil Nadu Tourism \'96 · 4th South Zone Level Art Exhibition, Arikkamedu Art Academy, Pondicherry · Artist Improvement Association Exhibition, Chennai · Annual Exhibition, Government College of Arts and Crafts, Chennai' },
-        { year: '1995', text: '1st Prize, Painting, Chemfest \'95, Chengalpattu Medical College · 1st Prize, Collage, Chemfest \'95, Chengalpattu Medical College · Young Artists\' Workshop, Tamil Nadu Oviya Nunkalai Kuzhu · Young Artists\' Workshop, South Zone Cultural Centre, All India Craft Mela · 16th All India Fine Arts Exhibition, Chitrakala Parishath, Bangalore · All India Art and Craft Festival \'95, South Zone Cultural Centre, Thanjavur · Exhibition, Victoria Technical Institute, Chennai · First painting sold: a watercolour of white daisies, through the Victoria Technical Institute' },
-        { year: '1995–98', text: 'Mahatma Gandhi Birth Centenary Memorial Exhibition, Chennai' },
-        { year: '1994–99', text: 'Bachelor of Fine Arts in Painting, First Class with Distinction, University of Madras, including a preparatory course in printmaking, visual communication design, textile design, ceramics, photography and sculpture' },
-        { year: '1992', text: 'Government Technical Examination, Higher Grade, Freehand Outline and Model Drawing, Tamil Nadu' },
-        { year: '1990', text: '1st Prize, Painting, Government Higher Secondary School, Ponparappi · 2nd Prize, Essay, Government Higher Secondary School, Ponparappi' },
-        { year: '1989', text: '1st Prize, Drawing, Government High School, Irumbulikkurichi' },
-        { year: '1988', text: '1st Prize, Drawing, Government High School, Irumbulikkurichi' }
-      ].map(function (t) { return { year: t.year, items: t.text.split(' · ') }; }),
       outward: [
         { tag: '2014', title: 'The banyan takes root', line: 'Aalam begins: Irumbulikkurichi people in Singapore, working for the village at home.', src: '/_blob/5646264453546d552ddd2c5bf18ee30b', pos: 'center', fit: 'contain', alt: 'Aalam banyan logo' },
         { tag: 'Pongal', title: 'The harvest, together', line: 'Festivals and village events, carried by volunteers.', src: '/_blob/0a2b51442b9ec16319ebb9103c291f9c', pos: 'center', fit: 'cover', alt: 'Aalam volunteers at the Pongal festival' },

@@ -1,0 +1,152 @@
+{
+  "about": "Public record of baaskaraa: chronology and documents & media. Public facts only (verified against certificates, programmes and press, see the archive record). Works (BK-) and projects (PR-) are published from the archive app into archive.json; this file links to them by number. Documents are DOC-YYYY-NN. b with me",
+  "updated": "2026-10-28",
+  "kinds": {
+    "life": "Life",
+    "education": "Education",
+    "exhibition": "Exhibitions",
+    "award": "Awards",
+    "work": "Works",
+    "project": "Projects",
+    "literature": "Literature",
+    "digital": "Digital",
+    "press": "Press",
+    "journey": "Agam · Puram"
+  },
+  "chronology": [
+    { "y": 1974, "k": "life", "t": "Born Baskar in Irumbulikkurichi, a village in Tamil Nadu, India", "l": [{ "h": "#chapter-1", "t": "Chapter I" }] },
+
+    { "y": 1988, "k": "award", "t": "1st Prize, Drawing, Government High School, Irumbulikkurichi" },
+    { "y": 1989, "k": "award", "t": "1st Prize, Drawing, Government High School, Irumbulikkurichi" },
+    { "y": 1990, "k": "award", "t": "1st Prize, Painting, Government Higher Secondary School, Ponparappi" },
+    { "y": 1990, "k": "award", "t": "2nd Prize, Essay, Government Higher Secondary School, Ponparappi" },
+    { "y": 1992, "k": "education", "t": "Government Technical Examination, Higher Grade, Freehand Outline and Model Drawing, Tamil Nadu" },
+
+    { "y": 1994, "k": "education", "t": "Enters the Government College of Arts and Crafts, Chennai, India's oldest art school (founded 1850)", "l": [{ "h": "#artist-lineage", "t": "The institution" }, { "h": "#chapter-2", "t": "Chapter II" }] },
+    { "y": 1994, "span": "1994–96", "k": "education", "t": "Preparatory course: drawing, painting, printmaking, visual communication design, textile design, ceramics, photography and sculpture" },
+
+    { "y": 1995, "k": "life", "t": "First painting sold: a watercolour of white daisies, through the Victoria Technical Institute, Chennai" },
+    { "y": 1995, "k": "award", "t": "1st Prize, Painting, Chemfest '95, Chengalpattu Medical College" },
+    { "y": 1995, "k": "award", "t": "1st Prize, Collage, Chemfest '95, Chengalpattu Medical College" },
+    { "y": 1995, "k": "exhibition", "t": "Young Artists' Workshop, Tamil Nadu Oviya Nunkalai Kuzhu" },
+    { "y": 1995, "k": "exhibition", "t": "Young Artists' Workshop, South Zone Cultural Centre, All India Craft Mela" },
+    { "y": 1995, "k": "exhibition", "t": "16th All India Fine Arts Exhibition, Chitrakala Parishath, Bangalore" },
+    { "y": 1995, "k": "exhibition", "t": "All India Art and Craft Festival '95, South Zone Cultural Centre, Thanjavur" },
+    { "y": 1995, "k": "exhibition", "t": "Exhibition, Victoria Technical Institute, Chennai" },
+    { "y": 1995, "span": "1995–98", "k": "exhibition", "t": "Mahatma Gandhi Birth Centenary Memorial Exhibition, Chennai" },
+
+    { "y": 1996, "k": "work", "t": "Paints a banyan in the campus of the Theosophical Society, Adyar, in the open air", "l": ["BK-1996-001"] },
+    { "y": 1996, "k": "award", "t": "Award, Tamil Nadu Tourism '96" },
+    { "y": 1996, "k": "exhibition", "t": "4th South Zone Level Art Exhibition, Arikkamedu Art Academy, Pondicherry" },
+    { "y": 1996, "k": "exhibition", "t": "Artist Improvement Association Exhibition, Chennai" },
+    { "y": 1996, "k": "exhibition", "t": "Annual Exhibition, Government College of Arts and Crafts, Chennai" },
+    { "y": 1996, "k": "exhibition", "t": "Exhibition, Victoria Technical Institute, Chennai" },
+
+    { "y": 1997, "k": "exhibition", "t": "40th National Exhibition of Art, Lalit Kala Akademi, Bangalore" },
+    { "y": 1997, "k": "award", "t": "Work acquired by the National Gallery of Modern Art, New Delhi: Abstract (gold and black)", "l": ["BK-1996-002"] },
+    { "y": 1997, "k": "work", "t": "College study trip to Ooty; the imagined far landscapes of the Ooty series follow", "l": ["BK-1997-045", "BK-1997-012", "BK-1997-008"] },
+    { "y": 1997, "k": "work", "t": "Portrait of Senthil Kumaran, pen and ink, one continuous line: an early unbroken-line drawing", "l": ["BK-1997-044"] },
+    { "y": 1997, "d": "15–30 Sep", "k": "exhibition", "t": "Square Group: paintings and sculptures by four artists, Saga Art Gallery, Chennai", "l": ["DOC-1997-03"] },
+    { "y": 1997, "d": "26 Sep", "k": "press", "t": "The Hindu reviews the Square Group show", "l": ["DOC-1997-01"] },
+    { "y": 1997, "d": "17 Oct", "k": "press", "t": "Dinamani reviews the Square Group show", "l": ["DOC-1997-02"] },
+    { "y": 1997, "k": "exhibition", "t": "Kala Mela, New Delhi" },
+    { "y": 1997, "k": "exhibition", "t": "Genesis II, print exhibition, Chennai" },
+    { "y": 1997, "k": "exhibition", "t": "Young Artists' Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai" },
+    { "y": 1997, "k": "exhibition", "t": "50th Independence Exhibition, Tamil Nadu Oviya Nunkalai Kuzhu, Chennai" },
+    { "y": 1997, "k": "exhibition", "t": "Annual Exhibition, Government College of Arts and Crafts, Chennai" },
+    { "y": 1997, "k": "exhibition", "t": "Exhibition, Victoria Technical Institute, Chennai" },
+    { "y": 1997, "k": "exhibition", "t": "Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai" },
+
+    { "y": 1998, "k": "award", "t": "Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award for 1998, for the oil painting My Native Land (presented 6 January 1999)", "l": ["BK-1998-016", "DOC-1999-01"] },
+    { "y": 1998, "d": "2 Sep", "k": "award", "t": "State Award, Tamil Nadu Oviya Nunkalai Kuzhu, Kalai Kankatchi 1998, for Light on Scape Series-1", "l": ["BK-1998-043", "DOC-1998-03"] },
+    { "y": 1998, "d": "11 Sep", "k": "press", "t": "The Hindu singles out Light on Scape Series-1", "l": ["DOC-1998-02"] },
+    { "y": 1998, "d": "2 Oct", "k": "award", "t": "2nd Prize, painting, Gandhi Mandapam, Chennai, presented in the presence of the Governor and the Chief Minister of Tamil Nadu", "l": ["DOC-1998-01"] },
+    { "y": 1998, "k": "work", "t": "Large realistic oil commissions for private clients, up to 240 × 180 cm", "l": [{ "h": "#engage", "t": "Commission" }] },
+    { "y": 1998, "k": "exhibition", "t": "Metaphor, Lalit Kala Akademi, Chennai" },
+    { "y": 1998, "k": "exhibition", "t": "All India Drawing Exhibition, Jaipur" },
+    { "y": 1998, "k": "exhibition", "t": "Tamil Nadu Oviya Nunkalai Kuzhu Exhibition, Chennai" },
+    { "y": 1998, "k": "exhibition", "t": "World-record long painting, Youth Festival, Jawaharlal Nehru Indoor Stadium, Chennai" },
+    { "y": 1998, "k": "exhibition", "t": "Mahatma Gandhi Memorial Camp, South Zone Cultural Centre, Chennai" },
+
+    { "y": 1999, "d": "Apr", "k": "education", "t": "Bachelor of Fine Arts in Painting, University of Madras, First Class with Distinction", "l": ["DOC-1999-02"] },
+    { "y": 1999, "k": "award", "t": "Best Outgoing Student Award" },
+    { "y": 1999, "k": "education", "t": "Diploma in Multimedia Design and Presentation, Grade A", "l": ["DOC-1999-03"] },
+    { "y": 1999, "k": "exhibition", "t": "MFA Students' Exhibition, Chennai" },
+    { "y": 1999, "span": "1999–2000", "k": "education", "t": "Master of Fine Arts, Government College of Arts and Crafts, Chennai, first year" },
+
+    { "y": 2000, "d": "15–30 May", "k": "exhibition", "t": "First solo exhibition, A Portfolio of Art Happenings, c/o Apparao Galleries, Chennai; sponsored by Tamil Nadu Oviya Nunkalai Kuzhu, the state art body", "l": ["DOC-2000-01"] },
+    { "y": 2000, "k": "work", "t": "Untitled 2K, a series of five mixed-media works, MFA, Chennai", "l": ["BK-2000-026", "BK-2000-027", "BK-2000-028"] },
+    { "y": 2000, "d": "2 Oct", "k": "life", "t": "Arrives in Singapore", "l": [{ "h": "#chapter-3", "t": "Chapter III" }] },
+
+    { "y": 2001, "span": "2001–08", "k": "digital", "t": "Digital creation for Tamil language and culture, Ministry of Education projects, Singapore" },
+    { "y": 2001, "span": "2001–08", "k": "digital", "t": "New-media education projects for Malaysia and China" },
+
+    { "y": 2003, "k": "life", "t": "Marries Suguna, a Tamil poet (pen name Suguna Baskar)" },
+    { "y": 2003, "span": "2003–14", "k": "literature", "t": "Kavimaalai and Kavi Solai, Tamil poetry circles, Singapore, with Suguna Baskar" },
+
+    { "y": 2004, "k": "literature", "t": "Life member, Association of Singapore Tamil Writers" },
+    { "y": 2004, "k": "work", "t": "Untitled (red and orange) and Untitled (blue and green), oil on canvas, Singapore", "l": ["BK-2004-038", "BK-2004-039"] },
+    { "y": 2006, "span": "2006–12", "k": "literature", "t": "Committee member, Association of Singapore Tamil Writers" },
+
+    { "y": 2007, "d": "3 Mar", "k": "project", "t": "Digital stage backdrops for 37 Pearls, Singapore Indian Artistes' Association and Manimaran Dance Group, Victoria Theatre, Singapore", "l": ["PR-2007-01"] },
+    { "y": 2007, "k": "literature", "t": "\"Understanding Contemporary Art\", sharing session, Ang Mo Kio Library, Read Singapore campaign" },
+
+    { "y": 2008, "d": "Nov", "k": "digital", "t": "Art and Visual Effects Director for television, Tantra Inc., Singapore: opening titles, trailers, visual effects, commercials and set design" },
+
+    { "y": 2010, "k": "journey", "t": "The inner journey begins: Agam", "l": [{ "h": "#agam", "t": "Agam" }] },
+    { "y": 2010, "span": "2010–14", "k": "life", "t": "Full-time painter, digital freelancer and founder of RiGHTMiND studio" },
+    { "y": 2010, "d": "29 Aug", "k": "literature", "t": "Short Story Workshop, Association of Singapore Tamil Writers, led by Kalaimamani Prapanchan, Umaru Pulavar Tamil Language Centre, Singapore" },
+
+    { "y": 2011, "d": "27 Oct", "k": "award", "t": "SPH–NAC Golden Point Award, Tamil Poetry, 3rd Prize", "l": ["DOC-2011-01", "DOC-2011-02"] },
+    { "y": 2011, "k": "literature", "t": "Organising committee, World Tamil Writers Conference, Singapore" },
+    { "y": 2011, "k": "project", "t": "Meets the novelist Ma. Elangkannan at the Karikalan Awards, Kuala Lumpur: the first step towards Bird Sanctum", "l": ["PR-2014-01"] },
+
+    { "y": 2013, "d": "19–22 Jun", "k": "project", "t": "GREY: rooftop murals for Maya Dance Theatre's production GREY, Singai Tamil Sangam, Little India, with the photographer Charlie Lim, painted with the dancers and the community; with thanks to the National Arts Council", "l": ["PR-2013-01", "BK-2013-046"] },
+    { "y": 2013, "d": "7 Nov", "k": "award", "t": "Golden Point Award, Tamil Poetry, 3rd Prize; at the same ceremony Suguna Baskar wins 1st Prize", "l": ["DOC-2013-01", "DOC-2013-02", "DOC-2013-03"] },
+
+    { "y": 2014, "d": "14 Jan", "k": "journey", "t": "Aalam begins: Irumbulikkurichi people working in Singapore, for the village at home", "l": [{ "h": "#puram", "t": "Puram" }] },
+    { "y": 2014, "k": "project", "t": "Bird Sanctum, installation after Ma. Elangkannan's novel Kuruvi Kottam, Project LAVA, National Arts Council and National Library Board; tours library@chinatown, Ang Mo Kio, Bedok and Jurong East libraries", "l": ["PR-2014-01", "BK-2014-052", "DOC-2014-01"] },
+    { "y": 2014, "d": "16 May", "k": "press", "t": "tabla! reports on Bird Sanctum", "l": ["PR-2014-01-024"] },
+    { "y": 2014, "d": "18 Jul", "k": "literature", "t": "Public talk with the novelist, Imagination and Creation, Ang Mo Kio Library", "l": ["PR-2014-01"] },
+    { "y": 2014, "k": "work", "t": "Sinegam Theerndha Kaadhal, digital sculpture and painting after Suguna Baskar's poem of the same title", "l": ["BK-2014-050", "BK-2014-049"] },
+    { "y": 2014, "k": "work", "t": "Convergence; Look Within", "l": ["BK-2014-047", "BK-2014-051"] },
+    { "y": 2014, "span": "2014–23", "k": "digital", "t": "Senior Graphic Designer, Mediacorp, CNA (Channel NewsAsia), Singapore", "l": [{ "h": "#chapter-5", "t": "Chapter V" }] },
+
+    { "y": 2015, "k": "award", "t": "PromaxBDA Global Excellence Award, Bronze, Los Angeles: Art Direction & Design, Program-Specific Logo, Documentary of the Week, CNA, Mediacorp", "l": ["DOC-2015-01"] },
+    { "y": 2016, "k": "journey", "t": "Hatha Yoga", "l": [{ "h": "#agam", "t": "Agam" }] },
+    { "y": 2018, "k": "journey", "t": "Nada", "l": [{ "h": "#agam", "t": "Agam" }] },
+
+    { "y": 2020, "d": "3 Feb", "k": "work", "t": "First sketch for Vinayagar Agaval, after Avvaiyar", "l": [{ "h": "#journal", "t": "Now" }] },
+    { "y": 2020, "d": "May", "k": "work", "t": "Emergence, 3D digital sculpture", "l": ["BK-2020-059"] },
+    { "y": 2020, "k": "work", "t": "The Unbroken Line and the line studies; self-portrait", "l": ["BK-2020-054", "BK-2020-055", "BK-2020-053"] },
+
+    { "y": 2021, "d": "16 Sep", "k": "digital", "t": "Mediacorp Long Service Award", "l": ["DOC-2021-01"] },
+    { "y": 2022, "k": "work", "t": "Still Life Study", "l": ["BK-2026-063"] },
+    { "y": 2023, "k": "work", "t": "Sacred Presence, oil and gold leaf", "l": ["BK-2023-060"] },
+    { "y": 2024, "k": "work", "t": "Coral Figures, 3D digital compositions", "l": ["BK-2024-061", "BK-2024-062"] },
+    { "y": 2025, "k": "work", "t": "Kavi: study for a portrait of Suguna Baskar, gouache and Japanese gold", "l": [{ "h": "#works", "t": "Artworks" }] },
+    { "y": 2026, "k": "work", "t": "Vinayagar Agaval, after Avvaiyar: in the making", "l": [{ "h": "#journal", "t": "Now" }] }
+  ],
+
+  "documents": [
+    { "id": "DOC-1997-01", "date": "1997-09-26", "kind": "Press", "title": "\"Display of artistic skills\", The Hindu", "by": "Lakshmi Venkatraman", "note": "Review of the Square Group show: his landscapes in watercolour and acrylic, the fishing boats of North Madras." },
+    { "id": "DOC-1997-02", "date": "1997-10-17", "kind": "Press", "title": "\"இளம் கலைஞர்களின் இதய ஓசை!\", Dinamani–Vellimani", "by": "S. Guru", "note": "Tamil review of the Square Group show (\"The heartbeat of young artists\"), with one of his paintings reproduced." },
+    { "id": "DOC-1997-03", "date": "1997-09", "kind": "Catalogue", "title": "Square Group: Paintings and Sculptures, Saga Art Gallery, Chennai", "note": "Catalogue of the four-artist show, 15–30 September 1997, with the artist's own page." },
+    { "id": "DOC-1998-01", "date": "1998-10-02", "kind": "Photograph", "title": "Receiving the painting prize, Gandhi Mandapam, Chennai", "img": "8185b280f940e5f11f1b28cef88d337f", "note": "2nd Prize, presented in the presence of the Governor and the Chief Minister of Tamil Nadu." },
+    { "id": "DOC-1998-02", "date": "1998-09-11", "kind": "Press", "title": "\"Questions on identity\", The Hindu", "by": "Lakshmi Venkatraman", "note": "Review of the Tamil Nadu Oviya Nunkalai Kuzhu exhibition, singling out Light on Scape Series-1 for its handling of light.", "l": ["BK-1998-043"] },
+    { "id": "DOC-1998-03", "date": "1998-09-02", "kind": "Certificate", "title": "State Award, Tamil Nadu Oviya Nunkalai Kuzhu, Kalai Kankatchi 1998", "note": "For the painting Light on Scape Series-1.", "l": ["BK-1998-043"] },
+    { "id": "DOC-1999-01", "date": "1999-01-06", "kind": "Photograph", "title": "Victoria Technical Institute, Mahatma Gandhi Birth Centenary Memorial Award for 1998", "img": "aa4ccb6edb9097aa2012a1e872d01ccb", "note": "Receiving the award for My Native Land, Chennai.", "l": ["BK-1998-016"] },
+    { "id": "DOC-1999-02", "date": "1999-04", "kind": "Certificate", "title": "Bachelor of Fine Arts, Branch I Painting, University of Madras", "note": "First Class with Distinction. Degree conferred 18 February 2000." },
+    { "id": "DOC-1999-03", "date": "1999", "kind": "Certificate", "title": "Diploma in Multimedia Design and Presentation, Grade A" },
+    { "id": "DOC-2000-01", "date": "2000-05-15", "kind": "Invitation", "title": "First solo exhibition: invitation card and poster", "note": "An exhibition of paintings by K. Baskar, A Portfolio of Art Happenings, c/o Apparao Galleries, Chennai, 15–30 May 2000." },
+    { "id": "DOC-2011-01", "date": "2011-10-27", "kind": "Photograph", "title": "Golden Point Award for Tamil Poetry, 2011 and 2013", "img": "036c7a1032e65d92936861ab67fdf272", "note": "Receiving the award in 2011 (left) and 2013 (right), both 3rd Prize, National Arts Council, Singapore." },
+    { "id": "DOC-2011-02", "date": "2011", "kind": "Poem", "title": "The Chola's Throne", "note": "Golden Point Award 2011, Tamil poetry. Tamil original with English translation.", "l": [{ "h": "#works", "t": "Literature" }] },
+    { "id": "DOC-2013-01", "date": "2013-11-07", "kind": "Photograph", "title": "Baskar and Suguna Baskar at the Golden Point Award", "img": "b96ecfe52e521411043b2a6fe4f7ca94", "note": "Same night, same language: her 1st Prize, his 3rd, for Tamil poetry." },
+    { "id": "DOC-2013-02", "date": "2013-11", "kind": "Press", "title": "\"Golden Point Award 2013\", Tamil Murasu", "img": "83d9fdd77e04b5acec37090a8bb35685", "note": "Report on the awards: Suguna Samidurai 1st Prize and Baskar 3rd Prize for Tamil poetry." },
+    { "id": "DOC-2013-03", "date": "2013", "kind": "Poem", "title": "Glances, Scattered", "note": "Golden Point Award 2013, Tamil poetry, title poem. Tamil original with English translation.", "l": [{ "h": "#works", "t": "Literature" }] },
+    { "id": "DOC-2014-01", "date": "2014", "kind": "Photograph", "title": "Baskar with Bird Sanctum at library@chinatown", "img": "7a71bc2ba5db994de09e71c4681a5116", "note": "Project LAVA, National Arts Council and National Library Board.", "l": ["PR-2014-01", "BK-2014-052"] },
+    { "id": "DOC-2015-01", "date": "2015", "kind": "Award", "title": "PromaxBDA Global Excellence Award, Bronze, Los Angeles", "img": "e3d509517cbfbf36e430ecf65ead61ee", "note": "Art Direction & Design, Program-Specific Logo, for CNA's Documentary of the Week, Mediacorp, Singapore." },
+    { "id": "DOC-2020-01", "date": "2020", "kind": "Photograph", "title": "At his desk in the CNA newsroom", "img": "75aa4a699493cd0ffdcb81a846d595bb", "note": "Mediacorp, Singapore, about 2020." },
+    { "id": "DOC-2021-01", "date": "2021-09-16", "kind": "Award", "title": "Mediacorp Long Service Award", "img": "906548d87f4725d0d9ed37ef28eb5be8", "note": "In appreciation of five years of dedicated service." }
+  ]
+}
