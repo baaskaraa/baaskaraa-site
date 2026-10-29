@@ -45,6 +45,19 @@
       var d = new URLSearchParams();
       d.append('name', em.split('@')[0]); d.append('email', em); d.append('message', 'Studio Circle · website'); d.append('lang', 'en'); d.append('page', location.href);
       fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: d }).then(function () { done(); }, function () { done(); });
+    },
+    /* anonymous tracking: downloads and the optional "I'm a…" tap go to the guest book script (sheet "Downloads"); no names, no emails */
+    track: function (kind, item) {
+      try {
+        var q = new URLSearchParams(location.search), vid = '';
+        try { vid = localStorage.getItem('bk-vid') || ''; if (!vid) { vid = Math.random().toString(36).slice(2, 10); localStorage.setItem('bk-vid', vid); } } catch (e) {}
+        var d = new URLSearchParams();
+        d.append('event', kind); d.append('item', item || ''); d.append('page', location.pathname + location.hash);
+        d.append('ref', document.referrer || ''); d.append('source', q.get('utm_source') || ''); d.append('campaign', q.get('utm_campaign') || '');
+        d.append('tz', (Intl.DateTimeFormat().resolvedOptions().timeZone) || ''); d.append('lang', navigator.language || '');
+        d.append('device', window.innerWidth < 760 ? 'phone' : 'computer'); d.append('visitor', vid);
+        if (navigator.sendBeacon) navigator.sendBeacon(ENDPOINT, d); else fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: d });
+      } catch (e) {}
     }
   };
 
@@ -170,7 +183,13 @@
     return true;
   }
   function onClick(e) {
-    var a = e.composedPath ? e.composedPath()[0] : e.target;
+    var t0 = e.composedPath ? e.composedPath()[0] : e.target;
+    var tr = t0 && t0.closest ? t0.closest('[data-bk-track],[data-bk-who]') : null;
+    if (tr) {
+      if (tr.hasAttribute('data-bk-who')) { BK.track('who', tr.getAttribute('data-bk-who')); var w = tr.parentNode; if (w) w.textContent = 'Thank you.'; return; }
+      BK.track('download', tr.getAttribute('data-bk-track'));
+    }
+    var a = t0;
     a = a && a.closest ? a.closest('a[href]') : null;
     if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
     var h = a.getAttribute('href');

@@ -7,6 +7,13 @@ var NOTIFY = 'studio@baaskaraa.com';
 function doPost(e) {
   var p = (e && e.parameter) || {};
   if (p._gotcha) return ContentService.createTextOutput('ok');          // spam trap
+  if (p.event) {                                                         // anonymous site tracking (downloads etc.): sheet "Downloads", no email
+    var ss = SpreadsheetApp.getActiveSpreadsheet(), ds = ss.getSheetByName('Downloads') || ss.insertSheet('Downloads');
+    if (ds.getLastRow() === 0) ds.appendRow(['When', 'Event', 'Item', 'Page', 'Came from', 'Source', 'Campaign', 'Time zone (≈ country)', 'Language', 'Device', 'Visitor (anonymous)']);
+    var c = function (k) { return String(p[k] || '').slice(0, 300); };
+    ds.appendRow([new Date(), c('event'), c('item'), c('page'), c('ref'), c('source'), c('campaign'), c('tz'), c('lang'), c('device'), c('visitor')]);
+    return ContentService.createTextOutput('ok');
+  }
   var name = String(p.name || '').slice(0, 200);
   var email = String(p.email || '').slice(0, 200);
   var word = String(p.message || '').slice(0, 2000);
