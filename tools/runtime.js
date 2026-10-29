@@ -1,5 +1,6 @@
 /* baaskaraa.com site runtime · renders the approved prototype inside Squarespace · b with me
-   Built by tools/build.js from the prototype (Main.dc.html). Do not edit site/bk-site.js by hand.
+   Built by tools/build.js from the prototype (Main.dc.html) into site/bk-app.js. Do not edit it by hand.
+   site/bk-site.js is a small hand-written loader: it forwards to the GitHub Pages copy of bk-app.js (live 1-2 min after a push, no CDN purge), falling back to jsDelivr.
    Loader on a Squarespace page (Code block):
      <div id="bk-app" data-page="home"></div><script src="https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/site/bk-site.js"></script>
    data-page: home | now | the-artist | artworks | awaken | archive | engage | live
@@ -23,7 +24,7 @@
   var SECTION_PAGE = { top: 'home', journal: 'now', artist: 'the-artist', works: 'artworks', statement: 'awaken', agam: 'awaken', puram: 'awaken', archive: 'archive', engage: 'engage', live: 'live' };
 
   var me = document.currentScript;
-  var BASE = (me && me.src ? me.src.replace(/site\/bk-site(\.min)?\.js.*$/, '') : 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/') + 'assets/';
+  var BASE = (me && me.src ? me.src.replace(/site\/bk-(site|app)(\.min)?\.js.*$/, '') : 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/') + 'assets/';
   var CDN_ASSETS = 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/';
   function asset(s) { s = String(s); if (s.indexOf(CDN_ASSETS) >= 0) s = s.split(CDN_ASSETS).join(BASE); return s.replace(/\/_blob\/([0-9a-f]{32})/g, function (m, id) { return BASE + id + (ASSETS[id] || '.jpg'); }); }
 

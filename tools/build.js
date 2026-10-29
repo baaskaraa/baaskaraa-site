@@ -1,4 +1,4 @@
-// Builds site/bk-site.js from the approved prototype (Main.dc.html). b with me
+// Builds site/bk-app.js from the approved prototype (Main.dc.html). b with me
 // Usage: node tools/build.js path/to/Main.dc.html
 const fs = require('fs'), path = require('path');
 const R = path.join(__dirname, '..');
@@ -48,5 +48,5 @@ put('__LOGIC__', logic.trim());
 put('__ARCHIVE__', fs.readFileSync(path.join(__dirname, 'archive-view.js'), 'utf8').trim());
 out = '/*! morphdom (MIT) © Patrick Steele-Idem · https://github.com/patrick-steele-idem/morphdom */\n' + out;
 fs.mkdirSync(path.join(R, 'site'), { recursive: true });
-fs.writeFileSync(path.join(R, 'site', 'bk-site.js'), out);
-console.log('site/bk-site.js', (out.length / 1024).toFixed(0) + ' KB,', Object.keys(ASSETS).length, 'assets,', used.size, 'used');
+fs.writeFileSync(path.join(R, 'site', 'bk-app.js'), out);
+console.log('site/bk-app.js', (out.length / 1024).toFixed(0) + ' KB,', Object.keys(ASSETS).length, 'assets,', used.size, 'used');
