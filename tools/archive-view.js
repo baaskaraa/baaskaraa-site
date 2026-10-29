@@ -385,7 +385,7 @@ var ARCHIVE = (function () {
   }
   function docEntry(d) {
     var rel = (d.l || []).slice().concat(backLinks(d.id));
-    return { im: d.img, no: d.id, kind: d.kind, title: d.title, meta: [ym(d.date), d.kind, d.by, d.note].filter(Boolean).join(' · '), hash: d.id, links: rel };
+    return { im: d.img ? (typeof d.img === 'string' ? { a: d.img } : d.img) : null, no: d.id, kind: d.kind, title: d.title, meta: [ym(d.date), d.kind, d.by, d.note].filter(Boolean).join(' · '), hash: d.id, links: rel };
   }
   function openDoc(id) {
     var list = docs(), seq = [], i = 0;
