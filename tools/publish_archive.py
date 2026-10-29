@@ -34,6 +34,9 @@ def web_img(i):
     if i in made: return made[i]
     src = find_img(i)
     if not src:
+        done = os.path.join(OUT_IMG, i + '-l.webp')
+        if os.path.exists(done):  # already published: reuse it
+            im = Image.open(done); made[i] = [im.width, im.height]; return made[i]
         print('  missing image', i); made[i] = None; return None
     im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
     for suffix, edge in (('s', 800), ('l', 1600)):
