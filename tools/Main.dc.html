@@ -437,12 +437,17 @@ and those who hunger only for success.</p>
 
 <!-- lightbox -->
 <sc-if value="{{hasOpen}}" hint-placeholder-val="{{ false }}">
-<div role="dialog" aria-modal="true" aria-label="{{openWork.title}}" style="position: fixed; inset: 0; z-index: 100; background: rgba(10,10,12,0.96); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; gap: 16px">
+<div role="dialog" aria-modal="true" aria-label="{{openWork.title}}" style="position: fixed; inset: 0; z-index: 100; background: {{lbBg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; gap: 16px; transition: background .25s">
+<div style="position: absolute; top: 16px; left: 16px; display: flex; gap: 4px">
+<sc-for list="{{viewModes}}" as="m" hint-placeholder-count="2">
+<button type="button" role="tab" aria-selected="{{m.on}}" onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
+</sc-for>
+</div>
 <button type="button" class="btn-line" onClick="{{closeWork}}" style="position: absolute; top: 16px; right: 16px; min-height: 44px; padding: 0 18px">CLOSE</button>
-<img src="{{openWork.src}}" alt="{{openWork.title}}" style="max-width: 100%; max-height: 74vh; object-fit: contain; display: block">
+<img src="{{openWork.src}}" alt="{{openWork.title}}" style="{{lbImgStyle}}">
 <div style="text-align: center; display: flex; flex-direction: column; gap: 6px">
-<div style="font-size: 20px; font-weight: 600; color: #F5F5F0">{{openWork.title}}</div>
-<div style="font-size: 14px; color: #CFCFC8">{{openWork.year}} · {{openWork.medium}}</div>
+<div style="font-size: 20px; font-weight: 600; color: {{lbTitleColor}}">{{openWork.title}}</div>
+<div style="font-size: 14px; color: {{lbMetaColor}}">{{openWork.year}} · {{openWork.medium}}</div>
 <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #D4AF37">{{openWork.status}}</div>
 <sc-if value="{{openInv}}" hint-placeholder-val="{{ false }}"><a class="wno-v" href="#{{openInv}}" onClick="{{closeWork}}" style="align-self: center; margin-top: 6px">{{openInv}} · OPEN IN THE ARCHIVE</a></sc-if>
 </div>
@@ -838,7 +843,7 @@ and those who hunger only for success.</p>
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { navGo: false, hLbl: '', intro: 'on', introDraw: false, markSeen: false, markRev: false, egIdx: { collect: 0, patron: 0, commission: 0, visit: 0 }, egPlay: { collect: true, patron: false, commission: false, visit: false }, egOpen: '', rcIdx: { artist: 0, india: 0, usa: 0, sg: 0 }, rcPlay: { artist: true, india: false, usa: false, sg: false }, awIdx: { art: 0, digital: 0, lit: 0 }, awPlay: { art: true, digital: false, lit: false }, awCh: '', awFilter: 'All', awOpen: -1, awLimit: 8, active: 'top', sub: '', archTab: 'chronology', joined: false, filter: 'All', open: -1, chapter: 'Art', record: false, story: false, limit: 8, slide: 0, teachers: false, nowMore: false, digiMore: false, litMore: false, menu: false, navHidden: false, hero: 0, tick: 0, lineDone: false, lineMsg: 'Touch the paper and draw.', copied: false };
+    this.state = { navGo: false, hLbl: '', intro: 'on', introDraw: false, markSeen: false, markRev: false, egIdx: { collect: 0, patron: 0, commission: 0, visit: 0 }, egPlay: { collect: true, patron: false, commission: false, visit: false }, egOpen: '', rcIdx: { artist: 0, india: 0, usa: 0, sg: 0 }, rcPlay: { artist: true, india: false, usa: false, sg: false }, awIdx: { art: 0, digital: 0, lit: 0 }, awPlay: { art: true, digital: false, lit: false }, awCh: '', awFilter: 'All', awOpen: -1, awLimit: 8, active: 'top', sub: '', archTab: 'chronology', joined: false, filter: 'All', open: -1, chapter: 'Art', record: false, story: false, limit: 8, slide: 0, teachers: false, nowMore: false, digiMore: false, litMore: false, menu: false, navHidden: false, hero: 0, tick: 0, lineDone: false, lineMsg: 'Touch the paper and draw.', copied: false, viewMode: 'framed' };
     this.onScroll = this.onScroll.bind(this);
   }
   componentDidMount() {
@@ -1289,6 +1294,18 @@ class Component extends DCLogic {
       closeWork: function () { self.setState({ open: -1 }); },
       nextWork: function () { self.setState({ open: (open + 1) % shown.length }); },
       prevWork: function () { self.setState({ open: (open - 1 + shown.length) % shown.length }); },
+      lbFramed: (this.state.viewMode || 'framed') === 'framed',
+      lbBg: (this.state.viewMode || 'framed') === 'framed' ? '#DED7C8' : 'rgba(10,10,12,0.96)',
+      lbTitleColor: (this.state.viewMode || 'framed') === 'framed' ? '#1A1510' : '#F5F5F0',
+      lbMetaColor: (this.state.viewMode || 'framed') === 'framed' ? '#5C5346' : '#CFCFC8',
+      lbImgStyle: (this.state.viewMode || 'framed') === 'framed'
+        ? 'max-width: min(100%, 720px); max-height: 66vh; object-fit: contain; display: block; background: #fff; box-shadow: 0 0 0 10px #F5F2EC, 0 0 0 11px #C8BFA8, 0 0 0 26px #F5F2EC, 0 0 0 27px #C8BFA8, 0 6px 48px rgba(0,0,0,.28)'
+        : 'max-width: 100%; max-height: 74vh; object-fit: contain; display: block',
+      viewModes: ['Gallery', 'Framed'].map(function (m) {
+        var key = m.toLowerCase(), on = (self.state.viewMode || 'framed') === key, framedNow = (self.state.viewMode || 'framed') === 'framed';
+        return { label: m.toUpperCase(), on: on ? 'true' : 'false', pick: function () { self.setState({ viewMode: key }); },
+          style: 'background: none; border: 0; border-bottom: 2px solid ' + (on ? '#D4AF37' : 'transparent') + '; color: ' + (on ? '#D4AF37' : (framedNow ? '#8A7F6E' : '#CFCFC8')) + '; font-family: inherit; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 12px; cursor: pointer; min-height: 36px' };
+      }),
       teachers: [
         { name: 'Alphonso Arul Doss', role: 'Painter. Principal, 1992–1997.' },
         { name: 'R.B. Bhaskaran', role: 'Painter. Principal; Chairman, Lalit Kala Akademi.' },
