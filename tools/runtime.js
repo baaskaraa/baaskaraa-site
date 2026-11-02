@@ -67,6 +67,7 @@
   BK.rerender = function () { schedule(); };
   BK.onArchive = function (t) { if (comp && comp.state.archTab !== t) comp.setState({ archTab: t }); };
   BK.inv = function (title, year) { return ARCHIVE.invFor(title, year); };
+  BK.openCards = function (cards, i) { ARCHIVE.openCards(cards, i); };
 
   /* ---------- tiny component base (what the prototype's logic expects) ---------- */
   var comp, queued = false;

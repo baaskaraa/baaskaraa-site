@@ -1135,7 +1135,7 @@ class Component extends DCLogic {
     var openWork = open >= 0 && open < shown.length ? shown[open] : { title: '', year: '', medium: '', src: '', status: '' };
     var cats = ['All', 'Available', 'Painting', 'Drawing', 'Sculpture', 'Installation', 'Studio', 'Concept'];
     var invOf = function (w) { return (typeof BK !== 'undefined' && BK.inv && w && w.title) ? BK.inv(w.title, w.year) : ''; };
-    var withOpen = shown.map(function (w, i) { var inv = invOf(w); return Object.assign({}, w, { inv: inv, tip: inv ? inv + ' · ' + w.title + ', ' + w.year : w.title + ', ' + w.year, fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { self.setState({ open: i }); } }); });
+    var withOpen = shown.map(function (w, i) { var inv = invOf(w); return Object.assign({}, w, { inv: inv, tip: inv ? inv + ' · ' + w.title + ', ' + w.year : w.title + ', ' + w.year, fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { if (typeof BK !== 'undefined' && BK.openCards) BK.openCards(shown.map(function (x) { return { inv: invOf(x), src: x.src, title: x.title, year: x.year, medium: x.medium, status: x.status }; }), i); else self.setState({ open: i }); } }); });
     var aw_st = this.state, aw_sets = this.awSets(), aw_all = this.works();
     var aw_names = { art: 'ART', digital: 'DIGITAL', lit: 'LITERATURE' }, aw_chs = { art: 'Art', digital: 'Digital', lit: 'Literature' };
     var aw_nums = { art: '01', digital: '02', lit: '03' };

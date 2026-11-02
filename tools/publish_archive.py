@@ -11,7 +11,7 @@
 #   works   : only those ticked "Show on baaskaraa.com"; inv, title, year, category, series, medium, size; front/detail/in situ images
 #   projects: Completed projects ticked "Show on baaskaraa.com"; title, subtitle, type, dates, partners, role, summary
 #   items   : only items marked "public"; number, stage, title, date, kind, images
-# Never: prices, owners, locations, provenance, notes, certificates, Drive links, item summaries (they hold archive notes), curator or private items.
+# Never: prices, owners, locations, private provenance, notes, certificates, Drive links, item summaries (they hold archive notes), curator or private items.
 import json, glob, os, sys, re
 from PIL import Image, ImageOps
 
@@ -53,6 +53,7 @@ def size_str(w):
     return ' × '.join(fmt(d) for d in dims) + ' cm (' + ' × '.join('%.1f' % (d / 2.54) for d in dims) + ' in)'
 
 PUBLIC_KINDS = {'front', 'page', 'detail', 'in situ'}
+PUBLIC_STATUS = {'National collection', 'Public commission', 'Public work'}
 works = []
 for w in load('works'):
     if not w.get('web'): continue
@@ -62,10 +63,18 @@ for w in load('works'):
         wh = web_img(im['id'])
         if wh: imgs.append({'id': im['id'], 'kind': im['kind'], 'w': wh[0], 'h': wh[1]})
     imgs.sort(key=lambda x: {'front': 0, 'page': 1}.get(x['kind'], 2))
+    # public record for the viewer's Info and Certificate tabs (decided 2 Nov 2026):
+    # the Story field (never Notes), collection status, and provenance only for works in a public or national collection
+    status = w.get('status', '')
     works.append({k: v for k, v in {
         'inv': w['inv'], 'title': w.get('title', ''), 'year': w.get('year'),
         'category': w.get('category', ''), 'series': w.get('series', ''),
-        'medium': w.get('medium', ''), 'size': size_str(w), 'images': imgs}.items() if v not in ('', None)})
+        'medium': w.get('medium', ''), 'size': size_str(w), 'images': imgs,
+        'story': w.get('story', ''), 'edition': w.get('edition', ''), 'signature': w.get('signature', ''),
+        'place': w.get('place', ''), 'status': status if status not in ('In studio', 'Unknown') else '',
+        'provenance': w.get('provenance', '') if status in PUBLIC_STATUS else '',
+        'awards': w.get('awards', ''), 'exhibitions': w.get('exhibitions', ''), 'literature': w.get('literature', ''),
+        'coa': ((w.get('coa') or {}).get('no') or 'COA-%s-1' % w['inv']) + '|' + ((w.get('coa') or {}).get('date') or '')}.items() if v not in ('', None)})
 
 STAGES = ['Idea', 'Proposal', 'Approval', 'Making', 'Presentation', 'Reception', 'After']
 items = load('pitems')
@@ -94,7 +103,8 @@ txt = json.dumps(out, ensure_ascii=False, separators=(',', ':'))
 # guard: nothing private may leave the archive
 ALLOWED = {'published', 'stages', 'works', 'projects', 'inv', 'title', 'year', 'category', 'series', 'medium', 'size', 'images',
            'id', 'kind', 'w', 'h', 'pid', 'subtitle', 'type', 'start', 'end', 'partners', 'role', 'summary', 'cover', 'items',
-           'no', 'stage', 'date', 'key'}
+           'no', 'stage', 'date', 'key', 'story', 'edition', 'signature', 'place', 'status', 'provenance',
+           'awards', 'exhibitions', 'literature', 'coa'}
 def check(o):
     if isinstance(o, dict):
         for k, v in o.items():
