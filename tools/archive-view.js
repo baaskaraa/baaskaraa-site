@@ -449,7 +449,7 @@ var ARCHIVE = (function () {
     var meta = mode === 'cert' ? (function () { var p = pubWork(w); return ['Certificate · preview', 'Nº ' + p.coa.no, p.coa.date ? 'issued ' + fmtIssue(p.coa.date) : '', w.medium, w.size].filter(Boolean).join(' · '); })() : c.meta;
     viewer.el.innerHTML = '<div class="vin"><div class="vtop"><span class="pos">' + [esc(c.no || ''), multi && mode === 'framed' ? (viewer.i + 1) + ' / ' + s.length : ''].filter(Boolean).join(' &nbsp;·&nbsp; ') + '</span>' +
       (ms.length ? '<div class="vtabs" role="tablist">' + ms.map(function (m) { return '<button type="button" role="tab" data-v="m:' + m[0] + '" aria-selected="' + (m[0] === mode) + '">' + m[1] + '</button>'; }).join('') + '</div>' : '') +
-      (c.enquire ? '<a class="vbtn gold" href="#engage">Enquire</a>' : '') +
+      (c.enquire ? '<a class="vbtn gold" href="mailto:studio@baaskaraa.com?subject=' + encodeURIComponent('[Enquiry] ' + (c.inv ? c.inv + ' · ' : '') + c.title) + '">Enquire</a>' : '') +
       (c.hash && !inArchive && !w ? '<a class="vbtn" href="#' + esc(c.home || c.hash) + '">' + (c.home && /^PR-/.test(c.home) ? 'See the project' : 'Open in the archive') + '</a>' : '') +
       '<button type="button" class="vbtn" data-v="close">✕ Close</button></div>' +
       '<div class="vmain">' + main + '</div>' +
@@ -582,7 +582,7 @@ function coaBg(){
    +'<rect x="10.4" y="10.4" width="189.2" height="275.2" fill="none" stroke="#B8963A" stroke-width=".15"/>'
    +'<text font-size="1.05" letter-spacing=".12" fill="#B8963A" opacity=".85" font-family="Montserrat,Helvetica,sans-serif"><textPath href="#coaMicro">'+micro+'</textPath></text></svg>';
 }
-var COA_CONTACT='info@baaskaraa.com';
+var COA_CONTACT='studio@baaskaraa.com';
 function coaNo(w){return (w.coa&&w.coa.no)||('COA-'+w.inv+'-1');}
 function fmtIssue(d){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d||'');if(!m)return d||'';return (+m[3])+' '+['January','February','March','April','May','June','July','August','September','October','November','December'][+m[2]-1]+' '+m[1];}
 function coaHtml(w,imgSrc,blank){

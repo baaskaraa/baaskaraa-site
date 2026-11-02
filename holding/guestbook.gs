@@ -3,6 +3,8 @@
    (Execute as: Me · Who has access: Anyone). Copy the /exec URL into holding.js (ENDPOINT).
    b with me */
 var NOTIFY = 'studio@baaskaraa.com';
+/* Subject tags (2 Nov 2026): every email to studio@ starts with [Guest book], [Enquiry], [Press] or [Certificate],
+   so one mail rule per tag files it into its folder. See claude/email-guide.md in the project. */
 
 function doPost(e) {
   var p = (e && e.parameter) || {};
@@ -24,7 +26,7 @@ function doPost(e) {
   MailApp.sendEmail({
     to: NOTIFY,
     replyTo: email,
-    subject: 'Guest book · ' + name + ' signed',
+    subject: '[Guest book] ' + (/^Studio Circle/.test(word) ? 'Studio Circle · ' + email : name + ' signed'),
     body: name + ' (' + email + ') signed the baaskaraa guest book.\n\n' + (word || '(no word)') + '\n\nLanguage: ' + (p.lang || 'en')
   });
   return ContentService.createTextOutput('ok');
