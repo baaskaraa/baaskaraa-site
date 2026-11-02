@@ -52,7 +52,7 @@ def size_str(w):
     fmt = lambda x: ('%g' % x)
     return ' × '.join(fmt(d) for d in dims) + ' cm (' + ' × '.join('%.1f' % (d / 2.54) for d in dims) + ' in)'
 
-PUBLIC_KINDS = {'front', 'detail', 'in situ'}
+PUBLIC_KINDS = {'front', 'page', 'detail', 'in situ'}
 works = []
 for w in load('works'):
     if not w.get('web'): continue
@@ -61,7 +61,7 @@ for w in load('works'):
         if im.get('kind') not in PUBLIC_KINDS: continue
         wh = web_img(im['id'])
         if wh: imgs.append({'id': im['id'], 'kind': im['kind'], 'w': wh[0], 'h': wh[1]})
-    imgs.sort(key=lambda x: 0 if x['kind'] == 'front' else 1)
+    imgs.sort(key=lambda x: {'front': 0, 'page': 1}.get(x['kind'], 2))
     works.append({k: v for k, v in {
         'inv': w['inv'], 'title': w.get('title', ''), 'year': w.get('year'),
         'category': w.get('category', ''), 'series': w.get('series', ''),
