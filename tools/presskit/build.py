@@ -6,8 +6,8 @@ Builds assets/presskit/baaskaraa-press-kit.pdf from tools/presskit/presskit.html
   python3 tools/presskit/prep_images.py   # only when images change
   python3 tools/presskit/build.py
 
-The template fills in the mark (mark-path.txt, the exact path from the site's
-logo), the running head and the page footers, renders with headless Chromium,
+The logo is always the selected file img/baaskaraa_logo_gold_transparent.png,
+never redrawn. The template fills in the running head and the page footers, renders with headless Chromium,
 and refuses to write the PDF if any page's text overflows its frame.
 """
 import os, re, sys
@@ -20,8 +20,8 @@ TMP = os.path.join(HERE, '.render.html')
 OUT = os.path.join(ROOT, 'assets', 'presskit', 'baaskaraa-press-kit.pdf')
 EDITION = 'PREVIEW EDITION · NOV 2026'
 
-HEAD = ('<div class="head"><div class="hlock"><svg viewBox="0 0 422 600" style="stroke:#B8932A">'
-        '<use href="#bmark"/></svg><span>baaskaraa</span></div>'
+HEAD = ('<div class="head"><div class="hlock"><img class="logo" src="img/baaskaraa_logo_gold_transparent.png" alt="">'
+        '<span>baaskaraa</span></div>'
         f'<div class="ed">{EDITION}</div></div>')
 
 def foot(n):
@@ -49,8 +49,7 @@ CHECK = """
 
 def main():
     html = open(SRC, encoding='utf-8').read()
-    mark = open(os.path.join(HERE, 'mark-path.txt')).read().strip()
-    html = html.replace('__MARK_D__', mark).replace('__HEAD__', HEAD)
+    html = html.replace('__HEAD__', HEAD)
     html = re.sub(r'__FOOT_(\d+)__', lambda m: foot(int(m.group(1))), html)
     open(TMP, 'w', encoding='utf-8').write(html)
     try:

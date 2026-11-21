@@ -5,7 +5,7 @@
 <title>baaskaraa · Press Kit</title>
 <!--
   baaskaraa press kit · source. Build: python3 tools/presskit/prep_images.py && python3 tools/presskit/build.py
-  Brand (Brand.dc.html): mark exactly as drawn; vertical lockup on covers, horizontal in running heads;
+  Logo: ONLY the selected file img/baaskaraa_logo_gold_transparent.png (project file), never redrawn. Brand (Brand.dc.html): vertical lockup on covers, horizontal in running heads;
   name lowercase in Montserrat Light, widely spaced (.2em), gold; Light 300 for large, Regular 400 for small print;
   Tamil in Mukta Malar; Paper #F5F1E8, Ink #141416, Gold #D4AF37 (dark gold #8A6D12 on paper for legibility);
   seal red is for the seal only, never for text. Works are always shown whole (no cropping).
@@ -54,7 +54,7 @@
   /* running head: horizontal lockup left, edition right */
   .head { position: absolute; top: 12mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; align-items: center; }
   .hlock { display: flex; align-items: center; gap: 2.4mm; }
-  .hlock svg { height: 5.2mm; width: auto; display: block; }
+  .hlock .logo { height: 5.2mm; width: auto; display: block; }
   .hlock span { font-weight: 300; font-size: 8.4pt; letter-spacing: .2em; color: var(--gold-dk); }
   .head .ed, .foot { font-size: 6.4pt; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--gold-dk); }
   .foot { position: absolute; bottom: 11mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; border-top: .3mm solid var(--rule); padding-top: 2.6mm; color: var(--muted); }
@@ -80,7 +80,7 @@
   /* COVER */
   .cover { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; }
   .cover .lockup { margin-top: 62mm; display: flex; flex-direction: column; align-items: center; }
-  .cover .lockup svg { height: 62mm; width: auto; display: block; }
+  .cover .lockup .logo { height: 62mm; width: auto; display: block; }
   .cover .name { margin-top: 9mm; font-weight: 300; font-size: 26pt; letter-spacing: .2em; padding-left: .2em; color: var(--gold); line-height: 1; }
   .cover .kind { margin-top: 7mm; font-size: 7.4pt; font-weight: 500; letter-spacing: .5em; padding-left: .5em; color: var(--gold); }
   .cover .pos { margin-top: 20mm; font-weight: 300; font-size: 12.5pt; letter-spacing: .03em; color: #E8E4DA; text-align: center; line-height: 1.7; }
@@ -143,7 +143,7 @@
 
   /* BACK */
   .back { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .back svg { height: 38mm; width: auto; display: block; }
+  .back .logo { height: 38mm; width: auto; display: block; }
   .back .name { margin-top: 6mm; font-weight: 300; font-size: 17pt; letter-spacing: .2em; padding-left: .2em; color: var(--gold); }
   .back .ta-name { margin-top: 3.5mm; font-family: 'BK Mukta Malar', sans-serif; font-weight: 300; font-size: 12pt; letter-spacing: .3em; padding-left: .3em; color: var(--gold); opacity: .9; }
   .back .c { margin-top: 16mm; font-size: 7pt; letter-spacing: .22em; color: #8C887F; text-align: center; line-height: 2.1; }
@@ -152,23 +152,12 @@
 </head>
 <body>
 
-<!-- the mark, drawn once -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#E6C766"/>
-      <stop offset=".5" stop-color="#D4AF37"/>
-      <stop offset="1" stop-color="#B08A24"/>
-    </linearGradient>
-    <symbol id="bmark" viewBox="0 0 422 600"><path id="bpath" d="__MARK_D__" fill="none" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  </defs>
-</svg>
 
 <!-- 1 · COVER -->
 <section class="page dark">
   <div class="cover">
     <div class="lockup">
-      <svg viewBox="0 0 422 600" style="stroke:url(#goldg)"><use href="#bmark"/></svg>
+      <img class="logo" src="img/baaskaraa_logo_gold_transparent.png" alt="baaskaraa">
       <div class="name">baaskaraa</div>
       <div class="kind">PRESS KIT</div>
     </div>
@@ -505,7 +494,7 @@
 <!-- 13 · BACK -->
 <section class="page dark">
   <div class="back">
-    <svg viewBox="0 0 422 600" style="stroke:url(#goldg)"><use href="#bmark"/></svg>
+    <img class="logo" src="img/baaskaraa_logo_gold_transparent.png" alt="baaskaraa">
     <div class="name">baaskaraa</div>
     <div class="c">STUDIO@BAASKARAA.COM<br>BAASKARAA.COM<br>SINGAPORE · INDIA</div>
     <div class="sig">b with me</div>
