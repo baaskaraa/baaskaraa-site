@@ -932,11 +932,14 @@ class Component extends DCLogic {
     return null;
   }
   works() {
-    /* TEMPORARILY HIDDEN (21 Oct 2026): remove a title from this list to show the work again */
-    var HIDDEN_TEMP = [];
+    /* HIDDEN (22 Nov 2026): works unticked "Show on baaskaraa.com" in the archive. Remove a title to show the work again */
+    var HIDDEN_TEMP = ['Sacred Presence', 'Torso Study', 'Kolam Knot', 'சினேகம் தீர்ந்த காதல் · Sinegam Theerndha Kaadhal', 'சினேகம் தீர்ந்த காதல் · the sculpture', 'Two horses', 'Light on Scape Series-1', 'Abstract (gold and black)'];
     return [
+      { inv: 'BK-2025-064', title: 'Kavi: study for a portrait of Suguna Baskar', year: '2024', medium: "HIMI artist gouache and Japanese gold paint on isometric grid paper, 29.7 \u00d7 21 cm \u00b7 study for a planned life-size portrait in oil and 24-carat gold", cat: 'Painting', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/73fa6749b65fa9d269e879e1d985e013-l.webp', pos: 'center', fit: 'contain', status: 'Enquire' },
       { title: 'Sacred Presence', year: '2023', medium: 'Oil and gold leaf', cat: 'Painting', src: '/_blob/7571ad066ea9cc36dc402b78607c3630', pos: 'center', status: 'Enquire' },
-      { title: 'Self-portrait', year: '2020', medium: "Ballpoint and colour pencil on paper \u00b7 signed and dated 29.3.20 \u00b7 looking within is not easy", cat: 'Drawing', src: '/_blob/0a8c0ebb12e6c6662865597edc6a4ed8', pos: 'center', fit: 'contain', status: 'Enquire' },
+      { inv: 'BK-2026-063', title: 'Still Life Study', year: '2022', medium: "Pencil on paper", cat: 'Drawing', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/e95cb88811ba4e903b2e6951f90dc2d2-l.webp', pos: 'center', fit: 'contain', status: 'Enquire' },
+      { inv: 'BK-2020-053', title: 'Self-portrait', year: '2020', medium: "Ballpoint and colour pencil on paper \u00b7 signed and dated 29.3.20 \u00b7 looking within is not easy", cat: 'Drawing', src: '/_blob/0a8c0ebb12e6c6662865597edc6a4ed8', pos: 'center', fit: 'contain', status: 'Enquire' },
+      { inv: 'BK-2020-077', title: 'Self-portrait, 13 April 2020', year: '2020', medium: "Orange pastel and cont\u00e9 on paper, 42 \u00d7 29.7 cm", cat: 'Drawing', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/cbc338c59e107dd7e43ae856277713fa-l.webp', pos: 'center', fit: 'contain', status: 'Enquire' },
       { title: 'The Unbroken Line', year: '2020', medium: 'Pastel on paper', cat: 'Drawing', src: '/_blob/9d9201aa624824d5f64f9a82ccc5f985', pos: 'center', status: 'Enquire' },
       { title: 'Face, line study', year: '2020', medium: 'Pastel and ink on paper', cat: 'Drawing', src: '/_blob/6bf515999adf83f32546114591a3f337', pos: 'center', status: 'Enquire' },
       { title: 'Head, line study', year: '2020', medium: 'Oil pastel and pencil on paper', cat: 'Drawing', src: '/_blob/3d91c6ce5623c11ae766ba80b6c9773c', pos: 'center', status: 'Enquire' },
@@ -957,6 +960,8 @@ class Component extends DCLogic {
       { title: 'Untitled (red and orange)', year: '2004', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/b6615e7a7bd3804962c9fc5f94cad97d', pos: 'center', status: 'Enquire' },
       { title: 'Untitled (blue and green)', year: '2004', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/57bf58c1b9e037355ee53084219e22cb', pos: 'center', status: 'Enquire' },
       { title: 'Abstract (violet and white)', year: '2000', medium: "Mixed media", cat: 'Painting', src: '/_blob/60db54a421b0f02437145b0d4671dedd', pos: 'center', status: 'Enquire' },
+      { inv: 'BK-2000-079', title: 'Untitled (green)', year: '2000', medium: "Acrylic on wood, 30 \u00d7 30 cm", cat: 'Painting', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/dc1076ac389c99628ac95ee2c82c9b74-l.webp', pos: 'center', fit: 'contain', status: 'Private collection' },
+      { inv: 'BK-2000-080', title: 'Untitled (blue and orange)', year: '2000', medium: "Acrylic on wood, 30 \u00d7 30 cm", cat: 'Painting', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/9cfa4337359e17a74f09bffcb47f75e8-l.webp', pos: 'center', fit: 'contain', status: 'Private collection' },
       { title: 'Untitled 2K, I', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/0ae24d64b50551c494447131481f7e3c', pos: 'center', status: 'Enquire' },
       { title: 'Untitled 2K, II', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/6317b3d92eb111e5c8434edc2e319585', pos: 'center', status: 'Enquire' },
       { title: 'Untitled 2K, III', year: '2000', medium: "Mixed media \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/216c3978f5eab73fe09a932b6d364a70', pos: 'center', status: 'Enquire' },
@@ -966,38 +971,41 @@ class Component extends DCLogic {
       { title: 'Abstract (green and ochre)', year: '2000', medium: "Oil on canvas \u00b7 MFA, Chennai", cat: 'Painting', src: '/_blob/12b1ca9f3e0c52d65fe6332cf0d2ee85', pos: 'center', status: 'Enquire' },
       { title: 'Water reflections', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/4a0886ac8006e76a9aaaaf9d0768cb4f', pos: 'center', status: 'Enquire' },
       { title: 'Tree and herd at dusk', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/41fc4d1679ed3b759cdac884781d2a42', pos: 'center', status: 'Enquire' },
-      { title: 'Blue hills rocks and palms', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/e0146b97854173937d43fad0e96258fe', pos: 'center', status: 'Enquire' },
-      { title: 'My Native Land', year: '1998', medium: "Oil on canvas \u00b7 VTI Gandhi Centenary Memorial Award", cat: 'Painting', src: '/_blob/f723bb7a2aa3afd8289da14a9cbeede5', pos: 'center', status: 'Enquire' },
+      { title: 'Blue hills, rocks and palms', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/e0146b97854173937d43fad0e96258fe', pos: 'center', status: 'Sold' },
+      { title: 'My Native Land', year: '1998', medium: "Oil on canvas \u00b7 VTI Gandhi Centenary Memorial Award", cat: 'Painting', src: '/_blob/f723bb7a2aa3afd8289da14a9cbeede5', pos: 'center', status: 'Private collection' },
       { title: 'Sleeping Figure', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/72763affba90410c1312676285d3b70b', pos: 'center', status: 'Enquire' },
       { title: 'Portrait of an elder (bearded)', year: '1998', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/aa8d3bd5df85008bbc452560d15f3ef4', pos: 'center', status: 'Enquire' },
       { title: 'Portrait of an elder', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/1d8a6a6838484560bc7fdcfebedce465', pos: 'center', status: 'Enquire' },
       { title: 'Abstract (earth and white)', year: '1998', medium: "Mixed media", cat: 'Painting', src: '/_blob/db0580be12f65b78f2f9906adf1d68bf', pos: 'center', status: 'Enquire' },
       { title: 'Cliff path (violet)', year: '1998', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/52e374acb75b89af47709a5fc26ada11', pos: 'center', status: 'Enquire' },
       { title: 'Three Elders', year: '1998', medium: "Charcoal on joined newsprint (full size)", cat: 'Drawing', src: '/_blob/98906c51eb7af139fb38b0f9ad7d43a6', pos: 'center', status: 'Enquire' },
-      { title: 'Fort landscape with goats', year: '1998', medium: "Acrylic on canvas, 120 \u00d7 90 cm", cat: 'Painting', src: '/_blob/ce12693f8272f45dae986da341b3fbb1', pos: 'center', status: 'Enquire' },
+      { title: 'Fort landscape with goats', year: '1998', medium: "Acrylic on canvas, 120 \u00d7 90 cm", cat: 'Painting', src: '/_blob/ce12693f8272f45dae986da341b3fbb1', pos: 'center', status: 'Private collection' },
       { title: 'Composition (landscape)', year: '1998', medium: "Acrylic on canvas, 90 \u00d7 60 cm", cat: 'Painting', src: '/_blob/22bb8ce5284ce8ff265900a92fb04e19', pos: 'center', status: 'Enquire' },
       { title: 'Two horses running', year: '1998', medium: 'Oil on canvas, 240 \u00d7 180 cm \u00b7 private commission', cat: 'Painting', src: '/_blob/a0d60bebd44c13abf2b246d5708e0cc2', pos: 'center', status: 'Commission (private)' },
       { title: 'Two horses', year: '1998', medium: 'Oil on canvas, 90 \u00d7 120 cm \u00b7 private commission', cat: 'Painting', src: '/_blob/525876d74e4a5ebe94dd465bc58a3bc1', pos: 'center', status: 'Commission (private)' },
       { title: 'Light on Scape Series-1', year: '1998', medium: "Acrylic on paper, 90 \u00d7 120 cm \u00b7 Tamil Nadu State Award", cat: 'Painting', src: '/_blob/06a63ee5e0cbe33dc81d9fbb86fc731e', pos: 'center', status: 'Enquire' },
-      { title: 'Portrait of Senthil Kumaran', year: '1997', medium: "Pen and ink on paper \u00b7 one continuous line", cat: 'Drawing', src: '/_blob/8cacd1a0d5dec1faa6c4689f093973a4', pos: 'center top', status: 'Not for sale' },
+      { inv: 'BK-1997-078', title: 'Ship at Kasimedu', year: '1997', medium: "Acrylic on canvas, 91 \u00d7 122 cm", cat: 'Painting', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/be2d54fedb0552f7fe5edb3a42e63ac5-l.webp', pos: 'center', fit: 'contain', status: 'Private collection' },
+      { title: 'Portrait of Senthil Kumaran', year: '1997', medium: "Pen and ink on paper \u00b7 one continuous line", cat: 'Drawing', src: '/_blob/8cacd1a0d5dec1faa6c4689f093973a4', pos: 'center top', status: 'Private collection' },
       { title: 'Hill path', year: '1997', medium: "Acrylic on canvas · Ooty series \u00b7 an imagined landscape, shaped by the college study trip, not a real place · an early experiment with the new medium · Collection of sculptor Rubesh Kannan", cat: 'Painting', src: '/_blob/ff200e6d459b6cd7339caae1e2fdcc74', thumb: '/_blob/e01192a56bf632ab18f65c1d65889325', pos: 'center', status: 'Private collection' },
-      { title: 'Herder with goats', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/646da263c9ff42410e1ac4245afa0f53', pos: 'center', status: 'Enquire' },
-      { title: 'Village lane', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/5d79c93603f694e950d6775af24ed014', pos: 'center', status: 'Enquire' },
-      { title: 'Tree cattle and farmer', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', status: 'Enquire' },
-      { title: 'Lotus pond', year: '1997', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/a2521a3bf02456d1e237530569dd05fd', pos: 'center', status: 'Enquire' },
-      { title: 'Great tree two figures', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', status: 'Enquire' },
+      { title: 'Herder with goats', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/646da263c9ff42410e1ac4245afa0f53', pos: 'center', status: 'Private collection' },
+      { title: 'Village lane', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/5d79c93603f694e950d6775af24ed014', pos: 'center', status: 'Not for sale' },
+      { title: 'Tree, cattle and farmer', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', status: 'Sold' },
+      { title: 'Lotus pond', year: '1997', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/a2521a3bf02456d1e237530569dd05fd', pos: 'center', status: 'Not for sale' },
+      { title: 'Great tree, two figures', year: '1997', medium: "Watercolour on paper \u00b7 Ooty series \u00b7 an imagined landscape, shaped by the college study trip", cat: 'Painting', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', status: 'Sold' },
       { title: 'Seated Figure', year: '1997', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/0d929a9cc7dbd6eeea9caec23bf3c8e7', thumb: '/_blob/4047576e44c5ac0c4f010512380e29e8', pos: 'center', status: 'Enquire' },
-      { title: 'Life study', year: '1997', medium: "Charcoal on paper, 50 \u00d7 70 cm", cat: 'Drawing', src: '/_blob/3413dca48b1ca156b6d93b5763f8225f', pos: 'center', status: 'Enquire' },
-      { title: 'Banyan, Theosophical Society, Adyar', year: '1996', medium: "Acrylic on canvas \u00b7 painted in the open air, Theosophical Society, Adyar, Chennai", cat: 'Painting', src: '/_blob/a0f1e9b46df79f76b203d67952d83a45', pos: 'center', status: 'Enquire' },
+      { title: 'Life study', year: '1997', medium: "Charcoal on paper, 50 \u00d7 70 cm", cat: 'Drawing', src: '/_blob/3413dca48b1ca156b6d93b5763f8225f', pos: 'center', status: 'Not for sale' },
+      { title: 'Banyan, Theosophical Society, Adyar', year: '1996', medium: "Acrylic on canvas \u00b7 painted in the open air, Theosophical Society, Adyar, Chennai", cat: 'Painting', src: '/_blob/a0f1e9b46df79f76b203d67952d83a45', pos: 'center', status: 'Sold' },
       { title: 'Abstract (gold and black)', year: '1996', medium: "Mixed media \u00b7 acquired for the national collection, National Gallery of Modern Art, New Delhi, 1997", cat: 'Painting', src: '/_blob/391ac8e76e892260a27cf3fbb7715747', pos: 'center', status: 'National collection' },
-      { title: 'Blue forest path', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/5f8aeb35e877a0002fd026328619f941', pos: 'center', status: 'Enquire' },
-      { title: 'Fields under evening sky', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/981db5f1ab9087f98b2e1f39de1559c9', pos: 'center', status: 'Enquire' },
+      { title: 'Blue forest path', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/5f8aeb35e877a0002fd026328619f941', pos: 'center', status: 'Sold' },
+      { title: 'Fields under evening sky', year: '1996', medium: "Oil on canvas", cat: 'Painting', src: '/_blob/981db5f1ab9087f98b2e1f39de1559c9', pos: 'center', status: 'Private collection' },
       { title: 'Still life with pomegranate', year: '1996', medium: "Watercolour on paper", cat: 'Painting', src: '/_blob/994f86bb37001b032a4989177fbaad80', pos: 'center', status: 'Enquire' },
       { title: 'Palms', year: '1996', medium: "Charcoal on paper", cat: 'Drawing', src: '/_blob/3897a7779721fa2f107b70e6a6a7327e', pos: 'center', status: 'Enquire' },
       { title: 'Bamboo thicket', year: '1996', medium: "Charcoal on paper", cat: 'Drawing', src: '/_blob/c6a19bb06fb979ce44192fd92838cd16', pos: 'center', status: 'Enquire' },
+      { inv: 'BK-1992-075', title: 'Nandi', year: '1992', medium: "Ink on cotton cloth, with colour washes \u00b7 drawn for the Amuthupadaiyal festival, Arulmigu Mariyamman Temple, Irumbulikkurichi", cat: 'Drawing', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/7f2a9494691650c0fc2e528fb951b859-l.webp', pos: 'center', fit: 'contain', status: 'Public work' },
+      { inv: 'BK-1992-076', title: 'Kamadhenu', year: '1992', medium: "Ink on cotton cloth, with colour washes \u00b7 drawn for the Amuthupadaiyal festival, Arulmigu Mariyamman Temple, Irumbulikkurichi", cat: 'Drawing', src: 'https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/assets/archive/6e9428204719542ccfa7b48570f9152e-l.webp', pos: 'center', fit: 'contain', status: 'Public work' },
       { title: 'Emergence', year: '2020', medium: '3D digital sculpture · Stillness opened into pure observation. A dialogue began with no intention: questions arose and answered themselves. This work is what remained.', cat: 'Digital', src: '/_blob/d01cc77666d1f3280807d635a18f08ea', pos: 'center', status: 'Edition on request' },
-      { title: 'Coral Figures', year: '2024', medium: '3D digital composition, series of 5', cat: 'Digital', src: '/_blob/00de530c8f67b2982dfaa07bb08a4414', pos: '30% center', status: 'Edition on request' },
-      { title: 'Coral Figures, Bow', year: '2024', medium: '3D digital sculpture', cat: 'Digital', src: '/_blob/75396a15219fcfb9079bd36d91fe1d27', pos: 'center', status: 'Edition on request' }
+      { title: 'Coral Figures', year: '2012', medium: '3D digital composition, series of 5', cat: 'Digital', src: '/_blob/00de530c8f67b2982dfaa07bb08a4414', pos: '30% center', status: 'Edition on request' },
+      { title: 'Coral Figures, Bow', year: '2012', medium: '3D digital sculpture', cat: 'Digital', src: '/_blob/75396a15219fcfb9079bd36d91fe1d27', pos: 'center', status: 'Edition on request' }
     ].filter(function (w) { return HIDDEN_TEMP.indexOf(w.title) < 0; });
   }
   startAw() {
@@ -1135,7 +1143,7 @@ class Component extends DCLogic {
     var open = this.state.open;
     var openWork = open >= 0 && open < shown.length ? shown[open] : { title: '', year: '', medium: '', src: '', status: '' };
     var cats = ['All', 'Available', 'Painting', 'Drawing', 'Sculpture', 'Installation', 'Studio', 'Concept'];
-    var invOf = function (w) { return (typeof BK !== 'undefined' && BK.inv && w && w.title) ? BK.inv(w.title, w.year) : ''; };
+    var invOf = function (w) { if (w && w.inv) return w.inv; return (typeof BK !== 'undefined' && BK.inv && w && w.title) ? BK.inv(w.title, w.year) : ''; };
     var withOpen = shown.map(function (w, i) { var inv = invOf(w); return Object.assign({}, w, { inv: inv, tip: inv ? inv + ' · ' + w.title + ', ' + w.year : w.title + ', ' + w.year, fit: w.fit || 'cover', thumb: w.thumb || w.src, open: function () { if (typeof BK !== 'undefined' && BK.openCards) BK.openCards(shown.map(function (x) { return { inv: invOf(x), src: x.src, title: x.title, year: x.year, medium: x.medium, status: x.status }; }), i); else self.setState({ open: i }); } }); });
     var aw_st = this.state, aw_sets = this.awSets(), aw_all = this.works();
     var aw_names = { art: 'ART', digital: 'DIGITAL', lit: 'LITERATURE' }, aw_chs = { art: 'Art', digital: 'Digital', lit: 'Literature' };
@@ -1210,8 +1218,8 @@ class Component extends DCLogic {
         { kind: 'Archive', cap: 'Hill path, 1997', src: '/_blob/e01192a56bf632ab18f65c1d65889325', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
         { kind: 'Archive', cap: 'Herder with goats, 1997', src: '/_blob/646da263c9ff42410e1ac4245afa0f53', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
         { kind: 'Archive', cap: 'Lotus pond, 1997', src: '/_blob/a2521a3bf02456d1e237530569dd05fd', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
-        { kind: 'Archive', cap: 'Tree cattle and farmer, 1997', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
-        { kind: 'Archive', cap: 'Great tree two figures, 1997', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Tree, cattle and farmer, 1997', src: '/_blob/e7a0a5d1f12ed7459cd858ef4a977481', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
+        { kind: 'Archive', cap: 'Great tree, two figures, 1997', src: '/_blob/cbdf1b2d1f5e1ca2745edafa871c1e6e', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
         { kind: 'Archive', cap: 'Blue forest path, 1996', src: '/_blob/5f8aeb35e877a0002fd026328619f941', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
         { kind: 'Archive', cap: 'Bamboo thicket, 1996', src: '/_blob/c6a19bb06fb979ce44192fd92838cd16', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' },
         { kind: 'Archive', cap: 'Cliff path (violet), 1998', src: '/_blob/52e374acb75b89af47709a5fc26ada11', pos: 'center', href: 'https://www.instagram.com/baaskaraa.studio/' }
