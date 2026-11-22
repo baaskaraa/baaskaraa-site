@@ -144,13 +144,16 @@
   /* BACK */
   .back { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
   .back .logo { height: 38mm; width: auto; display: block; }
-  .back .name { margin-top: 6mm; font-weight: 300; font-size: 17pt; letter-spacing: .2em; padding-left: .2em; color: var(--gold); }
-  .back .ta-name { margin-top: 3.5mm; font-family: 'BK Mukta Malar', sans-serif; font-weight: 300; font-size: 12pt; letter-spacing: .3em; padding-left: .3em; color: var(--gold); opacity: .9; }
+  /* 'Both names' lockup, proportions from Brand.dc.html 02d (mark 124 · gap 16 · name 24px +6 · Tamil 19.9 × 116.5) */
+  .back .name { margin-top: 6.7mm; font-weight: 300; font-size: 20.8pt; line-height: 1; letter-spacing: .2em; padding-left: .2em; color: var(--gold); }
+  .back .ta-name { margin-top: 4.9mm; height: 6.1mm; width: 35.7mm; display: block; overflow: visible; color: var(--gold); }
   .back .c { margin-top: 16mm; font-size: 7pt; letter-spacing: .22em; color: #8C887F; text-align: center; line-height: 2.1; }
   .back .sig { position: absolute; bottom: 20mm; font-size: 7pt; font-weight: 300; letter-spacing: .3em; color: #8C887F; }
 </style>
 </head>
 <body>
+<!-- Tamil name: fixed artwork from Brand.dc.html (symbol #tname), never retyped -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tname" viewBox="0 -696 5060 865"><g fill="currentColor" transform="scale(1,-1)"><path transform="translate(-78.0,0.0)" d="M136 495V49H517V495H575V0H78V495Z"/><path transform="translate(759.3,0.0)" d="M491 495V448H382V0H323V448H136V0H78V495Z"/><path transform="translate(1534.6,0.0)" d="M311 499Q349 499 381.0 489.5Q413 480 438.5 463.5Q464 447 483.0 426.0Q502 405 513 382Q518 405 529.0 426.5Q540 448 557.5 464.0Q575 480 599.0 489.5Q623 499 653 499Q727 499 764.0 446.0Q801 393 801 306V183Q801 43 910 43Q964 43 997.0 87.0Q1030 131 1030 215Q1030 258 1019.5 294.5Q1009 331 991.5 361.5Q974 392 950.5 415.5Q927 439 901 456L935 502Q966 481 994.0 452.0Q1022 423 1043.0 387.0Q1064 351 1076.5 307.5Q1089 264 1089 215Q1089 110 1039.0 52.0Q989 -6 907 -6Q826 -6 785.0 43.5Q744 93 744 178V305Q744 374 722.0 412.0Q700 450 646 450Q597 450 571.5 412.0Q546 374 546 305V0H489V274Q489 317 475.5 349.5Q462 382 438.0 404.5Q414 427 380.5 438.5Q347 450 307 450Q263 450 226.5 433.5Q190 417 163.5 387.0Q137 357 122.0 314.5Q107 272 107 220V209Q125 245 158.0 266.5Q191 288 233 288Q264 288 290.5 277.0Q317 266 336.5 247.0Q356 228 367.0 201.5Q378 175 378 145Q378 112 366.5 84.0Q355 56 334.5 36.0Q314 16 286.0 5.0Q258 -6 224 -6Q148 -6 102.0 53.0Q56 112 56 217Q56 280 74.0 331.5Q92 383 125.5 420.5Q159 458 206.0 478.5Q253 499 311 499ZM222 241Q202 241 184.5 233.5Q167 226 153.0 213.0Q139 200 129.0 182.5Q119 165 115 146Q125 92 156.0 66.5Q187 41 224 41Q268 41 294.5 69.0Q321 97 321 142Q321 187 294.5 214.0Q268 241 222 241ZM569 696Q591 696 605.0 681.5Q619 667 619 647Q619 627 605.0 612.5Q591 598 571 598Q548 598 534.0 612.5Q520 627 520 647Q520 667 534.0 681.5Q548 696 569 696Z"/><path transform="translate(2926.9,0.0)" d="M550 495V449H400V288H444Q532 288 577.5 248.0Q623 208 623 142Q623 109 611.5 81.5Q600 54 580.0 34.5Q560 15 531.0 4.5Q502 -6 468 -6Q453 -6 440.5 -4.0Q428 -2 419 1L427 48Q436 45 446.5 44.0Q457 43 466 43Q513 43 539.5 69.5Q566 96 566 142Q566 242 441 242H400V147Q400 80 354.5 37.0Q309 -6 225 -6Q183 -6 148.5 5.5Q114 17 89.0 38.0Q64 59 50.5 88.0Q37 117 37 152Q37 178 45.5 200.0Q54 222 67.5 238.5Q81 255 99.0 266.0Q117 277 137 281V495ZM193 242Q147 242 120.0 218.0Q93 194 93 151Q93 102 130.0 72.0Q167 42 228 42Q283 42 314.0 72.0Q345 102 345 154V242ZM192 288H345V449H192Z"/><path transform="translate(3812.2,0.0)" d="M495 495V448H386V10L220 -169L180 -131L328 27V448H135V0H78V495Z"/><path transform="translate(4569.4,0.0)" d="M491 495V448H382V0H323V448H136V0H78V495Z"/></g></symbol></defs></svg>
 
 
 <!-- 1 · COVER -->
@@ -296,7 +299,7 @@
       <div class="chgap"></div>
       <div class="ch"><span class="no">VI · Agam. Puram.</span><span class="yr">since 2010</span></div>
       <p>In 2010 a second journey began, inward. Agam, the inner path, led him through the yogis and siddhas of Tamil tradition, to Arunachala and the temples of Tamil Nadu, back to the village gods, and to sit with masters in India and Singapore. Vasi Yoga in the Siddha tradition. Hatha Yoga from 2016. Naadham <span class="ta">நாதம்</span> from 2018.</p>
-      <p>Stillness opened into pure observation: a dialogue with no intention, in which questions arose and answered themselves. In his words: “Stillness opens into observation. A dialogue begins without intention. Questions arise and answer themselves. What remains is the artwork.” What remained, in May 2020, was <i>Emergence</i>: a living plant traced as line, the line set free, the line resolved into a gold sculpture in three dimensions.</p>
+      <p>Stillness opened into pure observation: a dialogue with no intention, in which questions arose and answered themselves. In his words: “Stillness opens into observation. A dialogue begins without intention. Questions arise and answer themselves. What remains is the artwork.”</p>
       <p>Puram, the outer path, runs the other way. On 14 January 2014 he brought together the people of Irumbulikkurichi working in Singapore as Aalam, for the village at home: Pongal, village festivals, honouring the elders.</p>
       <p>The line itself is the signature: non-stop, never defined, everything connected and flowing. <i>The Unbroken Line</i>, the line studies and a self-portrait, all of 2020, carry it.</p>
       <p>Now the work turns on literature again. <i>Vinayagar Agaval</i>, after Avvaiyar's verse, has been in the making since a sketch of 3 February 2020. <i>Kavi</i>, a study of Suguna Baskar in gouache and Japanese gold, opens the way to a planned life-size portrait in oil and 24-carat gold.</p>
@@ -496,6 +499,7 @@
   <div class="back">
     <img class="logo" src="img/baaskaraa_logo_gold_transparent.png" alt="baaskaraa">
     <div class="name">baaskaraa</div>
+    <svg class="ta-name" role="img" aria-label="பாஸ்கரா"><use href="#tname"/></svg>
     <div class="c">STUDIO@BAASKARAA.COM<br>BAASKARAA.COM<br>SINGAPORE · INDIA</div>
     <div class="sig">b with me</div>
   </div>

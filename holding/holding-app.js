@@ -2,6 +2,15 @@
    Squarespace Code block: <div id="bk-holding"></div><script src="https://cdn.jsdelivr.net/gh/baaskaraa/baaskaraa-site@main/holding/holding.js"></script>
    Guest book signatures go to a Google Sheet owned by baaskaraa through a Google Apps Script web app (holding/guestbook.gs).
    b with me */
+/* favicon: the selected logo file (assets/favicon) */
+try { (function () {
+  var b = 'https://baaskaraa.github.io/baaskaraa-site/assets/favicon/', h = document.head;
+  var old = h.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"]');
+  for (var i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+  [['icon', 'favicon-32.png', '32x32'], ['icon', 'icon-192.png', '192x192'], ['apple-touch-icon', 'apple-touch-icon.png', '180x180']].forEach(function (f) {
+    var l = document.createElement('link'); l.rel = f[0]; l.type = 'image/png'; l.sizes = f[2]; l.href = b + f[1]; h.appendChild(l);
+  });
+})(); } catch (e) {}
 (function(){
 var ENDPOINT='https://script.google.com/macros/s/AKfycbyEQN5bhRxmcPEQ4oCPnczFaZzBJytxSRpDr9AeO9VkT7XWK6szzHL40xdAgETRyyxabQ/exec';  /* Apps Script web app URL, ends in /exec */
 var BASE=(document.currentScript&&document.currentScript.src||'').replace(/holding(-app)?\.js(\?.*)?$/,'');

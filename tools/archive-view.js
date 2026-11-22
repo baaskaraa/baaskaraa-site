@@ -725,5 +725,5 @@ function coaShrink(c){if(!c)return;var z=c.style.zoom;c.style.zoom=1;var i=c.que
     el.addEventListener('click', onClick); el.addEventListener('input', onInput); el.addEventListener('change', onChange);
     if (data) draw(); else load();
   }
-  return { mount: mount, load: load, route: route, handles: handles, invFor: invFor, openCards: openCards, tab: function () { return st.tab; }, visible: visible };
+  return { mount: mount, load: load, route: route, handles: handles, works: function () { return data ? data.works : null; }, invFor: invFor, openCards: openCards, tab: function () { return st.tab; }, visible: visible };
 })();

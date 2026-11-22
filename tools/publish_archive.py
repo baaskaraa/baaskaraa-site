@@ -74,6 +74,7 @@ for w in load('works'):
         'place': w.get('place', ''), 'status': status if status not in ('In studio', 'Unknown') else '',
         'provenance': w.get('provenance', '') if status in PUBLIC_STATUS else '',
         'awards': w.get('awards', ''), 'exhibitions': w.get('exhibitions', ''), 'literature': w.get('literature', ''),
+        'feature': True if w.get('feature') else None,
         'coa': ((w.get('coa') or {}).get('no') or 'COA-%s-1' % w['inv']) + '|' + ((w.get('coa') or {}).get('date') or '')}.items() if v not in ('', None)})
 
 STAGES = ['Idea', 'Proposal', 'Approval', 'Making', 'Presentation', 'Reception', 'After']
@@ -104,7 +105,7 @@ txt = json.dumps(out, ensure_ascii=False, separators=(',', ':'))
 ALLOWED = {'published', 'stages', 'works', 'projects', 'inv', 'title', 'year', 'category', 'series', 'medium', 'size', 'images',
            'id', 'kind', 'w', 'h', 'pid', 'subtitle', 'type', 'start', 'end', 'partners', 'role', 'summary', 'cover', 'items',
            'no', 'stage', 'date', 'key', 'story', 'edition', 'signature', 'place', 'status', 'provenance',
-           'awards', 'exhibitions', 'literature', 'coa'}
+           'awards', 'exhibitions', 'literature', 'coa', 'feature'}
 def check(o):
     if isinstance(o, dict):
         for k, v in o.items():

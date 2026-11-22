@@ -8,6 +8,17 @@
 (function () {
   'use strict';
   if (window.__bkSite) return; window.__bkSite = true;
+  /* favicon: the selected logo file (assets/favicon, made from baaskaraa_logo_gold_transparent.png) */
+  (function () {
+    try {
+      var b = 'https://baaskaraa.github.io/baaskaraa-site/assets/favicon/', h = document.head;
+      var old = h.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"]');
+      for (var i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+      [['icon', 'favicon-32.png', '32x32'], ['icon', 'icon-192.png', '192x192'], ['apple-touch-icon', 'apple-touch-icon.png', '180x180']].forEach(function (f) {
+        var l = document.createElement('link'); l.rel = f[0]; l.type = 'image/png'; l.sizes = f[2]; l.href = b + f[1]; h.appendChild(l);
+      });
+    } catch (e) {}
+  })();
   var morphdom = __MORPHDOM__;
   var TEMPLATE = __TEMPLATE__;
   var CSS = __CSS__;
@@ -67,6 +78,7 @@
   BK.rerender = function () { schedule(); };
   BK.onArchive = function (t) { if (comp && comp.state.archTab !== t) comp.setState({ archTab: t }); };
   BK.inv = function (title, year) { return ARCHIVE.invFor(title, year); };
+  BK.archWorks = function () { return ARCHIVE.works(); };
   BK.openCards = function (cards, i) { ARCHIVE.openCards(cards, i); };
 
   /* ---------- tiny component base (what the prototype's logic expects) ---------- */
